@@ -8,10 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        cabintetGrotesk: ['CabinetGrotesk', 'sans-serif'],
+      },
+      colors: {
+        "background-100": "#050419", // dark
+        "primary-100": "#574AFF", // blue badge
+        "primary-200": "#322d9c",
+        "primary-300": "#FBFBFB",
+        "header": "rgb(120, 120, 120, 0.1)"
       },
     },
   },
