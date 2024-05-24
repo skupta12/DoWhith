@@ -1,3 +1,5 @@
+import { WhiteButton } from "./components/Buttons";
+
 const styles = {
     boxWidth: "mx-auto w-full max-w-[1360px] px-4 md:px-20 relative",
     
@@ -16,6 +18,9 @@ const styles = {
     sectionPadding: "lg:py-32 py-16",
     mdContainer: "mx-auto max-w-[750px]",
     smContainer: "mx-auto max-w-[750px] px-4 md:px-20",
+
+    blackButton: "bg-background-100 text-white py-[10px] px-[32px] rounded-md text-base inline-block font-bold relative",
+    whiteButton: "bg-white text-black py-[10px] px-[32px] rounded-md text-base inline-block font-bold",
   };
   
 export default styles;

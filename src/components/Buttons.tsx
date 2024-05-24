@@ -1,5 +1,8 @@
+"use client"
+
+import styles from "@/style";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/navigation";
 
 type ButtonProps = {
   title: string;
@@ -13,20 +16,23 @@ export function BlackButton({
   href = "/",
   type,
   title,
-}: {
-  className?: string;
-  href: string;
-  type: string;
-  title: string;
-}) {
+}: ButtonProps) {
+  
+  const router = useRouter();
+
   return (
     <Link
-      className="bg-background-100 text-white py-[10px] 
-      px-[32px] rounded-md text-base font-bold overflow-hidden relative z-[5]"
-      href={""}
+      className="relative overflow-hidden group transform hover:-translate-y-1 duration-500"
+      onClick={() => router.push(href)}
+      href={href}
     >
-      <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-full bg-primary-200 blur-xl z-[10]"/>
-      <button className="z-[20] relative">{title}</button>
+      <button
+        className={styles.blackButton}
+      >
+        <span className="relative z-[5]">{title}</span>
+      </button>
+      <div className="absolute -bottom-3 left-1/2 transform 
+      -translate-x-1/2 w-20 h-full bg-primary-200 blur-xl group-hover:blur-md duration-200" />
     </Link>
   );
 }
@@ -36,19 +42,21 @@ export function WhiteButton({
   href = "/",
   type,
   title,
-}: {
-  className?: string;
-  href: string;
-  type: string;
-  title: string;
-}) {
+}: ButtonProps) {
+  
+  const router = useRouter();
+
   return (
     <Link
-      className="bg-white text-black py-[10px] 
-      px-[32px] rounded-md text-base font-bold overflow-hidden relative z-[5]"
-      href={""}
+      className="transform hover:-translate-y-1 duration-500"
+      onClick={() => router.push(href)}
+      href={href}
     >
-      <button className="z-[20] relative">{title}</button>
+      <button
+        className={styles.whiteButton}
+      >
+        {title}
+      </button>
     </Link>
   );
 }
