@@ -1,7 +1,5 @@
-import { WhiteButton } from "./components/Buttons";
-
 const styles = {
-    boxWidth: "mx-auto w-full max-w-[1360px] px-4 md:px-20 relative",
+    boxWidth: "mx-auto w-full max-w-[1380px] px-4 sm:px-10 relative",
     
     heading1: "text-primary-100 lg:text-[66px] md:text-[42px] text-[33px] font-medium leading-tight",
     heading2: "text-primary-100 lg:text-[56px] md:text-[48px] leading-[1.2] sm:text-[36px] text-[32px] font-medium",

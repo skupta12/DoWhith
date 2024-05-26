@@ -1,21 +1,34 @@
+"use client";
+
 import Image from "next/image";
 import Logo from "/public/logo.png";
 import { nav } from "@/data/placeholder-data";
 import Link from "next/link";
 import { BlackButton, WhiteButton } from "./Buttons";
+import { useState } from "react";
+import styles from "@/style";
 
 const Header = () => {
+
+  const [open, isOpen] = useState(false);
+
+  const handleClick = () => {
+    isOpen((prev) => !prev);
+  };
+
   return (
-    <header className="max-w-[1380px] mx-auto py-5">
+    <header className={`${styles.boxWidth} py-5`}>
       <div
         className="flex justify-between items-center 
-      p-4 bg-header rounded-md"
+      sm:p-4 p-3 bg-header rounded-md gap-x-4"
       >
-        <div className="flex items-center gap-x-14">
-          <div className="logo">
+        <div className="flex items-center lg:gap-x-14">
+          <Link href="/">
             <Image width={172} height={40} src={Logo} alt="DoWhith logo" />
-          </div>
-          <nav>
+          </Link>
+
+          {/* desktop nav */}
+          <nav className="lg:block hidden">
             <ul className="flex items-center gap-x-5">
               {nav.map((item, i) => (
                 <li key={i}>
@@ -26,18 +39,49 @@ const Header = () => {
               ))}
             </ul>
           </nav>
+
+          {/* mobile nav */}
+          <nav
+            onClick={() => isOpen(false)} 
+            className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
+            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500
+          ${
+            !open
+              ? "transform -translate-y-full"
+              : "transform translate-y-[40%]"
+          }`}
+          >
+            <ul className="flex w-full flex-col gap-y-4 sm:p-4 p-3">
+              {nav.map((item, i) => (
+                <li className="" key={i}>
+                  <Link className="text-[18px] font-medium" href={item.href}>
+                    {item.text}
+                  </Link>
+                </li>
+              ))}
+              <div className="flex items-center gap-4">
+                <WhiteButton className="sm:w-full" href={"/"} type="button" title="Log In" />
+                <BlackButton href={"/"} type="button" title="Sign Up" />
+              </div>
+            </ul>
+          </nav>
         </div>
-        <div className="flex items-center gap-x-4">
-          <WhiteButton 
-            href={"/"} 
-            type="button" 
-            title={"Log In"} />
-          <BlackButton
-            className={""}
-            href={"/"}
-            type="button"
-            title={"Sign Up"}
-          />
+        <div className="flex items-center gap-x-5">
+          <div className="md:flex hidden items-center gap-x-4">
+            <WhiteButton href={"/"} type="button" title="Log In" />
+            <BlackButton href={"/"} type="button" title="Sign Up" />
+          </div>
+          <div className="burger-menu lg:hidden block">
+            <button
+              aria-label="burger menu"
+              onClick={handleClick}
+              className="flex flex-col"
+            >
+              <span className="w-[22px] h-[2px] bg-black "></span>
+              <span className="w-[22px] h-[2px] bg-black my-[3px]"></span>
+              <span className="w-[22px] h-[2px] bg-black"></span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
