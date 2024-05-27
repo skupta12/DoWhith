@@ -10,7 +10,7 @@ import styles from "@/style";
 
 const Header = () => {
 
-  const [open, isOpen] = useState(false);
+  const [open, isOpen] = useState<boolean>(false);
 
   const handleClick = () => {
     isOpen((prev) => !prev);
@@ -42,7 +42,6 @@ const Header = () => {
 
           {/* mobile nav */}
           <nav
-            onClick={() => isOpen(false)} 
             className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
             sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500
           ${
@@ -53,14 +52,14 @@ const Header = () => {
           >
             <ul className="flex w-full flex-col gap-y-4 sm:p-4 p-3">
               {nav.map((item, i) => (
-                <li className="" key={i}>
-                  <Link className="text-[18px] font-medium" href={item.href}>
+                <li key={i}>
+                  <Link onClick={() => isOpen(false)}  className="text-[18px] font-medium" href={item.href}>
                     {item.text}
                   </Link>
                 </li>
               ))}
               <div className="flex items-center gap-4">
-                <WhiteButton className="sm:w-full" href={"/"} type="button" title="Log In" />
+                <WhiteButton href={"/"} type="button" title="Log In" />
                 <BlackButton href={"/"} type="button" title="Sign Up" />
               </div>
             </ul>

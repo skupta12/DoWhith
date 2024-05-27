@@ -13,11 +13,12 @@ const config: Config = {
         cabintetGrotesk: ['CabinetGrotesk', 'sans-serif'],
       },
       colors: {
-        "background-100": "#050419", // dark
-        "primary-100": "#574AFF", // blue badge
-        "primary-200": "#322d9c",
-        "primary-300": "#FBFBFB",
-        "header": "rgb(120, 120, 120, 0.1)"
+        "primary-100": "#050419", // dark
+        "primary-200": "#574AFF", // blue badge
+        "primary-300": "#dcbae0", // purple
+        "primary-400": "#322d9c",
+        "primary-500": "#FBFBFB",
+        "header": "rgba(255, 255, 255, 0.1)"
       },
     },
   },

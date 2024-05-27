@@ -27,12 +27,12 @@ export function BlackButton({
       href={href}
     >
       <button
-        className={styles.blackButton}
+        className={`${styles.blackButton} ${className}`}
       >
         <span className="relative z-[5]">{title}</span>
       </button>
       <div className="absolute -bottom-3 left-1/2 transform 
-      -translate-x-1/2 w-20 h-full bg-primary-200 blur-xl group-hover:blur-md duration-200" />
+      -translate-x-1/2 w-24 h-full bg-primary-200 blur-2xl group-hover:blur-xl duration-200" />
     </Link>
   );
 }
