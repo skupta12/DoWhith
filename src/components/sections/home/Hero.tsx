@@ -10,8 +10,7 @@ import GradientBg from "/public/gradient-bg.png";
 const Hero = () => {
   return (
     <section className="pt-12 pb-20 relative overflow-hidden">
-      <Image priority className="object-cover" fill src={Bg1} alt="background image 1"  />
-      {/* <Image priority className="absolute bottom-0" fill src={GradientBg} alt="background gradient"  /> */}
+      <Image quality={100} priority className="object-cover" fill src={Bg1} alt="background image 1"  />
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-5 items-center text-center mb-14">
           {/* label */}

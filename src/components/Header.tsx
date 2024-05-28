@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BlackButton, WhiteButton } from "./Buttons";
 import { useState } from "react";
 import styles from "@/style";
+import GradientBg from "/public/gradient-bg.png";
 
 const Header = () => {
 
@@ -17,6 +18,9 @@ const Header = () => {
   };
 
   return (
+    <>
+    {/* custom gradient */}
+    <Image className="object-cover opacity-80" priority fill src={GradientBg} alt="background gradient"  />
     <header className={`${styles.boxWidth} py-5`}>
       <div
         className="flex justify-between items-center 
@@ -53,7 +57,8 @@ const Header = () => {
             <ul className="flex w-full flex-col gap-y-4 sm:p-4 p-3">
               {nav.map((item, i) => (
                 <li key={i}>
-                  <Link onClick={() => isOpen(false)}  className="text-[18px] font-medium" href={item.href}>
+                  <Link onClick={() => isOpen(false)} 
+                    className="text-[18px] font-medium" href={item.href}>
                     {item.text}
                   </Link>
                 </li>
@@ -74,7 +79,7 @@ const Header = () => {
             <button
               aria-label="burger menu"
               onClick={handleClick}
-              className="flex flex-col"
+              className="flex flex-col p-3"
             >
               <span className="w-[22px] h-[2px] bg-black "></span>
               <span className="w-[22px] h-[2px] bg-black my-[3px]"></span>
@@ -84,6 +89,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 
