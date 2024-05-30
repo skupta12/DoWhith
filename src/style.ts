@@ -2,8 +2,8 @@ const styles = {
     boxWidth: "mx-auto w-full max-w-[1380px] px-4 sm:px-10 relative",
     
     heading1: "text-primary-100 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-tight",
-    // heading2: "text-primary-100 lg:text-[56px] md:text-[48px] leading-[1.2] sm:text-[36px] text-[32px] font-medium",
-    // heading3: "text-primary-100 lg:text-[32px] md:text-[28px] sm:text-[24px] text-[22px] font-medium leading-[1.4]",
+    heading2: "lg:text-[42px] text-[34px] leading-[1.2] font-semibold",
+    heading3: "text-primary-100 lg:text-[24px] text-[22px] font-semibold leading-[1.4]",
     // heading4: "lg:text-[22px] md:text-[18px] text-[17px] font-medium leading-tight",
     // heading5: "lg:text-[18px] font-medium leading-tight",
     // heading6: "text-[16px] font-medium leading-tight",

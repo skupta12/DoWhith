@@ -5,11 +5,10 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/hero.png";
 import Bg1 from "/public/hero-bg-1.png";
-import GradientBg from "/public/gradient-bg.png";
 
 const Hero = () => {
   return (
-    <section className="pt-12 pb-20 relative overflow-hidden">
+    <section className="lg:pt-12 pt-10 lg:pb-24 pb-20 relative overflow-hidden">
       <Image quality={100} priority className="object-cover" fill src={Bg1} alt="background image 1"  />
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-5 items-center text-center mb-14">

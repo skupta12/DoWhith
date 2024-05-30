@@ -18,6 +18,7 @@ const config: Config = {
         "primary-300": "#dcbae0", // purple
         "primary-400": "#322d9c",
         "primary-500": "#FBFBFB",
+        "primary-600": "#FAFAFA",
         "header": "rgba(255, 255, 255, 0.3)"
       },
     },
