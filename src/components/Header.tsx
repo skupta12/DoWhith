@@ -21,7 +21,7 @@ const Header = () => {
     <>
       {/* custom gradient */}
       <Image
-        className="object-cover opacity-70"
+        className="object-cover opacity-50"
         priority
         fill
         src={GradientBg}

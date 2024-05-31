@@ -26,7 +26,7 @@ const Services = () => {
                   <Image
                     quality={100}
                     className="aspect-[2/2] object-contain"
-                    width={200}
+                    width={180}
                     height={200}
                     src={item.src}
                     alt={`${item.alt} ${item.id}`}
