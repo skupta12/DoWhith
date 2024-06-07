@@ -7,26 +7,3 @@
 .white-line {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
 }
-      
-
-:root {
-    --slide-width: calc(100% / var(--slide-count));
-  }
-  
-  @media (max-width: 768px) {
-    :root {
-      --slide-width: 150%;
-    }
-  }
-  
-  @media (max-width: 650px) {
-    :root {
-      --slide-width: 200%;
-    }
-  }
-  
-  .slide {
-    flex-shrink: 0;
-    width: var(--slide-width);
-  }
-  

@@ -11,7 +11,7 @@ import Bg1 from "/public/hero-bg-1.png";
 const Hero = () => {
 
   return (
-    <section  className="lg:pt-12 pt-10 lg:pb-24 pb-20 relative overflow-hidden">
+    <section className="lg:pt-12 pt-10 lg:pb-24 pb-20 relative overflow-hidden">
         <Image
           quality={100}
           priority={true}
