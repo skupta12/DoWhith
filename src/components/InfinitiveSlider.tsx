@@ -1,40 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { brands } from "@/data/placeholder-data";
 import Image from "next/image";
-// Define the array of slides with numbers
+import { brands } from "@/data/placeholder-data"; // Ensure this path is correct
 
 const InfinitiveSlider = () => {
-
-  const duplicatedSlides = [...brands, ...brands];
+  // Duplicate the brands array multiple times
+  const extendedBrands = [...brands, ...brands];
 
   return (
-    <div className="relative w-full overflow-hidden">
-
+    <div className="relative w-full overflow-hidden scroller-box">
       <motion.div
-        className="flex"
-        animate={{
-          x: ["0", "-100%"],
-          transition: {
-            ease: "linear",
-            duration: 30,
-            repeat: Infinity,
-          },
+        className="flex scroller-list"
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{
+          ease: "linear",
+          duration: 30,   
+          repeat: Infinity,
         }}
       >
-
-        {duplicatedSlides.map((slide, index) => (
-          <div
-            key={index}
-            className={`flex-shrink-0`}
-            style={{ width: `${100 / brands.length}%` }}
-            // style={{ width: `${100 / brands.length}%` }}
-          >
-            <div className="flex flex-col items-center justify-center h-full p-5">
-              <Image width={150} height={40} src={slide.src} alt={`${slide.alt} ${slide.id}`} />
-            </div>
-            
-          </div>
+        {extendedBrands.map((brand, index) => (
+          <motion.div key={index} className="scroller-item">
+            <Image
+              width={150}
+              height={50}
+              src={brand.src}
+              alt={`Brand ${index + 1}`}
+            />
+          </motion.div>
         ))}
       </motion.div>
     </div>

@@ -2,9 +2,11 @@
 
 import InfinitiveSlider from "@/components/InfinitiveSlider";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+
 import styles from "@/style";
 
 const Brands = () => {
+
   return (
     <>
     <section className={`pb-24 bg-primary-100 overflow-hidden`}>
@@ -24,7 +26,9 @@ const Brands = () => {
           </h2>
         </div>
         <div>
-          <InfinitiveSlider />
+     
+      <InfinitiveSlider/>
+
         </div>
       </MaxWidthWrapper>
     </section>
