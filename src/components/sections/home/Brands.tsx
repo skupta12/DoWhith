@@ -1,6 +1,6 @@
 "use client";
 
-import InfinitiveSlider from "@/components/InfinitiveSlider";
+import InfinitiveScroller from "@/components/InfinitiveScroller";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 import styles from "@/style";
@@ -27,7 +27,7 @@ const Brands = () => {
         </div>
         <div>
      
-      <InfinitiveSlider/>
+      <InfinitiveScroller/>
 
         </div>
       </MaxWidthWrapper>
