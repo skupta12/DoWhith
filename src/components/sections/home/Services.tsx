@@ -11,7 +11,7 @@ const Services = () => {
           <div className="flex flex-col gap-y-4 text-center">
             <h2
               className={`${styles.heading2} lg:text-[58px] 
-              md:text-[48px] text-[36px] max-w-[850px] mx-auto `}
+              md:text-[48px] text-[36px] max-w-[850px] mx-auto`}
             >
               Make faster & smarter spending decisions
             </h2>

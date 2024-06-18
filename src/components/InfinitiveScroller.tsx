@@ -20,7 +20,7 @@ const InfinitiveScroller = () => {
                   x: ['0%', '-100%'],
                   transition: {
                       ease: 'linear',
-                      duration: 45,
+                      duration: 60,
                       repeat: Infinity,
                   }
               }}
