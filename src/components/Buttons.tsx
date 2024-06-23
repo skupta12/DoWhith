@@ -43,6 +43,7 @@ export function WhiteButton({
   type,
   title,
 }: ButtonProps) {
+
   const router = useRouter();
 
   return (
@@ -59,22 +60,26 @@ export function WhiteButton({
 }
 
 export function LinkButton({ href = "/", type, title }: ButtonProps) {
+
   const router = useRouter();
 
   return (
     <Link
-      className="transform hover:-translate-y-1 duration-500"
+      className=""
       onClick={() => router.push(href)}
       href={href}
     >
-      <div className="flex items-center gap-x-3 ">
+      <div className="flex items-center gap-x-2 group">
         <button
           type={type}
-          className="sm:text-[20px] font-semibold bg-gradient-to-r from-primary-300 to-primary-200 bg-clip-text text-transparent"
+          className={styles.linkButton}
         >
           {title}
         </button>
-        <ArrowUpRight className="text-primary-200" />
+        <div className="inline-block group-hover:transform group-hover:translate-x-[4px] duration-500">
+          <ArrowUpRight size={24} className="text-primary-200" />
+        </div>
+       
       </div>
     </Link>
   );

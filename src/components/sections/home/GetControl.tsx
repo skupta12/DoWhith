@@ -1,0 +1,63 @@
+"use client";
+
+import styles from "@/style";
+import Image from "next/image";
+import { LinkButton } from "../../Buttons";
+import BgGetControlImage from "/public/home-features/bg-feature-1.png";
+import MainControlImage from "/public/home-features/main-feature-1.png";
+import ExtraControlImage from "/public/home-features/extra-feature-1.png";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+
+const ShowCase = () => {
+  return (
+    <section className={styles.sectionPadding}>
+      <MaxWidthWrapper>
+        <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">
+          <div className="col-span-12 md:col-span-6">
+            <div className="relative">
+              <Image
+                className="rounded-2xl bg-gray-100"
+                width={568}
+                height={524}
+                quality={85}
+                src={BgGetControlImage}
+                alt="bg part image"
+              />
+              <Image
+                quality={85}
+                className="absolute bottom-0 left-0"
+                width={472}
+                height={524}
+                src={MainControlImage}
+                alt="main part image"
+              />
+              <Image
+                className="absolute bottom-5 sm:left-10 left-5"
+                width={304}
+                height={147}
+                quality={85}
+                src={ExtraControlImage}
+                alt="extra part image"
+              />
+            </div>
+          </div>
+          <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
+            <div className="bg-primary-200 text-white font-semibold px-3 py-1 rounded-full inline-block mb-3">
+              Approval
+            </div>
+            <h2 className={`${styles.heading2V} mb-3`}>
+              Get control & visibility over every payment
+            </h2>
+            <p className={`${styles.paragraph} mb-3`}>
+              Establish a request and approval process to increase spend
+              accountability without blocking employees.
+            </p>
+            <LinkButton title="Learn More" type="button" />
+          </div>
+        </div>
+      </MaxWidthWrapper>
+    </section>
+  );
+};
+
+export default ShowCase;
