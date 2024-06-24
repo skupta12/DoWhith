@@ -17,6 +17,8 @@ const styles = {
     flexBetween: "flex justify-between items-center",
   
     sectionPadding: "lg:py-32 py-16",
+    sectionPaddingV1: "lg:pb-32 pb-16",
+
     mdContainer: "mx-auto max-w-[750px]",
     smContainer: "mx-auto max-w-[750px] px-4 md:px-20",
 
