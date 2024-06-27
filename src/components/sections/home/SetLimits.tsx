@@ -49,7 +49,8 @@ const SetLimits = () => {
                 Set limits to help you stick to your budget
             </h2>
             <p className={`${styles.paragraph} mb-3`}>
-            We’&apos;ll calculate limits to recommend you based on your spending predictions, or simply tell us how much you want to spend
+            We&apos;ll calculate limits to recommend you based on 
+            your spending predictions, or simply tell us how much you want to spend
             </p>
             <LinkButton title="Learn More" type="button" />
           </div>
