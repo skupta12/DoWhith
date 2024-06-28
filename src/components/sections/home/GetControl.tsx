@@ -14,9 +14,9 @@ const ShowCase = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">
           <div className="col-span-12 md:col-span-6">
-            <div className="relative">
+            <div className="relative overflow-hidden">
               <Image
-                className="rounded-2xl bg-gray-100"
+                className="rounded-2xl bg-gray-100 w-full"
                 width={568}
                 height={524}
                 quality={85}
@@ -32,9 +32,8 @@ const ShowCase = () => {
                 alt="main part image"
               />
               <Image
-                className="absolute bottom-5 sm:left-10 left-5"
-                width={304}
-                height={147}
+                className="absolute bottom-5 sm:left-10 left-5 lg:w-[304px] 
+                md:w-[287px] w-[267px] lg:h-[147px] md:h-[127px] h-[107px] object-contain"
                 quality={85}
                 src={ExtraControlImage}
                 alt="extra part image"

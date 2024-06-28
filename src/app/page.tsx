@@ -13,8 +13,8 @@ export default function MainPage() {
       <Brands />
       <Services />
       <GetControl />
-      <IssueVirtual />
-      <SetLimits />
+      {/* <IssueVirtual />
+      <SetLimits /> */}
       {/* <Anim /> */}
     </>
   );

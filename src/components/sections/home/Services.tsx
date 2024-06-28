@@ -25,7 +25,7 @@ const Services = () => {
                 <div className="mb-5 hover:scale-105 duration-200">
                   <Image
                     quality={100}
-                    className="aspect-[2/2] object-contain"
+                    className="aspect-[2/2] sm:w-[180px] w-[130px] sm:h-[200px] h-[150px] object-contain"
                     width={180}
                     height={200}
                     src={item.src}
