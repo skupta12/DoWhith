@@ -13,9 +13,9 @@ export default function MainPage() {
       <Brands />
       <Services />
       <GetControl />
-      {/* <IssueVirtual />
-      <SetLimits /> */}
-      {/* <Anim /> */}
+      <IssueVirtual />
+      {/* <SetLimits />
+      <Anim /> */}
     </>
   );
 }
