@@ -28,22 +28,7 @@ const ShowCase = () => {
           </div>
           <div className="col-span-12 md:col-span-6">
             <div className="relative overflow-hidden">
-              <Image
-                className="rounded-2xl bg-gray-100 w-full"
-                width={568}
-                height={577}
-                quality={85}
-                src={BgGetControlImage}
-                alt="bg part image"
-              />
-              <Image
-                quality={85}
-                className="absolute bottom-0 sm:left-20 lg:w-[369px] w-[289px] lg:h-[488px] h-[408px] object-contain"
-                // width={369}
-                // height={488}
-                src={MainControlImage}
-                alt="main part image"
-              />
+             
             </div>
           </div>
         </div>
