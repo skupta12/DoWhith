@@ -22,6 +22,12 @@ const config: Config = {
         "header": "rgba(255, 255, 255, 0.3)"
       },
     },
+    screens: {
+      "xs": "400px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px"
+    }
   },
   plugins: [],
 };
