@@ -16,7 +16,7 @@ const SetLimits = () => {
           <div className="col-span-12 md:col-span-6">
             <div className="relative">
               <Image
-                className="rounded-2xl bg-gray-100"
+                className="rounded-2xl bg-gray-100 w-full"
                 width={568}
                 height={524}
                 quality={85}

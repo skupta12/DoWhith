@@ -21,7 +21,8 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-12 gap-5">
             {services.map((item, i) => (
-              <div key={i} className={`lg:col-span-4 md:col-span-6 col-span-12 p-5 bg-primary-600 h-full rounded-2xl`}>
+              <div key={i} className={`lg:col-span-4 md:col-span-6 col-span-12 p-5 
+              bg-primary-600 h-full rounded-2xl`}>
                 <div className="mb-5 hover:scale-105 duration-200">
                   <Image
                     quality={90}

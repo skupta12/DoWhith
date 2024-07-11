@@ -38,7 +38,8 @@ const ShowCase = () => {
               />
               <Image
                 quality={85}
-                className="absolute sm:-bottom-3 -bottom-5 md:left-20 left-1/4 lg:w-[369px] xs:w-[289px] w-[200px] lg:h-[488px] xs:h-[408px] h-[300px] object-contain"
+                className="absolute sm:-bottom-3 -bottom-5 md:left-20 left-1/4 lg:w-[369px] 
+                xs:w-[289px] w-[200px] lg:h-[488px] xs:h-[408px] h-[300px] object-contain"
                 // width={369}
                 // height={488}
                 src={MainControlImage}

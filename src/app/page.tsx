@@ -14,8 +14,8 @@ export default function MainPage() {
       <Services />
       <GetControl />
       <IssueVirtual />
-      {/* <SetLimits />
-      <Anim /> */}
+      <SetLimits />
+      {/* <Anim /> */}
     </>
   );
 }
