@@ -5,64 +5,65 @@
 /* custom styles */
 
 .white-line {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .carousel-container {
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-    border-color: #4b5563;
-    width: 100%;
-  }
-  
-  .carousel-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-    background: rgb(41, 40, 40);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .carousel-card:hover {
-    transform: scale(0.9);
-    box-shadow: 
-      5px 5px 8px rgba(222, 222, 222, 0.362),
-      10px 10px 8px rgba(152, 133, 133, 0.392),
-      15px 15px 8px rgba(139, 154, 139, 0.303);
-  }
-  
-  .carousel-card > img {
-    height: 80%;
-    width: 80%;
-    border-radius: 10%;
-  }
-  
-  .carousel-track {
-    display: flex;
-    position: absolute;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border-color: #4b5563;
+  width: 100%;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  background: rgb(41, 40, 40);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-card:hover {
+  transform: scale(0.9);
+  box-shadow:
+    5px 5px 8px rgba(222, 222, 222, 0.362),
+    10px 10px 8px rgba(152, 133, 133, 0.392),
+    15px 15px 8px rgba(139, 154, 139, 0.303);
+}
+
+.carousel-card>img {
+  height: 80%;
+  width: 80%;
+  border-radius: 10%;
+}
+
+.carousel-track {
+  display: flex;
+  position: absolute;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 200%;
+  height: 100%;
+  animation: slide 20s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
     left: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    width: 200%;
-    height: 100%;
-    animation: slide 20s linear infinite;
   }
-  
-  .carousel-track:hover {
-    animation-play-state: paused;
+
+  100% {
+    left: -100%;
   }
-  
-  @keyframes slide {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: -100%;
-    }
-  }
-  
+}
+
