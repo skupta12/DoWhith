@@ -13,9 +13,6 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 const MoveLine = () => {
 
-  const { scrollYProgress } = useScroll();
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
-
   return (
     <section className="lg:pb-32 pb-16">
       <MaxWidthWrapper>
