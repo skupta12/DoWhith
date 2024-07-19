@@ -14,7 +14,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 const MoveLine = () => {
 
   return (
-    <section className="lg:pb-32 pb-16">
+    <section className="lg:pb-32 pb-16 lg:block hidden">
       <MaxWidthWrapper>
         <div className="relative">
         <motion.div    >

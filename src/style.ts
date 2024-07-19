@@ -7,6 +7,7 @@ const styles = {
     heading2V: "lg:text-[58px] md:text-[48px] text-[36px] leading-[1.05] font-semibold",
     
     heading3: "text-primary-100 lg:text-[24px] text-[22px] font-semibold leading-[1.4]",
+    heading3V: "text-primary-100 text-[20px] font-semibold leading-[1.4]",
     // heading4: "lg:text-[22px] md:text-[18px] text-[17px] font-medium leading-tight",
     // heading5: "lg:text-[18px] font-medium leading-tight",
     // heading6: "text-[16px] font-medium leading-tight",
