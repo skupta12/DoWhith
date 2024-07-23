@@ -9,7 +9,7 @@ import Services from "@/components/sections/home/Services";
 import SetLimits from "@/components/sections/home/SetLimits";
 
 
-export default function MainPage() {
+export default function HomePage() {
   return (
     <>
       <Hero />

@@ -12,7 +12,6 @@ import TreasuryIcon from "/public/mov-sec/treasury-icon.png";
 import { motion, useScroll, useTransform } from "framer-motion"
 
 const MoveLine = () => {
-
   return (
     <section className="lg:pb-32 pb-16 lg:block hidden">
       <MaxWidthWrapper>

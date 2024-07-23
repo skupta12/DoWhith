@@ -13,8 +13,7 @@ const ShowCase = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">     
           <div className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}>
-            <div className="bg-primary-200 text-white font-semibold px-3 
-            py-1 rounded-full inline-block mb-3">
+            <div className={`mb-3 ${styles.blueLabel}`}>
               Expense Card
             </div>
             <h2 className={`${styles.heading2V} mb-3`}>

@@ -42,7 +42,7 @@ const SetLimits = () => {
             </div>
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
-            <div className="bg-primary-200 text-white font-semibold px-3 py-1 rounded-full inline-block mb-3">
+            <div className={`mb-3 ${styles.blueLabel}`}>
               Approval
             </div>
             <h2 className={`${styles.heading2V} mb-3`}>
