@@ -7,6 +7,7 @@ import BgGetControlImage from "/public/home-features/bg-feature-1.png";
 import MainControlImage from "/public/home-features/main-feature-1.png";
 import ExtraControlImage from "/public/home-features/extra-feature-1.png";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+// import { motion } from "framer-motion";
 
 const ShowCase = () => {
   return (
@@ -31,6 +32,7 @@ const ShowCase = () => {
                 src={MainControlImage}
                 alt="main part image"
               />
+              {/* <motion.div> */}
               <Image
                 className="absolute bottom-5 sm:left-10 left-5 lg:w-[304px] 
                 md:w-[287px] w-[267px] lg:h-[147px] md:h-[127px] h-[107px] object-contain"
@@ -38,6 +40,8 @@ const ShowCase = () => {
                 src={ExtraControlImage}
                 alt="extra part image"
               />
+              {/* </motion.div> */}
+            
             </div>
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
