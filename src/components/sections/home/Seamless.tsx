@@ -9,7 +9,7 @@ import SeamlessBg from "/public/seamless/seamless-bg.png";
 
 const Seamless = () => {
   return (
-    <section className={`${styles.sectionPadding} bg-primary-100`}>
+    <section className={`seamless-section ${styles.sectionPadding} bg-primary-100`}>
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-10">
           <div className="text-center">

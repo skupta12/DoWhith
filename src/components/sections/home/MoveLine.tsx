@@ -11,6 +11,7 @@ import ReportIcon from "/public/mov-sec/report-icon.png";
 import TreasuryIcon from "/public/mov-sec/treasury-icon.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import DynamicFramerPos from "@/components/DynamicFramerPos";
 
 const MoveLine = () => {
   
@@ -166,6 +167,16 @@ const MoveLine = () => {
                 <span className="font-semibold">Treasury</span>
               </div>
             </motion.div>
+
+            {/* <DynamicFramerPos xTransform={-400} yTransform={-90}>
+            <Image
+                  width={33}
+                  height={32}
+                  className="text-center mx-auto mb-1"
+                  src={TreasuryIcon}
+                  alt="treasury icon"
+                />
+            </DynamicFramerPos> */}
           </div>
         </div>
       </MaxWidthWrapper>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className={styles.sectionPadding}>
+    <section className={`services-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-20">
           <div className="flex flex-col gap-y-4 text-center">

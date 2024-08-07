@@ -9,7 +9,7 @@ const Brands = () => {
 
   return (
     <>
-    <section className={`pb-24 bg-primary-100 overflow-hidden`}>
+    <section className={`brands-section pb-24 bg-primary-100 overflow-hidden`}>
       <MaxWidthWrapper className="pt-24 border-t border-white/20">
         <div className="effects">
           <div className="white-line absolute -top-[1px] left-1/2 

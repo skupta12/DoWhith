@@ -9,7 +9,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const ShowCase = () => {
   return (
-    <section className={styles.sectionPaddingV1}>
+    <section className={`issuevirtual-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">     
           <div className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}>

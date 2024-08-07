@@ -1,68 +1,40 @@
-import { useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useRef } from "react";
 
 const DynamicFramerPos = ({
   children,
-  initialTransform,
-  finalTransform,
-  opacity,
+  xTransform,
+  yTransform,
+  className,
 }: {
-  initialTransform: string;
-  finalTransform: string;
   children: ReactNode;
+  xTransform: number;
+  yTransform: number;
+  className?: string;
 }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
+
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["1.7 1", "10 1"],
+    offset: ["1 1", "10 1"],
   });
 
-  const transformStyles = {
-    translateX: useTransform(
-      scrollYProgress,
-      [0, 1],
-      initialTransform.translateX
-    ),
-    translateY: useTransform(
-      scrollYProgress,
-      [0, 1],
-      initialTransform.translateY
-    ),
-  };
-
-  if (finalTransform) {
-    transformStyles.translateX = useTransform(
-      scrollYProgress,
-      [0, 1],
-      finalTransform.translateX
-    );
-    transformStyles.translateY = useTransform(
-      scrollYProgress,
-      [0, 1],
-      finalTransform.translateY
-    );
-  }
-
-  const opacityStyle = opacity ? { opacity: scrollYProgress } : {};
+  const Xtranslate = useTransform(scrollYProgress, [0, 1], [0, xTransform]);
+  const Ytranslate = useTransform(scrollYProgress, [0, 1], [0, yTransform]);
 
   return (
     <motion.div
-      className="transition ease-linear duration-75"
-      initial={{ translateX: 0, translateY: 0, opacity: 0 }}
+    className={`${className} transition ease-linear duration-75`}
+      initial={{ translateX: 0, translateY: 0 }}
       ref={ref}
-      style={{ ...transformStyles, ...opacityStyle }}
+      style={{
+        translateX: Xtranslate,
+        translateY: Ytranslate,
+      }}
     >
-      <div className="bg-white p-2 rounded-lg">
-        <Image
-          width={33}
-          height={32}
-          className="text-center mx-auto mb-1"
-          src={icon}
-          alt={`${label} icon`}
-        />
-        <span className="font-semibold">{label}</span>
-      </div>
+      {children}
     </motion.div>
   );
 };
+
 export default DynamicFramerPos;
