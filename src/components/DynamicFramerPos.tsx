@@ -8,8 +8,8 @@ const DynamicFramerPos = ({
   className,
 }: {
   children: ReactNode;
-  xTransform: number;
-  yTransform: number;
+  xTransform?: number;
+  yTransform?: number;
   className?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);

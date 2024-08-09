@@ -38,8 +38,8 @@ const ShowCase = () => {
                 yTransform={-40}
               >
                 <div
-                  className="lg:w-[304px] 
-                md:w-[287px] w-[267px] lg:h-[147px] md:h-[127px] h-[107px] object-contain"
+                  className="lg:w-[254px] 
+                md:w-[287px] w-[237px] lg:h-[147px] md:h-[127px] h-[107px] object-contain"
                 >
                   <Image
                     quality={85}

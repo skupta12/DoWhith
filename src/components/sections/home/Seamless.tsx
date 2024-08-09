@@ -46,7 +46,7 @@ const Seamless = () => {
             </div>
             <div className="relative lg:col-span-5 col-span-12 overflow-hidden rounded-xl
             p-[2px] bg-gradient-to-b from-primary-900 to-primary-800">
-              <div className="bg-primary-100 rounded-xl h-full">
+              <div className="bg-primary-100 rounded-2xl h-full">
                 <Image
                   className="w-full absolute p-[6px] top-0 left-0"
                   src={NeonLine}

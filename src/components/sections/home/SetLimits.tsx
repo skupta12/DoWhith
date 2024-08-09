@@ -19,23 +19,24 @@ const SetLimits = () => {
                 className="rounded-2xl bg-gray-100 w-full"
                 width={568}
                 height={524}
-                quality={85}
+                // quality={85}
                 src={BgSetLimitsImage}
                 alt="bg part image"
               />
               <Image
                 quality={85}
-                className="absolute bottom-0 left-5"
-                width={472}
-                height={524}
+                className="absolute top-0 sm:left-2 left-0"
+                width={552}
+                height={404}
                 src={MainSetLimitsImage}
                 alt="main part image"
               />
               <Image
-                className="absolute bottom-56 sm:left-1/4 left-3"
-                width={221}
-                height={81}
-                quality={85}
+                className="absolute sm:top-56 top-28 sm:w-[221px] w-[151px] 
+                sm:h-[81px] h-[51px] sm:left-1/4 xs:left-48 left-10 object-contain"
+                // width={221}
+                // height={81}
+                // quality={85}
                 src={ExtraSetLimitsImage}
                 alt="extra part image"
               />

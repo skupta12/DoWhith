@@ -6,18 +6,19 @@ import { LinkButton } from "../../Buttons";
 import BgGetControlImage from "/public/home-features/bg-feature-2.png";
 import MainControlImage from "/public/home-features/main-feature-2.png";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import DynamicFramerPos from "@/components/DynamicFramerPos";
 
 const ShowCase = () => {
   return (
     <section className={`issuevirtual-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">     
-          <div className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}>
-            <div className={`mb-3 ${styles.blueLabel}`}>
-              Expense Card
-            </div>
+        <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">
+          <div
+            className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}
+          >
+            <div className={`mb-3 ${styles.blueLabel}`}>Expense Card</div>
             <h2 className={`${styles.heading2V} mb-3`}>
-                Issue virtual & physical cards with built-in rules
+              Issue virtual & physical cards with built-in rules
             </h2>
             <p className={`${styles.paragraph} mb-3`}>
               Establish a request and approval process to increase spend
@@ -35,15 +36,23 @@ const ShowCase = () => {
                 src={BgGetControlImage}
                 alt="bg part image"
               />
-              <Image
-                quality={85}
-                className="absolute sm:-bottom-3 -bottom-5 md:left-20 left-1/4 lg:w-[369px] 
+              <DynamicFramerPos
+                className="absolute sm:-bottom-20 -bottom-16 md:left-20 left-1/4"
+                xTransform={0}
+                yTransform={-300}
+              >
+                <div
+                  className="lg:w-[369px] 
                 xs:w-[289px] w-[200px] lg:h-[488px] xs:h-[408px] h-[300px] object-contain"
-                // width={369}
-                // height={488}
-                src={MainControlImage}
-                alt="main part image"
-              />
+                >
+                  <Image
+                    className="justify-self-end"
+                    quality={85}
+                    src={MainControlImage}
+                    alt="main part image"
+                  />
+                </div>
+              </DynamicFramerPos>
             </div>
           </div>
         </div>
