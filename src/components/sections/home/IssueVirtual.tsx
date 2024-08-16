@@ -39,7 +39,7 @@ const ShowCase = () => {
               <DynamicFramerPos
                 className="absolute sm:-bottom-20 -bottom-16 md:left-20 left-1/4"
                 xTransform={0}
-                yTransform={-300}
+                yTransform={-200}
               >
                 <div
                   className="lg:w-[369px] 

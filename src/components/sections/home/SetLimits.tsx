@@ -7,6 +7,7 @@ import BgSetLimitsImage from "/public/home-features/bg-feature-3.png";
 import MainSetLimitsImage from "/public/home-features/main-feature-3.png";
 import ExtraSetLimitsImage from "/public/home-features/extra-feature-3.png";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import DynamicFramerPos from "@/components/DynamicFramerPos";
 
 const SetLimits = () => {
   return (
@@ -31,27 +32,28 @@ const SetLimits = () => {
                 src={MainSetLimitsImage}
                 alt="main part image"
               />
-              <Image
-                className="absolute sm:top-56 top-28 sm:w-[221px] w-[151px] 
-                sm:h-[81px] h-[51px] sm:left-1/4 xs:left-48 left-10 object-contain"
-                // width={221}
-                // height={81}
-                // quality={85}
-                src={ExtraSetLimitsImage}
-                alt="extra part image"
-              />
+
+              <DynamicFramerPos  
+                xTransform={40}
+                yTransform={-40} 
+                className="absolute sm:top-56 top-28 sm:left-1/4 xs:left-48 left-10">
+                <div
+                  className=" sm:w-[221px] w-[151px] 
+                sm:h-[81px] h-[51px] object-contain"
+                >
+                  <Image src={ExtraSetLimitsImage} alt="extra part image" />
+                </div>
+              </DynamicFramerPos>
             </div>
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
-            <div className={`mb-3 ${styles.blueLabel}`}>
-              Approval
-            </div>
+            <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
             <h2 className={`${styles.heading2V} mb-3`}>
-                Set limits to help you stick to your budget
+              Set limits to help you stick to your budget
             </h2>
             <p className={`${styles.paragraph} mb-3`}>
-            We&apos;ll calculate limits to recommend you based on 
-            your spending predictions, or simply tell us how much you want to spend
+              We&apos;ll calculate limits to recommend you based on your
+              spending predictions, or simply tell us how much you want to spend
             </p>
             <LinkButton title="Learn More" type="button" />
           </div>
