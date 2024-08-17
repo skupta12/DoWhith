@@ -1,4 +1,3 @@
-import Hello from "@/components/hello";
 import Brands from "@/components/sections/home/Brands";
 import GetControl from "@/components/sections/home/GetControl";
 import Hero from "@/components/sections/home/Hero";
@@ -7,6 +6,7 @@ import MoveLine from "@/components/sections/home/MoveLine";
 import Seamless from "@/components/sections/home/Seamless";
 import Services from "@/components/sections/home/Services";
 import SetLimits from "@/components/sections/home/SetLimits";
+import Steps from "@/components/sections/home/Steps";
 
 
 export default function HomePage() {
@@ -20,6 +20,7 @@ export default function HomePage() {
       <IssueVirtual />
       <SetLimits />
       <Seamless />
+      <Steps />
       {/* <Hello/> */}
       {/* <Anim /> */}
     </>

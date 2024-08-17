@@ -76,7 +76,7 @@ export function LinkButton({ href = "/", type, title }: ButtonProps) {
         >
           {title}
         </button>
-        <div className="inline-block group-hover:transform group-hover:translate-x-[4px] duration-500">
+        <div className="inline-block group-hover:transform group-hover:translate-x-[4px] group-hover:translate-y-[-4px] duration-500">
           <ArrowUpRight size={24} className="text-primary-200" />
         </div>
        
