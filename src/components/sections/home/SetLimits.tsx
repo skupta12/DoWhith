@@ -22,7 +22,7 @@ const SetLimits = () => {
                 height={524}
                 // quality={85}
                 src={BgSetLimitsImage}
-                alt="bg part image"
+                alt="bacgkround image"
               />
               <Image
                 quality={85}
@@ -30,7 +30,7 @@ const SetLimits = () => {
                 width={552}
                 height={404}
                 src={MainSetLimitsImage}
-                alt="main part image"
+                alt="A chart to show your budget"
               />
 
               <DynamicFramerPos  
@@ -41,7 +41,7 @@ const SetLimits = () => {
                   className=" sm:w-[221px] w-[151px] 
                 sm:h-[81px] h-[51px] object-contain"
                 >
-                  <Image src={ExtraSetLimitsImage} alt="extra part image" />
+                  <Image src={ExtraSetLimitsImage} alt="a tiny card to show one month revenue" />
                 </div>
               </DynamicFramerPos>
             </div>

@@ -6,11 +6,7 @@ import Image from "next/image";
 
 const InfinitiveScroller = () => {
 
-  // Calculate the necessary width for one cycle of slides
-
-  // const slideWidth = 100 / brands.length;
-
-  const duplicatedSlides = [...brands, ...brands]; // Duplicate for looping
+  const duplicatedSlides = [...brands, ...brands];
 
   return (
       <div className="relative overflow-hidden">

@@ -22,7 +22,7 @@ const ShowCase = () => {
                 height={524}
                 quality={85}
                 src={BgGetControlImage}
-                alt="bg part image"
+                alt="feature glass abstract image"
               />
               <Image
                 quality={85}
@@ -30,7 +30,7 @@ const ShowCase = () => {
                 width={472}
                 height={524}
                 src={MainControlImage}
-                alt="main part image"
+                alt="Feature image"
               />
               <DynamicFramerPos
                 className="absolute bottom-5 sm:left-10 left-5"
@@ -44,7 +44,7 @@ const ShowCase = () => {
                   <Image
                     quality={85}
                     src={ExtraControlImage}
-                    alt="extra part image"
+                    alt="master account showing image"
                   />
                 </div>
               </DynamicFramerPos>

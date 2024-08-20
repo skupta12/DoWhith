@@ -34,7 +34,7 @@ const ShowCase = () => {
                 height={577}
                 quality={85}
                 src={BgGetControlImage}
-                alt="bg part image"
+                alt="background image"
               />
               <DynamicFramerPos
                 className="absolute sm:-bottom-20 -bottom-16 md:left-20 left-1/4"
@@ -49,7 +49,7 @@ const ShowCase = () => {
                     className="justify-self-end"
                     quality={85}
                     src={MainControlImage}
-                    alt="main part image"
+                    alt="A nice mobile phone image"
                   />
                 </div>
               </DynamicFramerPos>
