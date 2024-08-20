@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 export const nav = [
   {
     id: 1,
@@ -81,4 +83,22 @@ export const services = [
     title: "Built for scale",
     text: "Access a fast, reliable, and secure platform that is trusted"
   },
+]
+
+export const steps = [
+  {
+    id: 1,
+    title: "Sign up & load funds",
+    text: "Verify your company and load funds to your Spendesk wallet from your existing bank account.",
+  },
+  {
+    id: 2,
+    title: "Set your spending rules",
+    text: "Define teams, approval workflows, spending policies, and card limits that work for you.",
+  },
+  {
+    id: 3,
+    title: "Invite your team",
+    text: "Employees can request funds, pay securely, and submit receipts in a snap with the Spendesk app.",
+  }
 ]

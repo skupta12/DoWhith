@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ReactNode, useRef } from "react";
+import { ReactNode, useRef, useState, useEffect } from "react";
 
 const DynamicFramerPos = ({
   children,
@@ -13,6 +13,20 @@ const DynamicFramerPos = ({
   className?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,13 +38,17 @@ const DynamicFramerPos = ({
 
   return (
     <motion.div
-    className={`${className} transition ease-linear duration-75`}
+      className={`${className} transition ease-linear duration-75`}
       initial={{ translateX: 0, translateY: 0 }}
       ref={ref}
-      style={{
-        translateX: Xtranslate,
-        translateY: Ytranslate,
-      }}
+      style={
+        isMobile
+          ? { translateX: 0, translateY: 0 }
+          : {
+              translateX: Xtranslate,
+              translateY: Ytranslate,
+            }
+      }
     >
       {children}
     </motion.div>

@@ -17,10 +17,10 @@ const ShowCase = () => {
             className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}
           >
             <div className={`mb-3 ${styles.blueLabel}`}>Expense Card</div>
-            <h2 className={`${styles.heading2V} mb-3`}>
+            <h2 className={`${styles.heading2Variant} mb-3`}>
               Issue virtual & physical cards with built-in rules
             </h2>
-            <p className={`${styles.paragraph} mb-3`}>
+            <p className={`${styles.paragraph100} mb-3`}>
               Establish a request and approval process to increase spend
               accountability without blocking employees.
             </p>

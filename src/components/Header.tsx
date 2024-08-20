@@ -33,7 +33,7 @@ const Header = () => {
       sm:p-4 p-3 bg-header rounded-md gap-x-4"
         >
           <div className="flex items-center lg:gap-x-14">
-            <Link href="/">
+            <Link onClick={handleClick} href="/">
               <Image width={172} height={40} src={Logo} alt="DoWhith logo" />
             </Link>
 
@@ -53,7 +53,7 @@ const Header = () => {
             {/* mobile nav */}
             <nav
               className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
-            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500
+            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500 ease-in-out
           ${
             !open
               ? "transform -translate-y-full"

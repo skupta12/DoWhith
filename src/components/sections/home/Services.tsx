@@ -10,11 +10,11 @@ const Services = () => {
         <div className="flex flex-col gap-y-20">
           <div className="flex flex-col gap-y-4 text-center">
             <h2
-              className={`${styles.heading2V} max-w-[850px] mx-auto`}
+              className={`${styles.heading2Variant} max-w-[850px] mx-auto`}
             >
               Make faster & smarter spending decisions
             </h2>
-            <p className={`${styles.paragraph} max-w-[750px] mx-auto`}>
+            <p className={`${styles.paragraph100} max-w-[750px] mx-auto`}>
               Unit simplifies compliance, bank partnerships, and technical
               integration so you can build, launch, and grow faster.
             </p>
@@ -34,8 +34,8 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-y-4">
-                  <h3 className={styles.heading3}>{item.title}</h3>
-                  <p className={styles.paragraph}>{item.text}</p>
+                  <h3 className={styles.heading300}>{item.title}</h3>
+                  <p className={styles.paragraph100}>{item.text}</p>
                 </div>
               </div>
             ))}

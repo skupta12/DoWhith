@@ -34,10 +34,10 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <h1 className={`${styles.heading1} max-w-[750px]`}>
+          <h1 className={`${styles.heading100} max-w-[750px]`}>
             Manage your money efficiently with DoWhith
           </h1>
-          <p className={`${styles.paragraph} max-w-[750px]`}>
+          <p className={`${styles.paragraph100} max-w-[750px]`}>
             Keep your business account and all your finance needs safely
             organized and manage money quickly, easily & efficiently.
           </p>

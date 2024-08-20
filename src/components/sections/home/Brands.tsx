@@ -24,7 +24,7 @@ const Brands = () => {
           </div>
           <div className="text-center mb-5">
             <h2
-              className={`${styles.heading2} max-w-[750px] mx-auto text-white`}
+              className={`${styles.heading200} max-w-[750px] mx-auto text-white`}
             >
               Building the future of financial services with leading brands
             </h2>

@@ -20,7 +20,7 @@ const config: Config = {
         "primary-500": "#FBFBFB",
         "primary-600": "#FAFAFA",
         "header": "rgba(255, 255, 255, 0.3)",
-        "primary-800": "#272032",
+        "primary-800": "#282347",
         "primary-900": "#160b5e",
       },
     },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import local from 'next/font/local';
 import Header from "../components/Header";
+import { Inter } from 'next/font/google'
 
 const cabinetGrotesk = local({
   src: [
@@ -21,6 +22,8 @@ const cabinetGrotesk = local({
   ],
   variable: '--font-cabinet-grotesk',
 });
+ 
+export const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "DoWidth",
