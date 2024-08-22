@@ -6,22 +6,24 @@ import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/hero.png";
-import Bg1 from "/public/hero-bg-1.png";
+import Bg1 from "/public/hero-bg-1-clone.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section lg:pt-12 pt-10 lg:pb-24 pb-20 relative overflow-hidden">
+    <section className="hero-section lg:pt-12 pt-10 
+    lg:pb-24 pb-20 relative overflow-hidden">
         <Image
-          priority
+          loading="eager"
           className="object-cover"
           fill
           src={Bg1}
-          alt="main background image"
+          alt="the main background image"
         />
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-5 items-center text-center mb-14">
           {/* label */}
-          <div className="rounded-full bg-gradient-to-r from-primary-300 to-primary-200 p-[1px]">
+          <div className="rounded-full bg-gradient-to-r 
+          from-primary-300 to-primary-200 p-[1px]">
             <div className="rounded-full bg-white px-4 py-[6px]">
               <span className="text-[14px] font-medium flex items-center gap-x-3">
                 Watch our investment series{" "}
