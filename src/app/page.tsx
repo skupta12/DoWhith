@@ -7,6 +7,7 @@ import Seamless from "@/components/sections/home/Seamless";
 import Services from "@/components/sections/home/Services";
 import SetLimits from "@/components/sections/home/SetLimits";
 import Steps from "@/components/sections/home/Steps";
+import Testimonial from "@/components/sections/home/Testimonial";
 
 
 export default function HomePage() {
@@ -21,6 +22,7 @@ export default function HomePage() {
       <SetLimits />
       <Seamless />
       <Steps />
+      <Testimonial />
       {/* <Hello/> */}
       {/* <Anim /> */}
     </>

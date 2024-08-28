@@ -102,3 +102,22 @@ export const steps = [
     text: "Employees can request funds, pay securely, and submit receipts in a snap with the Spendesk app.",
   }
 ]
+
+export const testimonial = [
+  {
+    id: 1,
+    title: "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
+    src: "/testimonial/testimonial-1.png",
+    alt: "Testimonial image 1",
+    name: "David",
+    position: "General Manager"
+  },
+  {
+    id: 2,
+    title: "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
+    src: "/testimonial/testimonial-2.png",
+    alt: "Testimonial image 2",
+    name: "Casey Kaspol",
+    position: "General Manager"
+  },
+]
