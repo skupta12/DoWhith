@@ -110,7 +110,8 @@ export const testimonial = [
     src: "/testimonial/testimonial-1.png",
     alt: "Testimonial image 1",
     name: "David",
-    position: "General Manager"
+    position: "General Manager",
+    quote: "/testimonial/quotes.png"
   },
   {
     id: 2,
@@ -118,6 +119,7 @@ export const testimonial = [
     src: "/testimonial/testimonial-2.png",
     alt: "Testimonial image 2",
     name: "Casey Kaspol",
-    position: "General Manager"
+    position: "General Manager",
+     quote: "/testimonial/quotes.png"
   },
 ]

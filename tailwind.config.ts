@@ -13,15 +13,24 @@ const config: Config = {
         cabintetGrotesk: ['CabinetGrotesk', 'sans-serif'],
       },
       colors: {
-        "primary-100": "#050419", // dark
-        "primary-200": "#574AFF", // blue badge
-        "primary-300": "#dcbae0", // purple
-        "primary-400": "#322d9c",
-        "primary-500": "#FBFBFB",
-        "primary-600": "#FAFAFA",
-        "header": "rgba(255, 255, 255, 0.3)",
-        "primary-800": "#282347",
-        "primary-900": "#160b5e",
+        "primary": {
+          100: "#050419", // main bg color
+          200: "#0b091f",
+          300: "#574AFF", // light blue
+        },
+        "neutral": {
+          100: "#dcbae0", // light purple
+          200: "#322d9c",
+          300: "#FBFBFB",
+
+        },
+        "non-neutral": {
+          100: "#FAFAFA",
+          200: "rgba(255, 255, 255, 0.3)", // semi transparent color for header
+          300: "#282347",
+          400: "#160b5e",
+
+        }
       },
     },
     screens: {

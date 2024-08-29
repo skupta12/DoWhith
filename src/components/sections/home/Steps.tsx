@@ -7,8 +7,8 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <section className="pb-24 bg-primary-100 overflow-hidden">
-      <MaxWidthWrapper className="pt-24 border-t border-white/20">
+    <section className="steps-section pb-24 bg-primary-100 overflow-hidden">
+      <MaxWidthWrapper className="pt-24 border-t border-white/10">
 
         <div className="effects">
           <div
@@ -16,7 +16,7 @@ const Steps = () => {
           transform -translate-x-1/2 w-48 h-[1px]"
           />
           <div
-            className="spotlight absolute w-52 h-24 bg-primary-400 -top-20 left-1/2 
+            className="spotlight absolute w-52 h-24 bg-primary-300 -top-20 left-1/2 
           transform -translate-x-1/2 blur-xl opacity-35 rounded-full"
           />
         </div>
@@ -31,7 +31,7 @@ const Steps = () => {
             </div>
             <div className="overflow-hidden">
               <BlackButton
-                className="text-[18px] py-[12px] border border-white/20"
+                className="text-[18px] py-[12px] border border-white/10"
                 href=""
                 title="Get Early Access"
                 type="button"
@@ -43,19 +43,19 @@ const Steps = () => {
               <div key={i} className="flex gap-x-10 text-white">
                 <div
                   className={`relative font-medium rounded-[50%] 
-                    w-[24px] h-[24px] p-8 border border-primary-800 inline-flex 
+                    w-[24px] h-[24px] p-8 border border-non-neutral-300 inline-flex 
                     justify-center items-center ${inter.className}`}
                 >
                   <div className="relative">
                     <span
                       className="text-[32px] font-semibold text-transparent bg-clip-text 
-                 bg-gradient-to-b from-primary-200 to-primary-300"
+                 bg-gradient-to-b from-primary-300 to-neutral-100"
                     >
                       {step.id}
                     </span>
                     {i !== steps.length - 1 && (
                       <span className="absolute lg:block hidden w-[1px] h-[50px] left-1/2 
-                      top-[160%] bg-primary-800 transform translate-x-[-50%]" />
+                      top-[160%] bg-non-neutral-300 transform translate-x-[-50%]" />
                     )}
                   </div>
                 </div>

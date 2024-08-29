@@ -24,7 +24,7 @@ const Seamless = () => {
           <div className="grid grid-cols-12 lg:gap-x-7 gap-x-5 lg:gap-y-7 gap-y-10">
             <div
               className="relative lg:col-span-7 col-span-12 overflow-hidden p-[2px] rounded-xl 
-            bg-gradient-to-b from-primary-900 to-primary-800"
+            bg-gradient-to-b from-non-neutral-400 to-non-neutral-300"
             >
               <Image className="absolute bottom-0 w-full" src={SeamlessBg} alt="seamless background"/>
               <div className="bg-primary-100 rounded-xl p-[2px] h-full">
@@ -45,7 +45,7 @@ const Seamless = () => {
               </div>
             </div>
             <div className="relative lg:col-span-5 col-span-12 overflow-hidden rounded-xl
-            p-[2px] bg-gradient-to-b from-primary-900 to-primary-800">
+            p-[2px] bg-gradient-to-b from-non-neutral-400 to-non-neutral-300">
               <div className="bg-primary-100 rounded-2xl h-full">
                 <Image
                   className="w-full absolute p-[6px] top-0 left-0"

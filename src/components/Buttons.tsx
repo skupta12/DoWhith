@@ -31,7 +31,7 @@ export function BlackButton({
       </button>
       <div
         className="absolute -bottom-3 left-1/2 transform 
-      -translate-x-1/2 w-24 h-full bg-primary-200 blur-2xl group-hover:blur-xl duration-200"
+      -translate-x-1/2 w-24 h-full bg-primary-300 blur-2xl group-hover:blur-xl duration-200"
       />
     </Link>
   );
@@ -78,7 +78,7 @@ export function LinkButton({ href = "/", type, title }: ButtonProps) {
         </button>
         <div className="inline-block group-hover:transform group-hover:translate-x-[4px] 
         group-hover:translate-y-[-4px] duration-500">
-          <ArrowUpRight size={24} className="text-primary-200" />
+          <ArrowUpRight size={24} className="text-primary-300" />
         </div>
        
       </div>

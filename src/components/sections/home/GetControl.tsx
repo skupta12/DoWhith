@@ -39,7 +39,8 @@ const ShowCase = () => {
               >
                 <div
                   className="lg:w-[254px] 
-                md:w-[287px] w-[237px] lg:h-[147px] md:h-[127px] h-[107px] object-contain"
+                md:w-[287px] w-[237px] lg:h-[147px] md:h-[127px] 
+                h-[107px] object-contain"
                 >
                   <Image
                     quality={85}
