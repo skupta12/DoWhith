@@ -1,4 +1,4 @@
-import { inter } from "@/app/layout";
+import { inter } from "@/app/fonts";
 import { BlackButton } from "@/components/Buttons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { steps } from "@/data/placeholder-data";
