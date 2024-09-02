@@ -8,31 +8,42 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { MutableRefObject, useRef } from "react";
+import { useRef } from "react";
 
 const Testimonial = () => {
-
   const sliderRef = useRef<any>(null);
 
-  const SamplePrevArrow = ({ className }: { className: string }) => {
+  type ArrowsProps = {
+    className: string;
+    style?: string;
+  };
 
+  const SamplePrevArrow = ({ className, style }: ArrowsProps) => {
     return (
       <div
         onClick={() => sliderRef.current.slickPrev()}
         className="arrow prev-arrow"
       >
-        <ArrowLeft absoluteStrokeWidth size={64}  className={`arrows ${className}`} />
+        <ArrowLeft
+          absoluteStrokeWidth
+          size={64}
+          className={`arrows ${className}`}
+        />
       </div>
     );
   };
 
-  const SampleNextArrow = ({ className }: { className: string }) => {
+  const SampleNextArrow = ({ className, style }: ArrowsProps) => {
     return (
       <div
         onClick={() => sliderRef.current.slickNext()}
         className="arrow next-arrow"
       >
-       <ArrowRight absoluteStrokeWidth size={64}  className={`arrows ${className}`} />
+        <ArrowRight
+          absoluteStrokeWidth
+          size={64}
+          className={`arrows ${className}`}
+        />
       </div>
     );
   };
@@ -65,8 +76,10 @@ const Testimonial = () => {
                       <q>{item.title}</q>
                     </h2>
                   </div>
-                  <div className="md:order-2 md:col-span-4 col-span-12 
-                  md:justify-self-end">
+                  <div
+                    className="md:order-2 md:col-span-4 col-span-12 
+                  md:justify-self-end"
+                  >
                     <div
                       className="relative overflow-hidden rounded-full 
                 w-[170px] h-[170px] bg-gradient-to-r from-neutral-100 to-primary-300"
@@ -97,12 +110,16 @@ const Testimonial = () => {
                           </span>
                         </div>
                       </div>
-                      <div className="sm:flex hidden items-center justify-center gap-4">           
-                        <SamplePrevArrow className="text-white border w-[50px] h-[50px]
-                        rounded-full p-2 cursor-pointer hover:bg-white hover:text-black duration-300" />
+                      <div className="sm:flex hidden items-center justify-center gap-4">
+                        <SamplePrevArrow
+                          className="text-white border w-[50px] h-[50px]
+                        rounded-full p-2 cursor-pointer hover:bg-white hover:text-black duration-300"
+                        />
 
-                        <SampleNextArrow className="text-white border w-[50px] h-[50px] 
-                        rounded-full p-2 cursor-pointer hover:bg-white hover:text-black duration-300" />
+                        <SampleNextArrow
+                          className="text-white border w-[50px] h-[50px] 
+                        rounded-full p-2 cursor-pointer hover:bg-white hover:text-black duration-300"
+                        />
                       </div>
                     </div>
                   </div>

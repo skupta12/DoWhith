@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import local from 'next/font/local';
 import Header from "../components/Header";
-import { Inter } from 'next/font/google';
 import { cabinetGrotesk } from "./fonts";
+import Cta from "@/components/Cta";
+import Testimonial from "@/components/sections/home/Testimonial";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "DoWidth",
@@ -22,9 +23,11 @@ export default function RootLayout({
         <main className="relative flex flex-col">
           <div className="flex-grow flex-1">
             {children}
+            <Cta />
           </div>   
         </main>
-        {/* <Footer /> */}
+        <Footer />
+        <Cta />
       </body>
     </html>
   );

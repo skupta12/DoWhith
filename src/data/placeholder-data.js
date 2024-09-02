@@ -123,3 +123,90 @@ export const testimonial = [
      quote: "/testimonial/quotes.png"
   },
 ]
+
+export const footerLinks = [
+  {
+    id: 1,
+    title: "Main Page",
+    links: [
+      {
+        id: 1,
+        link: "Home",
+        href: "/home"
+      },
+      {
+        id: 2,
+        link: "Feature",
+        href: "/feature"
+      },
+      {
+        id: 3,
+        link: "Pricing",
+        href: "/pricing"
+      },
+      {
+        id: 4,
+        link: "Integration",
+        href: "/integration"
+      },
+    ]
+  },
+  {
+    id: 2,
+    title: "Company",
+    links: [
+      {
+        id: 1,
+        link: "About us",
+        href: "/about-us"
+      },
+      {
+        id: 2,
+        link: "Careers",
+        href: "/careers"
+      },
+      {
+        id: 3,
+        link: "Contact",
+        href: "/contact"
+      },
+      {
+        id: 4,
+        link: "Blog",
+        href: "/blog"
+      },
+      {
+        id: 5,
+        link: "FAQ",
+        href: "/faq"
+      },
+    ]
+  },
+  {
+    id: 3,
+    title: "Utilities",
+    links: [
+      {
+        id: 1,
+        link: "Log in",
+        href: "/log-in"
+      },
+      {
+        id: 2,
+        link: "Sign Up",
+        href: "/sign-up"
+      },
+      {
+        id: 3,
+        link: "Style Guide",
+        href: "/style-guide"
+      },
+      {
+        id: 4,
+        link: "Licenses",
+        href: "/licenses"
+      },
+    ]
+  },
+  
+]

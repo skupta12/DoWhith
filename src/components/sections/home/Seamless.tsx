@@ -15,7 +15,7 @@ const Seamless = () => {
           <div className="text-center">
             <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
             <div>
-              <h2 className={`${styles.heading2Variant} text-white`}>
+              <h2 className={`${styles.heading200V} text-white`}>
                 Seamless integration with your{" "}
                 <br className="sm:block hidden" /> accounting tools
               </h2>
@@ -29,10 +29,10 @@ const Seamless = () => {
               <Image className="absolute bottom-0 w-full" src={SeamlessBg} alt="seamless background"/>
               <div className="bg-primary-100 rounded-xl p-[2px] h-full">
                 <div className="flex flex-col gap-y-4 rounded-xl p-5 bg-primary-100">
-                  <h3 className={`${styles.heading300Variant} text-white opacity-80`}>
+                  <h3 className={`${styles.heading300V} text-white opacity-80`}>
                     Connect 10+ Integrations
                   </h3>
-                  <p className={`${styles.paragraph100Variant} text-white opacity-70`}>
+                  <p className={`${styles.paragraph100V} text-white opacity-70`}>
                     Seamlessly Connect 10+ Platforms with Ease. Simplify your
                     workflow and productivity.
                   </p>
@@ -53,10 +53,10 @@ const Seamless = () => {
                   alt="neon line"
                 />
                 <div className="flex flex-col gap-y-4 p-[30px]">
-                  <h3 className={`${styles.heading300Variant} text-white opacity-80`}>
+                  <h3 className={`${styles.heading300V} text-white opacity-80`}>
                     Connect 10+ Integrations
                   </h3>
-                  <p className={`${styles.paragraph100Variant} text-white opacity-70`}>
+                  <p className={`${styles.paragraph100V} text-white opacity-70`}>
                     Seamlessly Connect 10+ Platforms with Ease. Simplify your
                     workflow and productivity.
                   </p>

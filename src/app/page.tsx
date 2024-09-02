@@ -23,6 +23,7 @@ export default function HomePage() {
       <Seamless />
       <Steps />
       <Testimonial />
+      {/* <Steps /> */}
       {/* <Hello/> */}
       {/* <Anim /> */}
     </>

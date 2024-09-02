@@ -25,7 +25,7 @@ const Steps = () => {
           <div className="lg:col-span-6 col-span-12">
             <div className="text mb-7">
               <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
-              <h2 className={`${styles.heading2Variant} text-white`}>
+              <h2 className={`${styles.heading200V} text-white`}>
                 Three steps to smarter spending
               </h2>
             </div>
@@ -60,10 +60,10 @@ const Steps = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className={`${styles.heading300Variant} text-white mb-3`}>
+                  <h3 className={`${styles.heading300V} text-white mb-3`}>
                     {step.title}
                   </h3>
-                  <p className={`${styles.paragraph100Variant} opacity-75`}>
+                  <p className={`${styles.paragraph100V} opacity-75`}>
                     {step.text}
                   </p>
                 </div>

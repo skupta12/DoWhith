@@ -48,7 +48,7 @@ const SetLimits = () => {
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
             <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
-            <h2 className={`${styles.heading2Variant} mb-3`}>
+            <h2 className={`${styles.heading200V} mb-3`}>
               Set limits to help you stick to your budget
             </h2>
             <p className={`${styles.paragraph100} mb-3`}>
