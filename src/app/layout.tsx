@@ -27,7 +27,6 @@ export default function RootLayout({
           </div>   
         </main>
         <Footer />
-        <Cta />
       </body>
     </html>
   );
