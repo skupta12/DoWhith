@@ -30,7 +30,7 @@ const Header = () => {
       <header className={`${styles.boxWidth} py-5`}>
         <div
           className="flex justify-between items-center 
-      sm:p-4 p-3 bg-header rounded-md gap-x-4"
+      sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4"
         >
           <div className="flex items-center lg:gap-x-14">
             <Link onClick={handleClick} href="/">
