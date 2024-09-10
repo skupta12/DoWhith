@@ -1,7 +1,7 @@
 "use client";
 
-import InfinitiveScroller from "@/components/InfinitiveScroller";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import InfinitiveScroller from "@/components/common/InfinitiveScroller";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 
 import styles from "@/style";
 

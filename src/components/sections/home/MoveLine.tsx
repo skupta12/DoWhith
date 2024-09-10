@@ -1,12 +1,12 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import Image from "next/image";
 import MoveLineImage from "/public/mov-sec/move-lines.png";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { movingIcons } from "@/data/placeholder-data";
-import DynamicFramerPos from "@/components/DynamicFramerPos";
+import DynamicFramerPos from "@/components/common/DynamicFramerPos";
 import { Icons } from "@/types/types";
 
 const MoveLine = () => {
@@ -23,7 +23,6 @@ const MoveLine = () => {
     <section className="lg:pb-32 pb-16 lg:block hidden">
       <MaxWidthWrapper>
         <div className="relative">
-          {/* Анимация фиолетовых линий */}
           <motion.div
             initial={{ opacity: 0 }}
             ref={ref}
@@ -32,14 +31,10 @@ const MoveLine = () => {
             <Image src={MoveLineImage} alt="move line image" />
           </motion.div>
 
-          {/* Анимация иконок */}
           {movingIcons.map((icon: Icons) => (
-            <motion.div
+            <div
               key={icon.id}
-              className="icon-box absolute transform -translate-x-1/2"
-              initial={{ opacity: 0, y: 20 }} // Начальное состояние: скрытые иконки ниже по оси Y
-              animate={{ opacity: 1, y: 0 }} // Конечное состояние: иконки видны и на своей позиции
-              transition={{ duration: 0.6, delay: icon.id * 0.2 }} // Длительность анимации и задержка для каждого элемента
+              className="icon-box absolute transform -translate-x-1/2"         
               style={{
                 left: `${icon.left}%`,
                 top: `${icon.top}%`,
@@ -64,7 +59,7 @@ const MoveLine = () => {
                   <span className="font-semibold">{icon.title}</span>
                 </div>
               </DynamicFramerPos>
-            </motion.div>
+            </div>
           ))}
         </div>
       </MaxWidthWrapper>

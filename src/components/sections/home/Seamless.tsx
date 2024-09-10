@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import Image from "next/image";
 import SeamlessImage2 from "/public/seamless/seamless-image-2.png";

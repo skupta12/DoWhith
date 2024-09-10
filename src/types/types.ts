@@ -1,7 +1,6 @@
 import { CSSProperties, ReactNode } from "react";
 
 export type PosTypes = {
-
     children: ReactNode;
     xTransform?: number;
     yTransform?: number;
@@ -11,8 +10,7 @@ export type PosTypes = {
     elEndOffset?: number;
 }
 
-  export type Icons = {
-    
+  export type Icons = { 
     id: number;
     left?: number;
     right?: number;

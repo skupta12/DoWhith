@@ -1,7 +1,7 @@
 "use client";
 
-import { BlackButton } from "@/components/Buttons";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { BlackButton } from "@/components/common/Buttons";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";

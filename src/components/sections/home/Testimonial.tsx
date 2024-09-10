@@ -1,6 +1,6 @@
 "use client";
 
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { testimonial } from "@/data/placeholder-data";
 import styles from "@/style";
 import Image from "next/image";
