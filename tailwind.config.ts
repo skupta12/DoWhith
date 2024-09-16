@@ -22,7 +22,6 @@ const config: Config = {
           100: "#dcbae0", // light purple
           200: "#322d9c",
           300: "#FBFBFB",
-
         },
         "non-neutral": {
           100: "#FAFAFA",

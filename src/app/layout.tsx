@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/common/Header";
 import { cabinetGrotesk } from "./fonts";
-import Cta from "@/components/Cta";
-import Testimonial from "@/components/sections/home/Testimonial";
-import Footer from "@/components/Footer";
+import Cta from "@/components/common/Cta";
+import Footer from "@/components/common/Footer";
 
 export const metadata: Metadata = {
   title: "DoWidth",

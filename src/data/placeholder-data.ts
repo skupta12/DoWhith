@@ -1,4 +1,4 @@
-import { m } from "framer-motion";
+
 
 export const nav = [
   {
@@ -110,7 +110,7 @@ export const movingIcons = [
     left: 57,
     top: 39,
     translateX: 500,
-    translateY: 90,
+    translateY: 110,
     title: "Approval",
     zIndex: 10,
     alt: "The approval icon",
@@ -125,10 +125,9 @@ export const movingIcons = [
     translateX: 500,
     translateY: 0,
     title: "Budget",
-    opacity: 0,
     zIndex: 5,
     alt: "The budget icon",
-    opacity: 0,
+    // opacity: 0,
     elStartOffset: 2,
     elEndOffset: 8,
   },
@@ -151,7 +150,7 @@ export const movingIcons = [
     right: 47,
     top: 39,
     translateX: -500,
-    translateY: 90,
+    translateY: 110,
     title: "Payment",
     zIndex: 10,
     alt: "The payment icon",
@@ -181,7 +180,7 @@ export const movingIcons = [
     title: "Treasury",
     zIndex: 5,
     alt: "The treasury icon",
-    opacity: 0,
+    // opacity: 0,
     elStartOffset: 2,
     elEndOffset: 8,
   },

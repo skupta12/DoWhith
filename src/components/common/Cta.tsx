@@ -17,6 +17,7 @@ const Cta = () => {
               Switch to smarter spending across your company.
             </h2>
             <BlackButton
+              className="text-[18px] py-[12px]"
               title="Get Early Access"
               type="button"
               href="/"

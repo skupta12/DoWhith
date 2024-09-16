@@ -27,7 +27,7 @@ const Header = () => {
         src={GradientBg}
         alt="background gradient"
       />
-      <header className={`${styles.boxWidth} py-5`}>
+      <header className={`${styles.boxWidth} py-5 z-[1]`}>
         <div
           className="flex justify-between items-center 
       sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4"
