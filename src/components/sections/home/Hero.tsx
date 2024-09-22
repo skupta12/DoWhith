@@ -1,5 +1,3 @@
-"use client";
-
 import { BlackButton } from "@/components/common/Buttons";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";

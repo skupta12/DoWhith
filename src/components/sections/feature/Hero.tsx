@@ -4,22 +4,24 @@ import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroFeatureImage from "/public/hero-feature.jpg";
+import BlackStar from "/public/black-star.png";
+
 const Hero = () => {
   return (
     <section
       className="feature-section lg:pt-20 pt-10
     lg:pb-24 pb-20 relative"
     >
-      <div className="object-cover w-[46vw] h-full absolute top-0 bottom-0 left-auto right-0">
+      <div className="object-cover w-[46vw] h-[130%] absolute -top-32 bottom-0 left-auto right-0 -z-[1]">
         <Image
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full lg:block hidden"
           src={HeroFeatureImage}
           alt="The Feature Image"
         />
       </div>
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 gap-0">
-          <div className="col-span-6">
+          <div className="lg:col-span-6 col-span-12">
             <div
               className="inline-block rounded-full bg-gradient-to-r 
           from-neutral-100 to-primary-300 p-[1px] mb-4"
@@ -36,7 +38,7 @@ const Hero = () => {
                 </span>
               </div>
             </div>
-            
+
             <div className="flex flex-col gap-y-5">
               <h1 className={styles.heading100}>
                 Employee expense reimbursements
@@ -53,16 +55,21 @@ const Hero = () => {
                   type="button"
                 />
               </div>
-              <div className="overflow-hidden">
-                <BlackButton
-                  className="text-[18px] py-[12px]"
-                  title="Get Early Access"
-                  type="button"
-                />
+              <div className="flex items-center">
+                <div className="inline-flex items-center gap-x-2 p-4">
+                  {Array(5).fill(0).map((_, index) => (
+                      <Image
+                        key={index}
+                        src={BlackStar}
+                        alt="The black star"    
+                      />
+                    ))}
+                </div>
+                <p className={styles.paragraph100}> 772+ reviews</p>
               </div>
             </div>
           </div>
-          <div className="col-span-6"></div>
+          <div className="lg:col-span-6 col-span-12"></div>
         </div>
       </MaxWidthWrapper>
     </section>
