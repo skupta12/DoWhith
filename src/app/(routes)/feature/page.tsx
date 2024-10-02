@@ -8,8 +8,7 @@ export default function Feature() {
   return (
     <>
       <Hero />
-      {/* <Brands />
-      <Brands /> */}
+      <Brands />
     </>
   );
 }

@@ -17,6 +17,7 @@ const Hero = () => {
           className="object-cover w-full h-full lg:block hidden"
           src={HeroFeatureImage}
           alt="The Feature Image"
+          priority
         />
       </div>
       <MaxWidthWrapper>

@@ -3,8 +3,8 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import HeroImage from "/public/hero.png";
-import Bg1 from "/public/hero-bg-test.png";
+import HeroImage from "/public/home/hero.png";
+import Bg1 from "/public/home/hero-bg.png";
 
 const Hero = () => {
   return (
@@ -49,7 +49,7 @@ const Hero = () => {
           />
         </div>
         <div className="flex justify-center">
-          <Image width={970} height={572} src={HeroImage} alt="hero image" />
+          <Image width={970} height={572} src={HeroImage} alt="The hero image" />
         </div>
       </MaxWidthWrapper>
     </section>

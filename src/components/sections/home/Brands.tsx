@@ -1,11 +1,51 @@
 "use client";
 
-import InfinitiveScroller from "@/components/common/InfinitiveScroller";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-
 import styles from "@/style";
+import { animate, motion, useMotionValue } from "framer-motion";
+import { useEffect, useState } from "react";
+import useMeasure from "react-use-measure";
+import { brands } from "@/data/placeholder-data";
+import InfinitiveScroller from "@/components/common/InfinitiveScroller";
 
 const Brands = () => {
+
+  const FAST_DURATION = 25;
+  const SLOW_DURATION = 75;
+
+  const [duration, setDuration] = useState(FAST_DURATION);
+  let [ref, { width }] = useMeasure();
+
+  const xTranslation = useMotionValue(0);
+
+  const [mustFinish, setMustFinish] = useState(false);
+  const [rerender, setRerender] = useState(false);
+
+  useEffect(() => {
+    let controls;
+    let finalPosition = -width / 2 - 8;
+
+    if (mustFinish) {
+      controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
+        ease: "linear",
+        duration: duration * (1 - xTranslation.get() / finalPosition),
+        onComplete: () => {
+          setMustFinish(false);
+          setRerender(!rerender);
+        },
+      });
+    } else {
+      controls = animate(xTranslation, [0, finalPosition], {
+        ease: "linear",
+        duration: duration,
+        repeat: Infinity,
+        repeatType: "loop",
+        repeatDelay: 0,
+      });
+    }
+
+  }, [mustFinish, rerender, xTranslation, width, duration]); // Also make sure dependencies are defined here
+
   return (
     <>
       <section
@@ -30,7 +70,18 @@ const Brands = () => {
             </h2>
           </div>
           <div>
-            <InfinitiveScroller />
+            <motion.div
+              className="absolute left-0 flex gap-4"
+              style={{ x: xTranslation }}
+              ref={ref}
+            >
+
+              {[...brands, ...brands].map((item, idx) => (
+                <InfinitiveScroller image={`${item}`} key={idx} />
+              ))}
+            
+            </motion.div>
+
           </div>
         </MaxWidthWrapper>
       </section>

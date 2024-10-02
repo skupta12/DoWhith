@@ -29,36 +29,12 @@ export const nav = [
 ];
 
 export const brands = [
-  {
-    id: 1,
-    src: "/brands/brand-2.png",
-    alt: "brand image",
-  },
-  {
-    id: 2,
-    src: "/brands/brand-1.png",
-    alt: "brand image",
-  },
-  {
-    id: 3,
-    src: "/brands/brand-3.png",
-    alt: "brand image",
-  },
-  {
-    id: 4,
-    src: "/brands/brand-4.png",
-    alt: "brand image",
-  },
-  {
-    id: 5,
-    src: "/brands/brand-5.png",
-    alt: "brand image",
-  },
-  {
-    id: 6,
-    src: "/brands/brand-4.png",
-    alt: "brand image",
-  },
+  "/brands/brand-1.png",
+  "/brands/brand-2.png",
+  "/brands/brand-3.png",
+  "/brands/brand-4.png",
+  "/brands/brand-5.png",
+  "/brands/brand-6.png",
 ];
 
 export const services = [
