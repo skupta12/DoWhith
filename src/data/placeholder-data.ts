@@ -34,7 +34,7 @@ export const brands = [
   "/brands/brand-3.png",
   "/brands/brand-4.png",
   "/brands/brand-5.png",
-  "/brands/brand-6.png",
+  "/brands/brand-2.png",
 ];
 
 export const services = [

@@ -9,7 +9,7 @@ import { brands } from "@/data/placeholder-data";
 import InfinitiveScroller from "@/components/common/InfinitiveScroller";
 
 const Brands = () => {
-
+  
   const FAST_DURATION = 25;
   const SLOW_DURATION = 75;
 
@@ -43,45 +43,38 @@ const Brands = () => {
         repeatDelay: 0,
       });
     }
-
   }, [mustFinish, rerender, xTranslation, width, duration]); // Also make sure dependencies are defined here
 
   return (
     <>
-      <section
-        className={`brands-section pb-24 bg-primary-100 overflow-hidden`}
-      >
+      <section className="brands-section pb-24 overflow-hidden bg-primary-100 relative">
+        {" "}
+        {/* убран overflow-hidden */}
         <MaxWidthWrapper className="pt-24 border-t border-white/10">
           <div className="effects">
-            <div
-              className="white-line absolute -top-[1px] left-1/2 
-              transform -translate-x-1/2 w-48 h-[1px]"
-            />
-            <div
-              className="spotlight absolute w-52 h-24 bg-primary-300 -top-20 left-1/2 
-              transform -translate-x-1/2 blur-xl opacity-35 rounded-full"
-            />
+            <div className="white-line absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-48 h-[1px]" />
+            <div className="spotlight absolute w-52 h-24 bg-primary-300 -top-20 left-1/2 transform -translate-x-1/2 blur-xl opacity-35 rounded-full" />
           </div>
-          <div className="text-center mb-5">
-            <h2
-              className={`${styles.heading200} max-w-[750px] mx-auto text-white`}
-            >
-              Building the future of financial services with leading brands
-            </h2>
-          </div>
-          <div>
-            <motion.div
-              className="absolute left-0 flex gap-4"
-              style={{ x: xTranslation }}
-              ref={ref}
-            >
+          <div className="common-block flex flex-col gap-y-10">
+            <div className="text-center">
+              <h2
+                className={`${styles.heading200} max-w-[750px] mx-auto text-white`}
+              >
+                Building the future of financial services with leading brands
+              </h2>
+            </div>
 
-              {[...brands, ...brands].map((item, idx) => (
-                <InfinitiveScroller image={`${item}`} key={idx} />
-              ))}
-            
-            </motion.div>
-
+            <div className="relative w-full overflow-hidden">
+              <motion.div
+                className="flex gap-4 w-max"
+                style={{ x: xTranslation }}
+                ref={ref}
+              >
+                {[...brands, ...brands].map((item, idx) => (
+                  <InfinitiveScroller image={`${item}`} key={idx} />
+                ))}
+              </motion.div>
+            </div>
           </div>
         </MaxWidthWrapper>
       </section>
