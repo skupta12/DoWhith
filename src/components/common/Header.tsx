@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Logo from "/public/logo.png";
-import { nav } from "@/data/placeholder-data";
+import { nav } from "@/constants";
 import Link from "next/link";
 import { BlackButton, WhiteButton } from "./Buttons";
 import { useState } from "react";
@@ -10,8 +10,8 @@ import styles from "@/style";
 import GradientBg from "/public/gradient-bg.png";
 
 const Header = () => {
-
-  const [open, isOpen] = useState<boolean>(false);
+  const isClicked = false;
+  const [open, isOpen] = useState<boolean>(isClicked);
 
   const handleClick = () => {
     isOpen((prev) => !prev);
@@ -53,10 +53,10 @@ const Header = () => {
             {/* mobile nav */}
             <nav
               className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
-            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500 ease-in-out
+            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500 ease-out
           ${
             !open
-              ? "transform -translate-y-full"
+              ? "transform -translate-y-full duration-0"
               : "transform translate-y-[40%]"
           }`}
             >

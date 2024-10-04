@@ -1,7 +1,7 @@
 "use client";
 
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { testimonial } from "@/data/placeholder-data";
+import { testimonial } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
 import Slider from "react-slick";

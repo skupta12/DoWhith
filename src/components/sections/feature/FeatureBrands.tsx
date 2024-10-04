@@ -1,8 +1,7 @@
 "use client";
 
 import InfinitiveScroller from "@/components/common/InfinitiveScroller";
-import InfinitiveScrollerWrapper from "@/components/common/InfinitiveScrollerWrapper";
-import { featureBrands } from "@/data/placeholder-data";
+import { featureBrands } from "@/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -10,7 +9,7 @@ const FeatureBrands = () => {
   return (
     <section className={`lg:py-16 py-10 overflow-hidden bg-primary-100 relative`}> 
       <div className="">
-        <InfinitiveScrollerWrapper Sduration={20} className="overflow-hidden">
+        <InfinitiveScroller Sduration={20} className="overflow-hidden">
           {[...featureBrands, ...featureBrands].map((item, i) => (
             <motion.div
               key={i}
@@ -20,7 +19,7 @@ const FeatureBrands = () => {
               <p className="text-white">{item.title}</p>
               </motion.div>
           ))}
-        </InfinitiveScrollerWrapper>
+        </InfinitiveScroller>
       </div>
     </section>
   );

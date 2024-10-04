@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { services } from "@/data/placeholder-data";
+import { services } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
 

@@ -9,6 +9,7 @@ import ExtraControlImage from "/public/home-features/extra-feature-1.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import DynamicFramerPos from "@/components/common/DynamicFramerPos";
 
+
 const ShowCase = () => {
   return (
     <section className={`getcontrol-section ${styles.sectionPaddingV1}`}>

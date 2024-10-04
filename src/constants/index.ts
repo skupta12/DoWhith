@@ -299,51 +299,95 @@ export const featureBrands = [
   {
     id: 1,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id: 2,
     title: "No more audit nightmares",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id: 3,
     title: "All at the same place",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id: 4,
     title: "Accounting made easy",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id:5,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id:6,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id:7,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
   {
     id:8,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/feature/mark.png",
     alt: "The mark icon",
   },
 
+]
 
+export const exploreFeatures = [
+  {
+    id: 1,
+    icon: "/feature/explore-feature-1.png",
+    title: "Digitise expense reports",
+    text: "Create an expense reimbursement policy that staff can&apos;t help but follow. You set the rules and spending limits.",
+    alt: "The feature explored list item icon",
+  },
+  {
+    id: 2,
+    icon: "/feature/explore-feature-2.png",
+    title: "Automate receipt capture",
+    text: "Requesters can track their invoice the whole way. Finance teams and budget owners have complete oversight of all requests.",
+    alt: "The feature explored list item icon",
+  },
+  {
+    id: 3,
+    icon: "/feature/explore-feature-3.png",
+    title: "Reconcile & report",
+    text: "Any team member or supplier can submit an invoice by directly email, file upload, or by taking a photo with their phone.",
+    alt: "The feature explored list item icon",
+  },
+  {
+    id: 4,
+    icon: "/feature/explore-feature-4.png",
+    title: "Digitise expense reports",
+    text: "Create an expense reimbursement policy that staff can’t help but follow. You set the rules and spending limits.",
+    alt: "The feature explored list item icon",
+  },
+  {
+    id: 5,
+    icon: "/feature/explore-feature-5.png",
+    title: "Reconcile & report",
+    text: "Any team member or supplier can submit an invoice by directly email, file upload, or by taking a photo with their phone.",
+    alt: "The feature explored list item icon",
+  },
+  {
+    id: 6,
+    icon: "/feature/explore-feature-6.png",
+    title: "Automate receipt capture",
+    text: "Requesters can track their invoice the whole way. Finance teams and budget owners have complete oversight of all requests.",
+    alt: "The feature explored list item icon",
+  },
 ]

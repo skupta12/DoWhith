@@ -2,10 +2,9 @@
 
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
-import { brands } from "@/data/placeholder-data";
+import { brands } from "@/constants";
 import InfinitiveScroller from "@/components/common/InfinitiveScroller";
 import Image from "next/image";
-import InfinitiveScrollerWrapper from "@/components/common/InfinitiveScrollerWrapper";
 import { motion } from "framer-motion";
 
 const Brands = () => {
@@ -30,7 +29,7 @@ const Brands = () => {
             </div>
 
             <div className="relative w-full overflow-hidden">
-              <InfinitiveScrollerWrapper Sduration={25}>
+              <InfinitiveScroller Sduration={25}>
                 {[...brands, ...brands].map((item, i) => (
                   <motion.div
                    className="relative overflow-hidden min-w-[200px] flex justify-center items-center"
@@ -44,7 +43,7 @@ const Brands = () => {
                     />
                   </motion.div> 
                 ))}
-              </InfinitiveScrollerWrapper>
+              </InfinitiveScroller>
             </div>
           </div>
         </MaxWidthWrapper>

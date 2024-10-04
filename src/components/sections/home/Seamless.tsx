@@ -5,7 +5,6 @@ import SeamlessImage2 from "/public/seamless/seamless-image-2.png";
 import SeamlessImage1 from "/public/seamless/seamless-image-1.png";
 import NeonLine from "/public/neon-line.png";
 import SeamlessBg from "/public/seamless/seamless-bg.png";
-// import
 
 const Seamless = () => {
   return (

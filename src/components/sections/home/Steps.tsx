@@ -1,7 +1,7 @@
 import { inter } from "@/app/fonts";
 import { BlackButton } from "@/components/common/Buttons";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { steps } from "@/data/placeholder-data";
+import { steps } from "@/constants";
 import styles from "@/style";
 import React from "react";
 

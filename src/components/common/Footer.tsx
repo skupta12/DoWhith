@@ -5,7 +5,7 @@ import Logo from "/public/logo.png";
 import { BlackButton } from "./Buttons";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { footerLinks } from "@/data/placeholder-data";
+import { footerLinks } from "@/constants";
 
 const Footer = () => {
   return (
