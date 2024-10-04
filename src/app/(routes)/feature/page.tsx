@@ -1,6 +1,6 @@
-import Header from "@/components/common/Header";
+import FeatureBrands from "@/components/sections/feature/FeatureBrands";
 import Hero from "@/components/sections/feature/Hero";
-import Brands from "@/components/sections/home/Brands";
+import Services from "@/components/sections/home/Services";
 
 
 
@@ -8,7 +8,8 @@ export default function Feature() {
   return (
     <>
       <Hero />
-      <Brands />
+      <FeatureBrands />
+      <Services />
     </>
   );
 }

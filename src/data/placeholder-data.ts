@@ -29,14 +29,37 @@ export const nav = [
 ];
 
 export const brands = [
-  "/brands/brand-1.png",
-  "/brands/brand-2.png",
-  "/brands/brand-3.png",
-  "/brands/brand-4.png",
-  "/brands/brand-5.png",
-  "/brands/brand-2.png",
-];
-
+  {
+    id: 1,
+    src: "/brands/brand-1.png",
+    alt: "The brand image 1"
+  },
+  {
+    id: 2,
+    src: "/brands/brand-2.png",
+    alt: "The brand image 2"
+  },
+  {
+    id: 3,
+    src: "/brands/brand-3.png",
+    alt: "The brand image 3"
+  },
+  {
+    id: 4,
+    src: "/brands/brand-4.png",
+    alt: "The brand image 4"
+  },
+  {
+    id: 5,
+    src: "/brands/brand-5.png",
+    alt: "The brand image 5"
+  },
+  {
+    id: 6,
+    src: "/brands/brand-2.png",
+    alt: "The brand image 6"
+  },
+]
 export const services = [
   {
     id: 1,
@@ -271,3 +294,56 @@ export const footerLinks = [
     ],
   },
 ];
+
+export const featureBrands = [
+  {
+    id: 1,
+    title: "Papertrail for every transaction",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id: 2,
+    title: "No more audit nightmares",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id: 3,
+    title: "All at the same place",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id: 4,
+    title: "Accounting made easy",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id:5,
+    title: "Papertrail for every transaction",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id:6,
+    title: "Papertrail for every transaction",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id:7,
+    title: "Papertrail for every transaction",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+  {
+    id:8,
+    title: "Papertrail for every transaction",
+    src: "/mark.png",
+    alt: "The mark icon",
+  },
+
+
+]

@@ -1,23 +1,17 @@
-import { AnimatePresence, motion } from "framer-motion";
-import React, { ReactNode, useState } from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
+import React, { ReactNode } from "react";
 
-interface CardProps {
+interface ImageProps {
   image: string;
+  children?: ReactNode;
 }
 
-const InfinitiveScroller = ({ image }: CardProps) => {
+const InfinitiveScroller = ({ children }: ImageProps) => {
   return (
     <motion.div
       className="relative overflow-hidden min-w-[200px] flex justify-center items-center"
-      key={image}
     >
-      <Image
-        src={image}
-        alt={image}
-        width={149}
-        height={40}
-      />
+     {children}
     </motion.div>
   );
 };
