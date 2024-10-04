@@ -3,6 +3,7 @@
 import InfinitiveScroller from "@/components/common/InfinitiveScroller";
 import InfinitiveScrollerWrapper from "@/components/common/InfinitiveScrollerWrapper";
 import { featureBrands } from "@/data/placeholder-data";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const FeatureBrands = () => {
@@ -11,13 +12,13 @@ const FeatureBrands = () => {
       <div className="">
         <InfinitiveScrollerWrapper Sduration={20} className="overflow-hidden">
           {[...featureBrands, ...featureBrands].map((item, i) => (
-            <InfinitiveScroller
-              image={`${item}`}
+            <motion.div
               key={i}
+              className="relative overflow-hidden min-w-[200px] flex justify-center items-center"
             >
               <Image className="mr-4" src={item.src} alt={`${item.alt} ${i}`} width={20} height={20} />
               <p className="text-white">{item.title}</p>
-            </InfinitiveScroller>
+              </motion.div>
           ))}
         </InfinitiveScrollerWrapper>
       </div>

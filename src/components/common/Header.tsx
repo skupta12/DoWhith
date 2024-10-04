@@ -90,7 +90,7 @@ const Header = () => {
                 onClick={handleClick}
                 className="flex flex-col p-3"
               >
-                <span className="w-[22px] h-[2px] bg-black "></span>
+                <span className="w-[22px] h-[2px] bg-black"></span>
                 <span className="w-[22px] h-[2px] bg-black my-[3px]"></span>
                 <span className="w-[22px] h-[2px] bg-black"></span>
               </button>

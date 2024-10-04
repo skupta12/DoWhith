@@ -15,7 +15,6 @@ const InfinitiveScrollerWrapper = ({
   Sduration?: number;
 }) => {
   let DURATION = Sduration; 
-  // const SLOW_DURATION = 75;
 
   const [duration, setDuration] = useState(DURATION);
   let [ref, { width }] = useMeasure();

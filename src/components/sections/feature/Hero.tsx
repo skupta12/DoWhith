@@ -15,18 +15,14 @@ const Hero = () => {
     lg:pb-24 pb-20 relative"
     >
       <div className="object-cover w-[46vw] h-[130%] absolute -top-32 bottom-0 left-auto right-0 -z-[1]">
-
         <Image
           className="object-cover w-full h-full lg:block hidden"
           src={HeroFeatureImage}
           alt="The Feature Image"
           priority
         />
-
-   
       </div>
-      
-     
+
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 gap-0">
           <div className="lg:col-span-6 col-span-12">
@@ -65,12 +61,10 @@ const Hero = () => {
               </div>
               <div className="flex items-center">
                 <div className="inline-flex items-center gap-x-2 p-4">
-                  {Array(5).fill(0).map((_, index) => (
-                      <Image
-                        key={index}
-                        src={BlackStar}
-                        alt="The black star"    
-                      />
+                  {Array(5)
+                    .fill(0)
+                    .map((_, index) => (
+                      <Image key={index} src={BlackStar} alt="The black star" />
                     ))}
                 </div>
                 <p className={styles.paragraph100}> 772+ reviews</p>
@@ -78,12 +72,18 @@ const Hero = () => {
             </div>
           </div>
           <div className="lg:col-span-6 col-span-12">
-            <div className="relative h-full">
-              <Image className="absolute left-8 -bottom-4 shadow-md rounded-lg" src={MasterAccount} alt="The master account image"/>
-              <Image className="absolute left-32 bottom-44 shadow-md rounded-lg" src={Spending} alt="The spending image"/>
-             
+            <div className="relative h-full lg:block hidden">
+              <Image
+                className="absolute left-8 -bottom-4 shadow-md rounded-lg"
+                src={MasterAccount}
+                alt="The master account image"
+              />
+              <Image
+                className="absolute left-32 bottom-44 shadow-md rounded-lg"
+                src={Spending}
+                alt="The spending image"
+              />
             </div>
-      
           </div>
         </div>
       </MaxWidthWrapper>
