@@ -8,7 +8,7 @@ const Cta = () => {
   return (
     <>
       <section
-        className={`${styles.sectionPaddingV1} bg-primary-100 relative overflow-hidden`}
+        className={`lg:py-32 py-16 bg-primary-100 relative overflow-hidden`}
       >
         <Image fill src={BgCta} alt="the background image of CTA" />
         <MaxWidthWrapper>

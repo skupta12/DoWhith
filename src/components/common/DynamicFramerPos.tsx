@@ -28,8 +28,6 @@ const DynamicFramerPos = ({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  // const elStartOffset2 = 2; // Значение должно быть числом
-  // const elEndOffset2 = 10;
   
 
   const { scrollYProgress } = useScroll({
@@ -39,9 +37,6 @@ const DynamicFramerPos = ({
 
   const Xtranslate = useTransform(scrollYProgress, [0, 1], [0, xTransform]);
   const Ytranslate = useTransform(scrollYProgress, [0, 1], [0, yTransform]);
-
-  // Add opacity transform based on scrollYProgress
-  // const animatedOpacity = useTransform(scrollYProgress, [0, 1], [0, opacity ?? 1]);
 
   return (
     <motion.div

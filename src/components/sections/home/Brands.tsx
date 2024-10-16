@@ -22,7 +22,7 @@ const Brands = () => {
           <div className="flex flex-col gap-y-10">
             <div className="text-center">
               <h2
-                className={`${styles.heading200} max-w-[750px] mx-auto text-white`}
+                className={`${styles.heading200} max-w-[850px] mx-auto text-white`}
               >
                 Building the future of financial services with leading brands
               </h2>

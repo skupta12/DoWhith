@@ -49,7 +49,12 @@ const Footer = () => {
           <div className="lg:col-span-7 col-span-12">
             <div className="grid grid-cols-12 gap-4">
               {footerLinks.map((link, i) => (
-               <div className={`md:col-span-4 col-span-6 ${i === 2 ? "col-span-12" : ""}`} key={i}>
+                <div
+                  className={`md:col-span-4 col-span-6 ${
+                    i === 2 ? "col-span-12" : ""
+                  }`}
+                  key={i}
+                >
                   <div className="flex flex-col gap-y-5">
                     <h6 className="text-[20px] font-semibold mb-3">
                       {link.title}
@@ -57,10 +62,17 @@ const Footer = () => {
                     {link.links.map((item, i) => (
                       <ul key={i}>
                         <li className="text-[18px] font-medium flex gap-3">
-                          <Link className="hover:opacity-70 duration-300" href={item.href}>{item.link}</Link>
+                          <Link
+                            className="hover:opacity-70 duration-300"
+                            href={item.href}
+                          >
+                            {item.link}
+                          </Link>
                           {item.link === "Careers" && (
-                            <div className="bg-gradient-to-r from-neutral-100
-                             to-primary-300 text-white px-4 py-[0.5px] rounded-full">
+                            <div
+                              className="bg-gradient-to-r from-neutral-100
+                             to-primary-300 text-white px-4 py-[0.5px] rounded-full"
+                            >
                               Hiring
                             </div>
                           )}

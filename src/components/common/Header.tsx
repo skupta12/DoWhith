@@ -33,13 +33,13 @@ const Header = () => {
       sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4"
         >
           <div className="flex items-center lg:gap-x-14">
-            <Link onClick={handleClick} href="/">
+            <Link href="/">
               <Image width={172} height={40} src={Logo} alt="DoWhith logo" />
             </Link>
 
             {/* desktop nav */}
             <nav className="lg:block hidden">
-              <ul className="flex items-center gap-x-5">
+              <ul className="flex items-center gap-x-6">
                 {nav.map((item, i) => (
                   <li key={i}>
                     <Link className="text-[18px] font-medium" href={item.href}>
@@ -53,11 +53,11 @@ const Header = () => {
             {/* mobile nav */}
             <nav
               className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
-            sm:right-10 right-4 z-[1] top-0 justify-start items-center duration-500 ease-out
+            sm:right-10 right-4 z-[1] top-0 justify-start items-center ease-out
           ${
             !open
               ? "transform -translate-y-full duration-0"
-              : "transform translate-y-[40%]"
+              : "transform translate-y-[40%] duration-500"
           }`}
             >
               <ul className="flex w-full flex-col gap-y-4 sm:p-4 p-3">

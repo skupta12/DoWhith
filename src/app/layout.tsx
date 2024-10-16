@@ -22,7 +22,7 @@ export default function RootLayout({
         <main className="relative flex flex-col">
           <div className="flex-grow flex-1">
             {children}
-            {/* <Cta /> */}
+            <Cta />
           </div>   
         </main>
         <Footer />

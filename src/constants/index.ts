@@ -207,6 +207,16 @@ export const testimonial = [
     position: "General Manager",
     quote: "/testimonial/quotes.png",
   },
+  {
+    id: 3,
+    title:
+      "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
+    src: "/testimonial/testimonial-1.png",
+    alt: "Testimonial image 1",
+    name: "Casey Kaspol",
+    position: "General Manager",
+    quote: "/testimonial/quotes.png",
+  },
 ];
 
 export const footerLinks = [

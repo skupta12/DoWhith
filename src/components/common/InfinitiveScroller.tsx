@@ -14,6 +14,7 @@ const InfinitiveScroller = ({
   className?: string;
   Sduration: number;
 }) => {
+  
   let DURATION = Sduration; 
 
   const [duration, setDuration] = useState(DURATION);

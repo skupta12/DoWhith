@@ -64,10 +64,10 @@ const Hero = () => {
                   {Array(5)
                     .fill(0)
                     .map((_, index) => (
-                      <Image key={index} src={BlackStar} alt="The black star" />
+                      <Image width={16} height={16} key={index} src={BlackStar} alt="The black star" />
                     ))}
                 </div>
-                <p className={styles.paragraph100}> 772+ reviews</p>
+                <p className={styles.paragraph100}>772+ reviews</p>
               </div>
             </div>
           </div>

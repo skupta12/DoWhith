@@ -8,7 +8,7 @@ import Bg1 from "/public/home/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section lg:pt-12 pt-10
+    <section className="hero-section pt-7
     lg:pb-24 pb-20 relative overflow-hidden">
         <Image
           loading="eager"
