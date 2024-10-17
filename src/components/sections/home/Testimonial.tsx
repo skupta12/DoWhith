@@ -13,7 +13,6 @@ const Testimonial = () => {
     <section className={`py-2 bg-primary-100`}>
       <MaxWidthWrapper>
         <SliderWrapper
-          dots
           slidesToShow={1}
           className="border border-white/10 rounded-3xl bg-[#0b091f] relative"
         >
@@ -37,7 +36,8 @@ const Testimonial = () => {
                 >
                   <div
                     className="relative overflow-hidden rounded-full 
-                      w-[170px] h-[170px] bg-gradient-to-r from-neutral-100 to-primary-300"
+                      w-[170px] h-[170px] bg-gradient-to-r 
+                      from-neutral-100 to-primary-300"
                   >
                     <Image
                       width={166}

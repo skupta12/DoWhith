@@ -66,3 +66,10 @@
     left: -100%;
   }
 }
+
+
+.slick-dots li button {
+  color: gray;
+  width: 100px;
+  height: 100px;
+}

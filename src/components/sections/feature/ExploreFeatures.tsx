@@ -18,9 +18,15 @@ const ExploreFeatures = () => {
               className="lg:col-span-4 sm:col-span-6 col-span-12 flex flex-col gap-y-4"
             >
               <div className="sm:mx-0 mx-auto">
-                <Image className="mb-3" src={item.icon} alt={item.alt} width={48} height={48} />
+                <Image
+                  className="mb-3"
+                  src={item.icon}
+                  alt={item.alt}
+                  width={48}
+                  height={48}
+                />
               </div>
-             
+
               <h3 className={styles.heading300V}>{item.title}</h3>
               <p className={styles.paragraph100}>{item.text}</p>
             </div>

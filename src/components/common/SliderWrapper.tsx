@@ -8,13 +8,17 @@ const SliderWrapper = ({
   slidesToShow,
   arrows,
   children,
-  className
+  className,
+  infinite,
+  autoplay
 }: {
-  dots: boolean;
+  dots?: boolean;
   slidesToShow: number;
   arrows?: boolean;
   children: ReactNode;
-  className: string;
+  className?: string;
+  infinite?: boolean;
+  autoplay?: boolean;
 }) => {
   const sliderRef = useRef<any>(null);
 
@@ -55,12 +59,13 @@ const SliderWrapper = ({
 
   const settings = {
     dots: dots,
-    infinite: false,
-    autoplay: true,
+    infinite: infinite,
+    autoplay: autoplay,
     speed: 600,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     arrows: arrows,  // Если arrows = true, стрелки будут отображаться
+
   };
 
   return (
