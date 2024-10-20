@@ -414,19 +414,21 @@ export const featureTestimonial = [
     src: "/feature-testimonial/feature-testimonial-2.jpg",
     alt: "feature testimonial 2"
   },
-  // {
-  //   id: 3,
-  //   src: "/feature-testimonial/feature-testimonial-3.jpg",
-  //   alt: "feature testimonial 3"
-  // },
   {
-    id: 4,
+    id: 3,
     src: "/feature-testimonial/feature-testimonial-4.jpg",
     alt: "feature testimonial 4"
   },
   {
-    id: 5,
+    id: 4,
     src: "/feature-testimonial/feature-testimonial-5.jpg",
     alt: "feature testimonial-5"
   },
+
+  {
+    id: 5,
+    src: "/feature-testimonial/feature-testimonial-2.jpg",
+    alt: "feature testimonial 1"
+  },
+
 ]

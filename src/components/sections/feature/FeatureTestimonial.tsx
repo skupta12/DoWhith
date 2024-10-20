@@ -25,13 +25,14 @@ const FeatureTestimonial = () => {
           </p>
         </div>
       </MaxWidthWrapper>
-      <SliderWrapper dots autoplay infinite slidesToShow={4}>
+
+      <SliderWrapper className="carousel mx-auto w-full max-w-[1920px]" dots autoplay infinite slidesToShow={5}>
         {featureTestimonial.map((item, i) => (
           <div className="outline-none" key={i}>
             <Image
               className="rounded-2xl"
               width={370}
-              height={493}
+              height={486}
               src={item.src}
               alt={item.alt}
             />

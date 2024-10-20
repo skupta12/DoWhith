@@ -68,8 +68,33 @@
 }
 
 
-.slick-dots li button {
-  color: gray;
-  width: 100px;
-  height: 100px;
+
+.slick-slide{
+  padding: 0px 12px;
+}  
+
+/* .slick-dots {
+	display: flex;
+	justify-content: center;	
+	margin: 0;
+	list-style-type: none;
+} */
+
+.slick-dots button {
+  display: block;
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: 10px !important;
+  border: none;
+  border-radius: 100%;
+  background-color: gray!important; 
+  text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: black !important;
+}
+
+.slick-dots li {
+  margin: 0px !important;
 }

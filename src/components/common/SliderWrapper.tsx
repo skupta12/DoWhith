@@ -64,8 +64,22 @@ const SliderWrapper = ({
     speed: 600,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
-    arrows: arrows,  // Если arrows = true, стрелки будут отображаться
-
+    arrows: arrows,
+    swipe: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   };
 
   return (
