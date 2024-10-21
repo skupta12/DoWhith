@@ -1,5 +1,3 @@
-import { DragControls } from "framer-motion";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import { ReactNode, useRef } from "react";
 import Slider from "react-slick";
 
@@ -10,7 +8,9 @@ const SliderWrapper = ({
   children,
   className,
   infinite,
-  autoplay
+  autoplay,
+  lgBreakpoint,
+  mdBreakPoint
 }: {
   dots?: boolean;
   slidesToShow: number;
@@ -19,43 +19,10 @@ const SliderWrapper = ({
   className?: string;
   infinite?: boolean;
   autoplay?: boolean;
+  lgBreakpoint?: number;
+  mdBreakPoint?: number;
 }) => {
   const sliderRef = useRef<any>(null);
-
-  // type ArrowsProps = {
-  //   className?: string;
-  //   style?: string;
-  // };
-
-  // const SamplePrevArrow = ({ className, style }: ArrowsProps) => {
-  //   return (
-  //     <div
-  //       onClick={() => sliderRef.current.slickPrev()}
-  //       className="arrow prev-arrow"
-  //     >
-  //       <ArrowLeft
-  //         absoluteStrokeWidth
-  //         size={64}
-  //         className={`arrows ${className}`}
-  //       />
-  //     </div>
-  //   );
-  // };
-
-  // const SampleNextArrow = ({ className, style }: ArrowsProps) => {
-  //   return (
-  //     <div
-  //       onClick={() => sliderRef.current.slickNext()}
-  //       className="arrow next-arrow"
-  //     >
-  //       <ArrowRight
-  //         absoluteStrokeWidth
-  //         size={64}
-  //         className={`arrows ${className}`}
-  //       />
-  //     </div>
-  //   );
-  // };
 
   const settings = {
     dots: dots,
@@ -67,24 +34,32 @@ const SliderWrapper = ({
     arrows: arrows,
     swipe: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2
-        }
-      }
+      ...(lgBreakpoint
+        ? [
+            {
+              breakpoint: lgBreakpoint,
+              settings: {
+                slidesToShow: 3
+              }
+            }
+          ]
+        : []),
+      ...(mdBreakPoint
+        ? [
+            {
+              breakpoint: mdBreakPoint,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+          ]
+        : [])
     ]
   };
 
   return (
     <Slider ref={sliderRef} {...settings} className={className}>
-        {children}    
+      {children}
     </Slider>
   );
 };

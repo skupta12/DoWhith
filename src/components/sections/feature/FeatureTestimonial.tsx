@@ -26,7 +26,15 @@ const FeatureTestimonial = () => {
         </div>
       </MaxWidthWrapper>
 
-      <SliderWrapper className="carousel mx-auto w-full max-w-[1920px]" dots autoplay infinite slidesToShow={5}>
+      <SliderWrapper
+        className="carousel mx-auto w-full max-w-[1920px]"
+        dots
+        lgBreakpoint={1024}
+        mdBreakPoint={768}
+        autoplay
+        infinite
+        slidesToShow={5}
+      >
         {featureTestimonial.map((item, i) => (
           <div className="outline-none" key={i}>
             <Image
