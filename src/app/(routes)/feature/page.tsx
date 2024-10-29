@@ -1,19 +1,18 @@
-import ExploreFeatures from "@/components/sections/feature/ExploreFeatures";
-import FeatureBrands from "@/components/sections/feature/FeatureBrands";
-import FeatureTestimonial from "@/components/sections/feature/FeatureTestimonial";
-import Hero from "@/components/sections/feature/Hero";
-import Manage from "@/components/sections/feature/Manage";
-
-
+import {
+  Brands,
+  Features,
+  Hero,
+  Testimonial,
+} from "@/components/sections/feature";
 
 export default function Feature() {
   return (
     <>
       <Hero />
-      <FeatureBrands />
-      <ExploreFeatures />
-      <FeatureTestimonial />
-      <Manage />
+      <Brands />
+      <Features />
+      <Testimonial />
+      {/* <Management /> */}
     </>
   );
 }

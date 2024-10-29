@@ -1,14 +1,15 @@
-import Brands from "@/components/sections/home/Brands";
-import GetControl from "@/components/sections/home/GetControl";
-import Hero from "@/components/sections/home/Hero";
-import IssueVirtual from "@/components/sections/home/IssueVirtual";
-import MoveLine from "@/components/sections/home/MoveLine";
-import Seamless from "@/components/sections/home/Seamless";
+import {
+  Brands,
+  GetControl,
+  Hero,
+  IssueVirtual,
+  MoveLine,
+  Seamless,
+  SetLimits,
+  Steps,
+  Testimonial,
+} from "@/components/sections/home";
 import Services from "@/components/sections/home/Services";
-import SetLimits from "@/components/sections/home/SetLimits";
-import Steps from "@/components/sections/home/Steps";
-import Testimonial from "@/components/sections/home/Testimonial";
-
 
 export default function HomePage() {
   return (
@@ -23,9 +24,6 @@ export default function HomePage() {
       <Seamless />
       <Steps />
       <Testimonial />
-      {/* <Steps /> */}
-      {/* <Hello/> */}
-      {/* <Anim /> */}
     </>
   );
 }

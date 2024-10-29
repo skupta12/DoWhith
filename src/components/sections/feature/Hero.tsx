@@ -74,12 +74,12 @@ const Hero = () => {
           <div className="lg:col-span-6 col-span-12">
             <div className="relative h-full lg:block hidden">
               <Image
-                className="absolute left-8 -bottom-4 shadow-md rounded-lg"
+                className="absolute left-8 -bottom-4 rounded-lg"
                 src={MasterAccount}
                 alt="The master account image"
               />
               <Image
-                className="absolute left-32 bottom-44 shadow-md rounded-lg"
+                className="absolute left-32 bottom-44 rounded-lg"
                 src={Spending}
                 alt="The spending image"
               />

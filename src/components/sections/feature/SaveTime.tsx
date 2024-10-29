@@ -9,7 +9,7 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import DynamicFramerPos from "@/components/common/DynamicFramerPos";
 import MarkImage from "/public/mark.png";
 
-const SetLimits = () => {
+const SaveTime = () => {
   return (
     <section
       className={`setlimits-section bg-neutral-50 ${styles.sectionPadding}`}
@@ -31,7 +31,7 @@ const SetLimits = () => {
               </div>
               <div className="flex items-center gap-x-3">
                 <Image src={MarkImage} alt="The mark icon" />
-                <p>Review all invoices before payment, if needed</p>
+                <p>Invite teammates so they can help you</p>
               </div>
             </div>
           </div>
@@ -41,12 +41,12 @@ const SetLimits = () => {
                 className="rounded-2xl bg-gray-100 w-full"
                 width={568}
                 height={524}
-                // quality={85}
+                quality={100}
                 src={BgSetLimitsImage}
                 alt="bacgkround image"
               />
               <Image
-                quality={85}
+                quality={100}
                 className="absolute top-0 sm:left-2 left-0"
                 width={552}
                 height={404}
@@ -61,11 +61,12 @@ const SetLimits = () => {
               >
                 <div
                   className=" sm:w-[221px] w-[151px] 
-                sm:h-[81px] h-[51px] object-contain"
+                sm:h-[81px] h-[51px] object-cover"
                 >
                   <Image
                     src={ExtraSetLimitsImage}
                     alt="a tiny card to show one month revenue"
+                    quality={100}
                   />
                 </div>
               </DynamicFramerPos>
@@ -77,4 +78,4 @@ const SetLimits = () => {
   );
 };
 
-export default SetLimits;
+export default SaveTime;
