@@ -2,6 +2,7 @@ import {
   Brands,
   Features,
   Hero,
+  Management,
   Testimonial,
 } from "@/components/sections/feature";
 
@@ -12,7 +13,7 @@ export default function Feature() {
       <Brands />
       <Features />
       <Testimonial />
-      {/* <Management /> */}
+      <Management />
     </>
   );
 }

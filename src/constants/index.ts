@@ -432,3 +432,26 @@ export const featureTestimonial = [
   },
 
 ]
+
+export const managementAccordion = [
+  {
+    id: 1,
+    title: "Employees",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+  },
+  {
+    id: 2,
+    title: "Managers",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+  },
+  {
+    id: 3,
+    title: "Finance & Accounting",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+  },
+  {
+    id: 4,
+    title: "Finance & Accounting",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+  },
+];
