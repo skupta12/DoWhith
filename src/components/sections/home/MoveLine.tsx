@@ -7,7 +7,7 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { movingIcons } from "@/constants";
 import DynamicFramerPos from "@/components/common/DynamicFramerPos";
-import { Icons } from "@/types/types";
+import { Icons } from "@/types";
 
 const MoveLine = () => {
 

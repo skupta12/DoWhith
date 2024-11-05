@@ -12,7 +12,7 @@ const Cta = () => {
       >
         <Image fill src={BgCta} alt="the background image of CTA" />
         <MaxWidthWrapper>
-          <div className="flex flex-col justify-center items-center gap-y-10 text-center">
+          <div className={`${styles.flexCenter} flex-col gap-y-10 text-center`}>
             <h2 className={`${styles.heading200V} text-white max-w-[900px]`}>
               Switch to smarter spending across your company.
             </h2>

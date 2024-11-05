@@ -1,4 +1,4 @@
-import { PosTypes } from "@/types/types";
+import { PosTypes } from "@/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 

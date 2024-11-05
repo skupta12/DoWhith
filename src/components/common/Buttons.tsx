@@ -1,10 +1,10 @@
 "use client";
 
 import styles from "@/style";
-import { ButtonProps } from "@/types/types";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { ButtonProps } from "@/types";
 
 export function BlackButton({
   className,

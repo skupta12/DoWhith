@@ -1,62 +1,51 @@
-"use client"; 
-
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Minus, Plus } from "lucide-react";
+import { AccordionProps } from "@/types";
+import styles from "@/style";
 
-const Accordion = ({
-  title,
-  content,
-  initialActive = false,
-  className,
-}: {
-  title: string;
-  content: string;
-  initialActive?: boolean;
-  className?: string;
-}) => {
-  const [active, setActive] = useState<boolean>(initialActive);
-  const [height, setHeight] = useState<string>("0px");
-  const [rotate, setRotate] = useState<string>("");
+const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
 
-  const contentSpace = useRef<null>(null);
+  const contentSpace = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(
+    isActive ? `${contentSpace.current?.scrollHeight}px` : "0px"
+  );
 
   useEffect(() => {
-    //@ts-ignore
-    setHeight(active ? `${contentSpace.current.scrollHeight}px` : "0px");
-  }, [active]);
+    if (contentSpace.current) {
+      setHeight(isActive ? `${contentSpace.current.scrollHeight}px` : "0px");
+    }
+  }, [isActive]);
 
-  function toggleAccordion() {
-    setActive((prevState) => !prevState);
-    setRotate(active ? "transform duration-300" : "transform duration-300 rotate-[90deg]");
-  }
+  // const handleClick = () => {
+  //   if (!isActive) {
+  //     onToggle();
+  //   }
+
+  // };
 
   return (
-    <div className={`flex flex-col border my-7 py-6 px-4 ${className}`}>
-      <button
-        className="flex items-center justify-between outline-none"
-        onClick={toggleAccordion}
-      >
-        <div className="flex items-center gap-x-6">
-          <div className="lg:text-[24px] text-[20px] text-white font-semibold">
+    <div onClick={() => !isActive ? onToggle() : null} className="mb-6 cursor-pointer">
+      <div className="border border-white/10 bg-primary-200 rounded-lg px-4 py-[22px]">
+        <div className={`outline-none ${styles.flexBetween}`}>
+          <span className="text-white font-semibold lg:text-[24px] text-[20px]">
             {title}
-          </div>
+          </span>
+          <span
+            className={`transform transition-transform duration-500 ${
+              isActive ? "rotate-[180deg]" : ""
+            }`}
+          >
+            {isActive ? <Minus color="white" /> : <Plus color="white" />}
+          </span>
         </div>
-
-        <div className={`accordion-icon ml-3 ${rotate}`}>
-          {active ? (
-            <Minus color="white" className="rotate-90" />
-          ) : (
-            <Plus color="white" />
-          )}
+        <div
+          ref={contentSpace}
+          style={{ maxHeight: height }}
+          className="overflow-hidden transition-max-height duration-500 ease-in-out"
+        >
+          <p className="text-white text-base mt-3">{content}</p>
         </div>
-      </button>
-      <div
-        ref={contentSpace}
-        style={{ maxHeight: `${height}` }}
-        className="overflow-hidden transition-max-height duration-300 ease-out"
-      >
-        <p className={`text-white text-base`}>{content}</p>
-      </div>
+        </div>
     </div>
   );
 };

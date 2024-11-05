@@ -12,7 +12,7 @@ import MarkImage from "/public/mark.png";
 const SaveTime = () => {
   return (
     <section
-      className={`setlimits-section bg-neutral-50 ${styles.sectionPadding}`}
+      className={`time-section bg-neutral-50 ${styles.sectionPadding}`}
     >
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">

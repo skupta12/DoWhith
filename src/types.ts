@@ -1,3 +1,4 @@
+
 import { CSSProperties, ReactNode } from "react";
 
 export type PosTypes = {
@@ -9,6 +10,13 @@ export type PosTypes = {
   elStartOffset?: number;
   elEndOffset?: number;
 };
+
+export type ButtonProps = {
+  className?: string;
+  href?: string;
+  type: "button" | "submit" | "reset";
+  title: string;
+}
 
 export type Icons = {
   id: number;
@@ -25,9 +33,10 @@ export type Icons = {
   elEndOffset?: number;
 };
 
-export type ButtonProps = {
+export type AccordionProps = {
   title: string;
+  content: string;
+  isActive: boolean;
+  onToggle: () => void;
   className?: string;
-  href?: string;
-  type: "button" | "submit" | "reset" | undefined;
-};
+}

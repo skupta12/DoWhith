@@ -18,7 +18,7 @@ const styles = {
     flexStart: "flex justify-center items-start",
     flexBetween: "flex justify-between items-center",
   
-    sectionPadding: "lg:py-32 py-16",
+    sectionPadding: "lg:py-32 py-24",
     sectionPaddingV1: "lg:pb-40 lg:pt-0 pt-10 pb-16",
 
     blueLabel: "bg-primary-300 text-white font-semibold px-3 py-1 rounded-full inline-block",

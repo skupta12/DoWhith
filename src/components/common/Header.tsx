@@ -10,6 +10,7 @@ import styles from "@/style";
 import GradientBg from "/public/gradient-bg.png";
 
 const Header = () => {
+  
   const isClicked = false;
   const [open, isOpen] = useState<boolean>(isClicked);
 
@@ -29,8 +30,8 @@ const Header = () => {
       />
       <header className={`${styles.boxWidth} py-5`}>
         <div
-          className="flex justify-between items-center 
-      sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4"
+          className={`${styles.flexBetween}
+      sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4`}
         >
           <div className="flex items-center lg:gap-x-14">
             <Link href="/">
