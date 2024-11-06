@@ -3,6 +3,7 @@ import {
   Features,
   Hero,
   Management,
+  Spending,
   Testimonial,
 } from "@/components/sections/feature";
 
@@ -14,6 +15,7 @@ export default function Feature() {
       <Features />
       <Testimonial />
       <Management />
+      <Spending />
     </>
   );
 }

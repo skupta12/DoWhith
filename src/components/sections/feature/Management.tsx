@@ -11,7 +11,7 @@ import Image from "next/image";
 import ManagementImage from "/public/management.jpg";
 
 const Management = () => {
-
+  
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const handleToggle = (index: number) => {
@@ -19,8 +19,18 @@ const Management = () => {
   };
 
   return (
-    <section className={`management-section bg-primary-100 ${styles.sectionPadding}`}>
+    <section
+      className={`management-section bg-primary-100 ${styles.sectionPadding}`}
+    >
       <MaxWidthWrapper>
+        <div className="text-center mb-20">
+          <div className={`${styles.blueLabel} mb-3`}>Management</div>
+          <h2
+            className={`text-white max-w-[800px] mx-auto ${styles.heading200V}`}
+          >
+            Smarter management with real-time insights
+          </h2>
+        </div>
         <div className="grid lg:grid-cols-[1.25fr,1fr] grid-cols-1 lg:gap-[78px] gap-10">
           <div className="">
             <Image

@@ -33,15 +33,20 @@ const SetLimits = () => {
                 alt="A chart to show your budget"
               />
 
-              <DynamicFramerPos  
+              <DynamicFramerPos
                 xTransform={40}
-                yTransform={-40} 
-                className="absolute sm:top-56 top-28 sm:left-1/4 xs:left-48 left-10">
+                yTransform={-40}
+                className="absolute sm:top-56 top-28 sm:left-1/4 xs:left-48 left-10"
+              >
                 <div
                   className="sm:w-[221px] w-[151px] 
                 sm:h-[81px] h-[51px] object-contain"
                 >
-                  <Image quality={100} src={ExtraSetLimitsImage} alt="a tiny card to show one month revenue" />
+                  <Image
+                    quality={100}
+                    src={ExtraSetLimitsImage}
+                    alt="a tiny card to show one month revenue"
+                  />
                 </div>
               </DynamicFramerPos>
             </div>

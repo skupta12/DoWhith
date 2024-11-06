@@ -455,3 +455,21 @@ export const managementAccordion = [
     text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
   },
 ];
+
+export const spending = [
+  {
+    id: 1,
+    title: "Add employees",
+    text: "Invite the employees who can submit expenses to your company. All they need is to download our app to get started."
+  },
+  {
+    id: 2,
+    title: "Review & Approve",
+    text: "Once the expense is submitted, you can review and approve it right from your dashboard."
+  },
+  {
+    id: 3,
+    title: "Pay your employee",
+    text: "Once the expense is approved, you can pay your employee with a single click, providing instant confirmation and payment at the same time."
+  },
+]

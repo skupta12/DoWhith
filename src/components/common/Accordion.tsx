@@ -16,13 +16,6 @@ const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
     }
   }, [isActive]);
 
-  // const handleClick = () => {
-  //   if (!isActive) {
-  //     onToggle();
-  //   }
-
-  // };
-
   return (
     <div onClick={() => !isActive ? onToggle() : null} className="mb-6 cursor-pointer">
       <div className="border border-white/10 bg-primary-200 rounded-lg px-4 py-[22px]">
