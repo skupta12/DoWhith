@@ -5,6 +5,7 @@ import Management from "@/components/sections/feature/Management";
 import SaveTime from "@/components/sections/feature/SaveTime";
 import Testimonial from "@/components/sections/feature/Testimonial";
 import Spending from "@/components/sections/feature/Spending";
+import PhysicalCard from "./PhysicalCard";
 
 
 export {
@@ -14,5 +15,6 @@ export {
   Management,
   SaveTime,
   Testimonial,
-  Spending
+  Spending,
+  PhysicalCard,
 };

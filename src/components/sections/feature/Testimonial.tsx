@@ -8,7 +8,7 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const FeatureTestimonial = () => {
+const Testimonial = () => {
   return (
     <section
       className={`feature-testimonial-section border-t ${styles.sectionPadding}`}
@@ -51,4 +51,4 @@ const FeatureTestimonial = () => {
   );
 };
 
-export default FeatureTestimonial;
+export default Testimonial;

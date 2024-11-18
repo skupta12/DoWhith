@@ -43,7 +43,8 @@ const ShowCase = () => {
               >
                 <div
                   className="lg:w-[369px] 
-                xs:w-[289px] w-[200px] lg:h-[488px] xs:h-[408px] h-[300px] object-contain"
+                xs:w-[289px] w-[200px] lg:h-[488px] xs:h-[408px] 
+                h-[300px] object-contain"
                 >
                   <Image
                     className="justify-self-end"

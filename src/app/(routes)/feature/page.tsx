@@ -3,6 +3,8 @@ import {
   Features,
   Hero,
   Management,
+  PhysicalCard,
+  SaveTime,
   Spending,
   Testimonial,
 } from "@/components/sections/feature";
@@ -14,8 +16,10 @@ export default function Feature() {
       <Brands />
       <Features />
       <Testimonial />
+      <SaveTime />
       <Management />
       <Spending />
+      <PhysicalCard />
     </>
   );
 }
