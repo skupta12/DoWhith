@@ -4,11 +4,11 @@ import { BlackButton } from "./Buttons";
 import Image from "next/image";
 import BgCta from "/public/CTA.png";
 
-const Cta = () => {
+const PrimaryCta = () => {
   return (
     <>
       <section
-        className={`lg:py-32 py-16 bg-primary-100 relative overflow-hidden`}
+        className={`primary-cta-section lg:py-32 py-16 bg-primary-100 relative overflow-hidden`}
       >
         <Image fill src={BgCta} alt="the background image of CTA" />
         <MaxWidthWrapper>
@@ -33,4 +33,4 @@ const Cta = () => {
   );
 };
 
-export default Cta;
+export default PrimaryCta;

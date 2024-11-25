@@ -11,10 +11,10 @@ import Spending from "/public/feature/spending.png";
 const Hero = () => {
   return (
     <section
-      className="feature-hero-section lg:pt-20 pt-10
-    lg:pb-24 pb-20 relative"
+      className="feature-hero-section lg:pt-20 pt-10 lg:pb-24 pb-20 relative"
     >
-      <div className="object-cover w-[46vw] h-[130%] absolute -top-32 bottom-0 left-auto right-0 -z-[1]">
+      <div className="object-cover w-[46vw] h-[130%] absolute -top-32 
+      bottom-0 left-auto right-0 -z-[1]">
         <Image
           className="object-cover w-full h-full lg:block hidden"
           src={HeroFeatureImage}

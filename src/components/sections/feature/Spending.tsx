@@ -7,7 +7,7 @@ import ReceiveImage from "/public/receive.png";
 
 const Spending = () => {
   return (
-    <section className={styles.sectionPadding}>
+    <section className={`spending-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <ul className="grid grid-cols-12 gap-6">
           {spending.map((item, i) => (

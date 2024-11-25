@@ -54,9 +54,9 @@ const SaveTime = () => {
                 alt="A chart to show your budget"
               />
 
-              <DynamicFramerPos
-                xTransform={40}
-                yTransform={-40}
+              <div
+                // xTransform={40}
+                // yTransform={-40}
                 className="absolute sm:top-56 top-28 sm:left-1/4 xs:left-48 left-10"
               >
                 <div
@@ -69,7 +69,7 @@ const SaveTime = () => {
                     quality={100}
                   />
                 </div>
-              </DynamicFramerPos>
+              </div>
             </div>
           </div>
         </div>

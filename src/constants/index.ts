@@ -473,3 +473,24 @@ export const spending = [
     text: "Once the expense is approved, you can pay your employee with a single click, providing instant confirmation and payment at the same time."
   },
 ]
+
+export const physicalCards = [
+  {
+    id: 1,
+    label: "Trusted user",
+    value: "9.4k",
+    text: "Lorem ipsum dolor sit amet. Aut autem maxime et consequuntur"
+  },
+  {
+    id: 2,
+    label: "Rating",
+    value: "99%",
+    text: "Lorem ipsum dolor sit amet. Aut autem maxime et consequuntur"
+  },
+  {
+    id: 3,
+    label: "Fund",
+    value: "$4.3M",
+    text: "Lorem ipsum dolor sit amet. Qui eaque illum sit saepe repellat aut omnis repellat in cupiditate galisum."
+  },
+]

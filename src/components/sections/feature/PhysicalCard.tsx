@@ -2,10 +2,13 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import Image from "next/image";
 import PhysicalCardImage from "/public/physical-card-image.png";
+import PhysicalBgImage from "/public/home-features/bg-feature-1.png";
+import PaymentReceivedImage from "/public/payment-received.png";
+import { physicalCards } from "@/constants";
 
 const PhysicalCard = () => {
   return (
-    <section className={styles.sectionPaddingV1}>
+    <section className={`physicalcard-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
         <div className="text-center mb-20">
           <div className={`mb-3 ${styles.blueLabel}`}>Expense Card</div>
@@ -13,30 +16,53 @@ const PhysicalCard = () => {
             Issue virtual & physical cards with built-in rules
           </h2>
         </div>
-        <div className="grid grid-cols-12 gap-0">
-          <div className="col-span-7 relative overflow-hidden">
+        <div className="grid grid-cols-12 gap-7">
+          <div className="lg:col-span-7 col-span-12 relative overflow-hidden rounded-xl bg-neutral-50">
             <Image
+              className="absolute bottom-0 left-0 z-[10]"
               width={582}
               height={480}
+              quality={90}
               src={PhysicalCardImage}
               alt="The physical card"
             />
+            <Image
+              className="lg:absolute block bottom-0 left-0 z-[5] w-full"
+              width={549}
+              quality={90}
+              height={550}
+              src={PhysicalBgImage}
+              alt="The Physical background image"
+            />
+            <Image
+              className="absolute sm:bottom-8 bottom-4 sm:right-8 right-4 z-[15]"
+              width={180}
+              height={121}
+              quality={90}
+              src={PaymentReceivedImage}
+              alt="The payment received image"
+            />
           </div>
-          <div className="col-span-5">
+          <div className="lg:col-span-5 col-span-12">
             <div className="grid grid-cols-12 gap-4">
-              <div className="col-span-6 text-center bg-neutral-50 p-6 rounded-xl">
-                <div className={`${styles.blueLabel} mb-3`}>Trusted user</div>
-                <h3 className="lg:text-[58px] text-[42px] font-semibold mb-3">9.4k</h3>
-                <p className={`text-base text-primary-100`}>Lorem ipsum dolor sit amet. Aut autem maxime et consequuntur</p>
-              </div>
-              <div className="col-span-6 text-center bg-neutral-50 p-6 rounded-xl">
-                <div className={`${styles.blueLabel} mb-3`}>Rating</div>
-                <h3 className="lg:text-[58px] text-[42px] font-semibold mb-3 ">9.4k</h3>
-                <p className={`text-base text-primary-100`}>Lorem ipsum dolor sit amet. Aut autem maxime et consequuntur</p>
-              </div>
-              <div className="col-span-12 text-center bg-neutral-50 p-6 rounded-xl"> <div className={`${styles.blueLabel} mb-3`}>Fund</div>
-                <h3 className="lg:text-[58px] text-[42px] font-semibold mb-3 ">9.4k</h3>
-                <p className={`text-base text-primary-100`}>Lorem ipsum dolor sit amet. Aut autem maxime et consequuntur</p></div>
+              {physicalCards.map(({ id, label, text, value }) => (
+                <div
+                  key={id}
+                  className={`bg-neutral-50 text-center p-6 rounded-xl ${
+                    id === 3 ? "col-span-12" : "sm:col-span-6 col-span-12"
+                  }`}
+                >
+                  <div className={`${styles.blueLabel} mb-3`}>{label}</div>
+                  <h3 className="lg:text-[58px] text-[42px] font-semibold mb-3">
+                    {value}
+                  </h3>
+                  <p
+                    className={`text-base text-primary-100 sm:max-w-[350px] mx-auto`}
+                  >
+                    {text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

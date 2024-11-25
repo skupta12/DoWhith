@@ -11,7 +11,7 @@ const FeatureBrands = () => {
     <section
       className={`feature-brands-section lg:py-16 py-10 overflow-hidden bg-primary-100 relative`}
     >
-      <div className="">
+      <div>
         <InfinitiveScroller Sduration={20} className="overflow-hidden">
           {[...featureBrands, ...featureBrands].map((item, i) => (
             <motion.div
