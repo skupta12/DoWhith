@@ -16,7 +16,7 @@ const ShowCase = () => {
           <div
             className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10 md:order-1 order-2`}
           >
-            <div className={`mb-3 ${styles.blueLabel}`}>Expense Card</div>
+            <span className={`mb-3 ${styles.blueLabel}`}>Expense Card</span>
             <h2 className={`${styles.heading200V} mb-3`}>
               Issue virtual & physical cards with built-in rules
             </h2>

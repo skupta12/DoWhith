@@ -11,7 +11,7 @@ const PhysicalCard = () => {
     <section className={`physicalcard-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
         <div className="text-center mb-20">
-          <div className={`mb-3 ${styles.blueLabel}`}>Expense Card</div>
+          <span className={`mb-3 ${styles.blueLabel}`}>Expense Card</span>
           <h2 className={`${styles.heading200V} max-w-[800px] mx-auto`}>
             Issue virtual & physical cards with built-in rules
           </h2>
@@ -52,7 +52,7 @@ const PhysicalCard = () => {
                     id === 3 ? "col-span-12" : "sm:col-span-6 col-span-12"
                   }`}
                 >
-                  <div className={`${styles.blueLabel} mb-3`}>{label}</div>
+                  <span className={`${styles.blueLabel} mb-3`}>{label}</span>
                   <h3 className="lg:text-[58px] text-[42px] font-semibold mb-3">
                     {value}
                   </h3>

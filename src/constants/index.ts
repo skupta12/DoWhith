@@ -494,3 +494,34 @@ export const physicalCards = [
     text: "Lorem ipsum dolor sit amet. Qui eaque illum sit saepe repellat aut omnis repellat in cupiditate galisum."
   },
 ]
+
+export const blogs = [
+  {
+    id: 1,
+    title: "Do startups valuations matter for investment returns?",
+    src: "/posts/post-image-1.jpg",
+    url: "do-startups-valuations-matter-for-investment-returns",
+    label: "Company Announcement",
+  },
+  {
+    id: 2,
+    title: "12 powerful integrations & addons to grow your business",
+    src: "/posts/post-image-2.jpg",
+    url: "12-powerful-valuations-addons-to-grow-your-business",
+    label: "Company Finance tools & tech",
+  },
+  {
+    id: 3,
+    title: "10 top spend management software solutions for 2024",
+    src: "/posts/post-image-3.jpg",
+    url: "10-top-spend-management-software-solutions-for-2024",
+    label: "Expense management",
+  },
+  {
+    id: 4,
+    title: "Do startups valuations matter for investments",
+    src: "/posts/post-image-4.jpg",
+    url: "do-startups-valuations-matter-for-investments",
+    label: "Company Announcement",
+  },
+]

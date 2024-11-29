@@ -8,7 +8,7 @@ const ExploreFeatures = () => {
     <section className={`explore-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="text-center mb-20">
-          <div className={`${styles.blueLabel} mb-3`}>Features Explored</div>
+          <span className={`${styles.blueLabel} mb-3`}>Features Explored</span>
           <h2 className={styles.heading200V}>Explore Our Powerful Features</h2>
         </div>
         <div className="grid grid-cols-12 gap-y-14 sm:gap-x-12 

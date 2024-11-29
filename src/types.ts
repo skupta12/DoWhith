@@ -16,6 +16,7 @@ export type ButtonProps = {
   href?: string;
   type: "button" | "submit" | "reset";
   title: string;
+  style?: string;
 }
 
 export type Icons = {

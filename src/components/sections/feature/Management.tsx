@@ -24,7 +24,7 @@ const Management = () => {
     >
       <MaxWidthWrapper>
         <div className="text-center mb-20">
-          <div className={`${styles.blueLabel} mb-3`}>Management</div>
+          <span className={`${styles.blueLabel} mb-3`}>Management</span>
           <h2
             className={`text-white max-w-[800px] mx-auto ${styles.heading200V}`}
           >

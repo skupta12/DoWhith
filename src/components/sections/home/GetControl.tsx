@@ -53,7 +53,7 @@ const ShowCase = () => {
             </div>
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
-            <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
+            <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
             <h2 className={`${styles.heading200V} mb-3`}>
               Get control & visibility over every payment
             </h2>

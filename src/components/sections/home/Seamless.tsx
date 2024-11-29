@@ -12,7 +12,7 @@ const Seamless = () => {
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-10">
           <div className="text-center">
-            <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
+            <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
             <div>
               <h2 className={`${styles.heading200V} text-white`}>
                 Seamless integration with your{" "}

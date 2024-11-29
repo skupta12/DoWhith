@@ -24,7 +24,7 @@ const Steps = () => {
         <div className="grid grid-cols-12 lg:gap-x-14 gap-y-10">
           <div className="lg:col-span-6 col-span-12">
             <div className="text mb-7">
-              <div className={`mb-3 ${styles.blueLabel}`}>Approval</div>
+              <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
               <h2 className={`${styles.heading200V} text-white`}>
                 Three steps to smarter spending
               </h2>

@@ -2,12 +2,14 @@ import {
   Brands,
   Features,
   Hero,
+  LatestArticles,
   Management,
   PhysicalCard,
   SaveTime,
   Spending,
   Testimonial,
 } from "@/components/sections/feature";
+import SecondaryCta from "@/components/sections/feature/SecondaryCta";
 
 export default function Feature() {
   return (
@@ -20,6 +22,8 @@ export default function Feature() {
       <Management />
       <Spending />
       <PhysicalCard />
+      <SecondaryCta />
+      <LatestArticles />
     </>
   );
 }

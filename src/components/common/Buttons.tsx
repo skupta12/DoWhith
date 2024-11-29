@@ -11,6 +11,7 @@ export function BlackButton({
   href = "/",
   type,
   title,
+  style
 }: ButtonProps) {
   const router = useRouter();
 

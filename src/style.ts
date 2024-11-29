@@ -23,7 +23,7 @@ const styles = {
 
     blueLabel: "bg-primary-300 text-white font-semibold px-3 py-1 rounded-full inline-block",
 
-    blackButton: "bg-primary-100 text-white py-[10px] px-[32px] rounded-md inline-block font-bold relative",
+    blackButton: "bg-primary-100 text-white py-[10px] px-[32px] rounded-md inline-block font-bold", // relative missing
     whiteButton: "bg-white text-black py-[10px] px-[32px] rounded-md text-base inline-block font-bold",
     linkButton: "inline-block sm:text-[20px] font-semibold bg-gradient-to-r from-neutral-100 to-primary-300 bg-clip-text text-transparent"
   };
