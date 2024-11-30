@@ -1,5 +1,5 @@
 const styles = {
-    boxWidth: "mx-auto w-full max-w-[1380px] px-4 sm:px-10 relative",
+    headerStyles: "mx-auto w-full max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md bg-non-neutral-200 z-[111]",
     
     heading100: "text-primary-200 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-[1.2]",
 
@@ -17,6 +17,7 @@ const styles = {
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
     flexBetween: "flex justify-between items-center",
+    flexItems: "flex items-center",
   
     sectionPadding: "lg:py-32 py-24",
     sectionPaddingV1: "lg:pb-40 lg:pt-0 pt-10 pb-16",

@@ -64,7 +64,7 @@ export function LinkButton({ href = "/", type, title }: ButtonProps) {
       onClick={() => router.push(href)}
       href={href}
     >
-      <div className="flex items-center gap-x-2 group">
+      <div className={`${styles.flexItems} gap-x-2 group`}>
         <button
           type={type}
           className={styles.linkButton}

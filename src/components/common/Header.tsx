@@ -22,19 +22,18 @@ const Header = () => {
     <>
       {/* custom gradient */}
       <Image
-        className="object-cover opacity-50"
+        className="absolute top-0 left-0 object-cover opacity-[75%] w-[1920px] h-[750px] -z-[1]"
         priority
-        fill
+        // fill
         src={GradientBg}
         alt="background gradient"
       />
-      <header className={`${styles.boxWidth} py-5`}>
+      <header className={`${styles.headerStyles} mt-4`}>
         <div
-          className={`${styles.flexBetween}
-      sm:p-4 p-3 bg-non-neutral-200 rounded-md gap-x-4`}
+          className={`${styles.flexBetween} py-4`}
         >
           <div className="flex items-center lg:gap-x-14">
-            <Link href="/">
+            <Link onClick={() => isOpen(false)} href="/">
               <Image width={172} height={40} src={Logo} alt="DoWhith logo" />
             </Link>
 
@@ -81,7 +80,7 @@ const Header = () => {
             </nav>
           </div>
           <div className="flex items-center gap-x-5">
-            <div className="md:flex hidden items-center gap-x-4">
+            <div className="md:flex hidden items-center gap-x-3">
               <WhiteButton href={"/"} type="button" title="Log In" />
               <BlackButton href={"/"} type="button" title="Sign Up" />
             </div>

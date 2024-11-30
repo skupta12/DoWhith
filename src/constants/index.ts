@@ -362,7 +362,7 @@ export const exploreFeatures = [
     id: 1,
     icon: "/feature/explore-feature-1.png",
     title: "Digitise expense reports",
-    text: "Create an expense reimbursement policy that staff can&apos;t help but follow. You set the rules and spending limits.",
+    text: "Create an expense reimbursement policy that staff can't help but follow. You set the rules and spending limits.",
     alt: "The feature explored list item icon",
   },
   {
@@ -437,22 +437,22 @@ export const managementAccordion = [
   {
     id: 1,
     title: "Employees",
-    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don't look even slightly believable",
   },
   {
     id: 2,
     title: "Managers",
-    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don't look even slightly believable",
   },
   {
     id: 3,
     title: "Finance & Accounting",
-    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don't look even slightly believable",
   },
   {
     id: 4,
     title: "Finance & Accounting",
-    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don&apos;t look even slightly believable",
+    text: "There are many variations of passages of Lorem ipsum available, but the majority have suffered alternation in some form, by injected humour, or randomized words which don't look even slightly believable",
   },
 ];
 

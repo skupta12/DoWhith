@@ -25,11 +25,11 @@ const SaveTime = () => {
               Approve or reject the different invoices.
             </h3>
             <div className="flex flex-col gap-y-3">
-              <div className="flex items-center gap-x-3">
+              <div className={`${styles.flexItems} gap-x-3`}>
                 <Image src={MarkImage} alt="The mark icon" />
                 <p>Review all invoices before payment, if needed</p>
               </div>
-              <div className="flex items-center gap-x-3">
+              <div className={`${styles.flexItems} gap-x-3`}>
                 <Image src={MarkImage} alt="The mark icon" />
                 <p>Invite teammates so they can help you</p>
               </div>

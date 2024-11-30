@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="rounded-full bg-gradient-to-r 
           from-neutral-100 to-primary-300 p-[1px]">
             <div className="rounded-full bg-white px-4 py-[6px]">
-              <span className="text-[14px] font-medium flex items-center gap-x-3">
+              <span className={`text-[14px] font-medium ${styles.flexItems} gap-x-3`}>
                 Watch our investment series{" "}
                 <span
                   className="bg-gradient-to-r from-primary-300 to-neutral-100 

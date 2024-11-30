@@ -14,7 +14,7 @@ const Hero = () => {
       className="feature-hero-section lg:pt-20 pt-10 lg:pb-24 pb-20 relative"
     >
       <div className="object-cover w-[46vw] h-[130%] absolute -top-32 
-      bottom-0 left-auto right-0 -z-[1]">
+      bottom-0 left-auto right-0 -z-[2]">
         <Image
           className="object-cover w-full h-full lg:block hidden"
           src={HeroFeatureImage}
@@ -31,7 +31,7 @@ const Hero = () => {
           from-neutral-100 to-primary-300 p-[1px] mb-4"
             >
               <div className="rounded-full bg-white px-4 py-[6px]">
-                <span className="text-[14px] font-medium flex items-center gap-x-3">
+                <span className={`text-[14px] font-medium ${styles.flexItems} gap-x-3`}>
                   Watch our investment series{" "}
                   <span
                     className="bg-gradient-to-r from-primary-300 to-neutral-100 
@@ -59,7 +59,7 @@ const Hero = () => {
                   type="button"
                 />
               </div>
-              <div className="flex items-center">
+              <div className={styles.flexItems}>
                 <div className="inline-flex items-center gap-x-2 p-4">
                   {Array(5)
                     .fill(0)

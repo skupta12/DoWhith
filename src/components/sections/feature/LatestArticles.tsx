@@ -15,12 +15,12 @@ const Post = () => {
             </span>
             <h2 className={styles.heading200V}>Latest Articles</h2>
           </div>
-          <div className="grid grid-cols-12 gap-3">
+          <div className="grid grid-cols-12 gap-6">
             {blogs.map(({ id, title, src, url, label }) => (
-              <Link className="col-span-3" href={`/post/${url}`} key={id}>
+              <Link className="lg:col-span-3 md:col-span-6 col-span-12" href={`/post/${url}`} key={id}>
                 <div className="flex flex-col h-full">
                   <Image
-                    className="rounded-lg"
+                    className="rounded-lg w-full"
                     width={272}
                     height={177}
                     src={src}
