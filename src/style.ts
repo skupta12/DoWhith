@@ -11,16 +11,19 @@ const styles = {
     // heading4: "lg:text-[22px] md:text-[18px] text-[17px] font-medium leading-tight",
     // heading5: "lg:text-[18px] font-medium leading-tight",
     // heading6: "text-[16px] font-medium leading-tight",
-    paragraph100: "font-normal text-primary-200 sm:text-[18px] opacity-95 text-base leading-[1.6]",
+    paragraph100: "font-normal text-primary-200 text-[18px] opacity-95 leading-[1.6]",
     paragraph100V: "font-normal text-white sm:text-[18px] text-base leading-[1.6] opacity-[65%]",
 
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
     flexBetween: "flex justify-between items-center",
     flexItems: "flex items-center",
+
+    spotlightPaddingUp: "lg:pt-32 md:pt-20 pt-16",
+    spotlightPaddingDown: "lg:pb-32 md:pb-20 pb-16",
   
-    sectionPadding: "lg:py-32 py-24",
-    sectionPaddingV1: "lg:pb-40 lg:pt-0 pt-10 pb-16",
+    sectionPadding: "lg:py-32 md:py-20 py-14",
+    sectionPaddingV1: "lg:pb-40 md:pb-20 pb-14", // pt removed
 
     blueLabel: "bg-primary-300 text-white font-semibold px-3 py-1 rounded-full inline-block",
 

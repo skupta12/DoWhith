@@ -7,9 +7,8 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <section className="steps-section pb-24 bg-primary-100 overflow-hidden">
-      <MaxWidthWrapper className="pt-24 border-t border-white/10">
-
+    <section className={`steps-section ${styles.spotlightPaddingDown} bg-primary-100 overflow-hidden`}>
+      <MaxWidthWrapper className={`${styles.spotlightPaddingUp} border-t border-white/10`}>
         <div className="effects">
           <div
             className="white-line absolute -top-[1px] left-1/2 

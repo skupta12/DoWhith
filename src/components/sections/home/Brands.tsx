@@ -3,17 +3,19 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import { brands } from "@/constants";
-import InfinitiveScroller from "@/components/common/InfinitiveScroller";
+import InfinitiveScroller from "@/components/common/motion/InfinitiveScroller";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const Brands = () => {
   return (
     <>
-      <section className="brands-section pb-24 overflow-hidden bg-primary-100 relative">
-        <MaxWidthWrapper className="pt-24 border-t border-white/10">
+      <section className={`brands-section ${styles.spotlightPaddingDown}
+      overflow-hidden bg-primary-100 relative`}>
+        <MaxWidthWrapper className={`${styles.spotlightPaddingUp} border-t border-white/10`}>
           <div className="effects">
-            <div className="white-line absolute -top-[1px] left-1/2 transform -translate-x-1/2 w-48 h-[1px]" />
+            <div className="white-line absolute -top-[1px] left-1/2 
+            transform -translate-x-1/2 w-48 h-[1px]" />
             <div
               className="spotlight absolute w-52 h-24 bg-primary-300 -top-20 left-1/2 
             transform -translate-x-1/2 blur-xl opacity-35 rounded-full"
@@ -32,7 +34,8 @@ const Brands = () => {
               <InfinitiveScroller Sduration={25}>
                 {[...brands, ...brands].map((item, i) => (
                   <motion.div
-                   className="relative overflow-hidden min-w-[200px] flex justify-center items-center"
+                   className={`relative overflow-hidden min-w-[200px] 
+                   ${styles.flexCenter}`}
                     key={i}
                   >
                     <Image

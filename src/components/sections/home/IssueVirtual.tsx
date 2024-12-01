@@ -6,7 +6,7 @@ import { LinkButton } from "../../common/Buttons";
 import BgGetControlImage from "/public/home-features/bg-feature-2.png";
 import MainControlImage from "/public/home-features/main-feature-2.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import DynamicFramerPos from "@/components/common/DynamicFramerPos";
+import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 
 const ShowCase = () => {
   return (

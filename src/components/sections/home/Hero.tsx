@@ -8,10 +8,9 @@ import Bg1 from "/public/home/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className="hero-section pt-7
-    lg:pb-24 pb-20 relative overflow-hidden">
+    <section className={`lg:pt-16 lg:pb-28 py-14 hero-section relative overflow-hidden`}>
         <Image
-          loading="eager"
+          priority
           className="object-cover"
           fill
           src={Bg1}
@@ -49,7 +48,7 @@ const Hero = () => {
           />
         </div>
         <div className="flex justify-center">
-          <Image width={970} height={572} src={HeroImage} alt="The hero image" />
+          <Image loading="eager" width={970} height={572} src={HeroImage} alt="The hero image" />
         </div>
       </MaxWidthWrapper>
     </section>

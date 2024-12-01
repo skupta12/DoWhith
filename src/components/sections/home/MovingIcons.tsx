@@ -6,10 +6,10 @@ import MoveLineImage from "/public/mov-sec/move-lines.png";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { movingIcons } from "@/constants";
-import DynamicFramerPos from "@/components/common/DynamicFramerPos";
+import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 import { Icons } from "@/types";
 
-const MoveLine = () => {
+const MovingIcons = () => {
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -20,7 +20,7 @@ const MoveLine = () => {
   });
 
   return (
-    <section className="lg:pb-32 pb-16 lg:block hidden">
+    <section className="icons-section lg:pb-32 pb-16 lg:block hidden">
       <MaxWidthWrapper>
         <div className="relative">
           <motion.div
@@ -67,4 +67,4 @@ const MoveLine = () => {
   );
 };
 
-export default MoveLine;
+export default MovingIcons;

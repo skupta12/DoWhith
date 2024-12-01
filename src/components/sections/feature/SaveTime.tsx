@@ -6,7 +6,7 @@ import BgSetLimitsImage from "/public/home-features/bg-feature-3.png";
 import MainSetLimitsImage from "/public/home-features/main-feature-3.png";
 import ExtraSetLimitsImage from "/public/home-features/extra-feature-3.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import DynamicFramerPos from "@/components/common/DynamicFramerPos";
+import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 import MarkImage from "/public/mark.png";
 
 const SaveTime = () => {

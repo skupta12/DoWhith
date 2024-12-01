@@ -1,6 +1,6 @@
 "use client";
 
-import InfinitiveScroller from "@/components/common/InfinitiveScroller";
+import InfinitiveScroller from "@/components/common/motion/InfinitiveScroller";
 import { featureBrands } from "@/constants";
 import styles from "@/style";
 import { motion } from "framer-motion";

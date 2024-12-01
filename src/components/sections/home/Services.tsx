@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section className={`services-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
-        <div className="flex flex-col gap-y-20">
+        <div className="flex flex-col lg:gap-y-20 gap-y-10">
           <div className="flex flex-col gap-y-4 text-center">
             <h2
               className={`${styles.heading200V} max-w-[850px] mx-auto`}

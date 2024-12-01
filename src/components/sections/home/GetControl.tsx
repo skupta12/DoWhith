@@ -7,7 +7,7 @@ import BgGetControlImage from "/public/home-features/bg-feature-1.png";
 import MainControlImage from "/public/home-features/main-feature-1.png";
 import ExtraControlImage from "/public/home-features/extra-feature-1.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import DynamicFramerPos from "@/components/common/DynamicFramerPos";
+import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 
 
 const ShowCase = () => {
@@ -27,9 +27,9 @@ const ShowCase = () => {
               />
               <Image
                 quality={85}
-                className="absolute bottom-0 left-0"
-                width={472}
-                height={524}
+                className="object-cover absolute bottom-0 left-0 
+                lg:w-[472px] sm:w-[392px] w-[312px] h-[324px] sm:h-[415px] lg:h-[524px]"
+
                 src={MainControlImage}
                 alt="Feature image"
               />
@@ -40,8 +40,8 @@ const ShowCase = () => {
               >
                 <div
                   className="lg:w-[254px] 
-                md:w-[287px] w-[237px] lg:h-[147px] md:h-[127px] 
-                h-[107px] object-contain"
+                md:w-[287px] w-[227px] lg:h-[147px] md:h-[127px] 
+                h-[97px] object-contain"
                 >
                   <Image
                     quality={85}
