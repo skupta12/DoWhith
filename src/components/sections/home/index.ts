@@ -1,10 +1,10 @@
 import Hero from "@/components/sections/home/Hero";
 import Brands from "@/components/sections/home/Brands"
-import GetControl from "./GetControl";
+import GetControl from "./feature-two/GetControl";
 import MoveLine from "./MovingIcons";
-import IssueVirtual from "./IssueVirtual";
+import IssueVirtual from "./feature-two/IssueVirtual";
 import Seamless from "./Seamless";
-import SetLimits from "./SetLimits";
+import SetLimits from "./feature-two/SetLimits";
 import Steps from "./Steps";
 import Testimonial from "./Testimonial";
 

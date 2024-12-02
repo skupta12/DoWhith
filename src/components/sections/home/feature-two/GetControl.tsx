@@ -2,7 +2,7 @@
 
 import styles from "@/style";
 import Image from "next/image";
-import { LinkButton } from "../../common/Buttons";
+import { LinkButton } from "../../../common/Buttons";
 import BgGetControlImage from "/public/home-features/bg-feature-1.png";
 import MainControlImage from "/public/home-features/main-feature-1.png";
 import ExtraControlImage from "/public/home-features/extra-feature-1.png";

@@ -17,7 +17,11 @@ const Post = () => {
           </div>
           <div className="grid grid-cols-12 gap-6">
             {blogs.map(({ id, title, src, url, label }) => (
-              <Link className="lg:col-span-3 md:col-span-6 col-span-12" href={`/post/${url}`} key={id}>
+              <Link
+                className="lg:col-span-3 md:col-span-6 col-span-12"
+                href={`/post/${url}`}
+                key={id}
+              >
                 <div className="flex flex-col h-full">
                   <Image
                     className="rounded-lg w-full"
@@ -26,7 +30,11 @@ const Post = () => {
                     src={src}
                     alt={`The post image ${id}`}
                   />
-                  <h3 className={`mt-4 mb-5 hover:underline ${styles.heading300}`}>{title}</h3>
+                  <h3
+                    className={`mt-4 mb-5 hover:underline ${styles.heading300}`}
+                  >
+                    {title}
+                  </h3>
                   <span className="mt-auto">{label}</span>
                 </div>
               </Link>

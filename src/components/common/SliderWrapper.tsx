@@ -49,7 +49,7 @@ const SliderWrapper = ({
             {
               breakpoint: mdBreakPoint,
               settings: {
-                slidesToShow: 2
+                slidesToShow: 1
               }
             }
           ]

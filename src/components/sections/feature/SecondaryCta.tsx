@@ -9,8 +9,10 @@ const SecondaryCta = () => {
   return (
     <section className={`${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
-        <div className="bg-primary-100 grid grid-cols-12 lg:px-20 sm:px-10 
-        px-6 sm:py-10 py-8 items-center rounded-2xl">
+        <div
+          className="bg-primary-100 grid grid-cols-12 lg:px-20 sm:px-10 
+        px-6 sm:py-10 py-8 items-center rounded-2xl"
+        >
           <div className="cta-text lg:col-span-6 col-span-12 lg:pr-14">
             <h2 className={`text-white mb-3 ${styles.heading200V}`}>
               Contact our award winning team
@@ -27,8 +29,10 @@ const SecondaryCta = () => {
                 focus:outline-none"
                 type="text"
               />
-              <div className="absolute lg:left-auto md:left-40 
-              right-1 top-[10px] overflow-hidden">
+              <div
+                className="absolute lg:left-auto md:left-40 
+              right-1 top-[10px] overflow-hidden"
+              >
                 <BlackButton
                   href="/feature"
                   className="rounded-[6px]"

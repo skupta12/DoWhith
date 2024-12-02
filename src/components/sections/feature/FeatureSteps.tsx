@@ -1,16 +1,22 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { spending } from "@/constants";
+import { steps } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
-import SpendingImage from "/public/spending-image.jpg";
+import StepsImage from "/public/steps-image.jpg";
 import ReceiveImage from "/public/receive.png";
 
-const Spending = () => {
+const FeatureSteps = () => {
   return (
-    <section className={`spending-section ${styles.sectionPadding}`}>
+    <section className={`howitworks-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
+        <div className="lg:mb-20 sm:mb-16 mb-10 text-center">
+          <span className={`${styles.blueLabel} mb-3`}>How it works</span>
+          <h2 className={styles.heading200V}>
+            Three steps to smarter spending
+          </h2>
+        </div>
         <ul className="grid grid-cols-12 gap-6">
-          {spending.map((item, i) => (
+          {steps.map((item, i) => (
             <li
               key={i}
               className={`${
@@ -32,8 +38,8 @@ const Spending = () => {
               <Image
                 quality={90}
                 className="w-full sm:h-full h-[200px] object-cover rounded-lg"
-                src={SpendingImage}
-                alt="The spending image"
+                src={StepsImage}
+                alt="The steps image"
               />
             </div>
 
@@ -50,4 +56,4 @@ const Spending = () => {
   );
 };
 
-export default Spending;
+export default FeatureSteps;

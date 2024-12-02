@@ -12,7 +12,7 @@ const Seamless = () => {
       className={`seamless-section ${styles.sectionPadding} bg-primary-100`}
     >
       <MaxWidthWrapper>
-        <div className="flex flex-col gap-y-12">
+        <div className="flex flex-col gap-y-10">
           <div className="text-center">
             <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
             <div>
@@ -22,7 +22,7 @@ const Seamless = () => {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-12 lg:gap-x-7 gap-x-5 lg:gap-y-7 gap-y-10">
+          <div className="grid grid-cols-12 lg:gap-x-7 gap-x-5 gap-y-7">
             <div
               className="relative lg:col-span-7 col-span-12 p-[2px] rounded-xl 
             bg-gradient-to-b from-non-neutral-400 to-non-neutral-300 overflow-hidden"

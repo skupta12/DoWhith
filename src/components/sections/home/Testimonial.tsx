@@ -14,6 +14,7 @@ const Testimonial = () => {
       <MaxWidthWrapper>
         <SliderWrapper
           slidesToShow={1}
+          autoplay
           className="border border-white/10 rounded-3xl bg-[#0b091f] relative"
         >
           {testimonial.map((item, i) => (

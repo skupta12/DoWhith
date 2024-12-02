@@ -6,7 +6,7 @@ import {
   Management,
   PhysicalCard,
   SaveTime,
-  Spending,
+  FeatureSteps,
   Testimonial,
 } from "@/components/sections/feature";
 import SecondaryCta from "@/components/sections/feature/SecondaryCta";
@@ -20,7 +20,7 @@ export default function Feature() {
       <Testimonial />
       <SaveTime />
       <Management />
-      <Spending />
+      <FeatureSteps />
       <PhysicalCard />
       <SecondaryCta />
       <LatestArticles />

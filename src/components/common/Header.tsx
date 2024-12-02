@@ -30,11 +30,11 @@ const Header = () => {
       />
       <header className={`${styles.headerStyles} mt-4`}>
         <div
-          className={`${styles.flexBetween} py-4`}
+          className={`${styles.flexBetween} sm:py-4 py-2`}
         >
           <div className="flex items-center lg:gap-x-14">
-            <Link onClick={() => isOpen(false)} href="/">
-              <Image width={172} height={40} src={Logo} alt="DoWhith logo" />
+            <Link className="sm:w-[172px] w-[142px] h-auto" onClick={() => isOpen(false)} href="/">
+              <Image src={Logo} alt="DoWhith logo" />
             </Link>
 
             {/* desktop nav */}
@@ -52,15 +52,15 @@ const Header = () => {
 
             {/* mobile nav */}
             <nav
-              className={`lg:hidden flex absolute bg-white rounded-md sm:left-10 left-4 
-            sm:right-10 right-4 z-[1] top-0 justify-start items-center ease-out
+              className={`lg:hidden flex absolute bg-white h-[580px] rounded-md left-0 
+             right-0 z-[1] p-4 top-0 justify-start ease-out
           ${
             !open
-              ? "transform -translate-y-full duration-0"
-              : "transform translate-y-[40%] duration-500"
+              ? "transform -translate-y-[103%] duration-0"
+              : "transform translate-y-[15%] duration-[550ms]"
           }`}
             >
-              <ul className="flex w-full flex-col gap-y-4 sm:p-4 p-3">
+              <ul className="flex w-full flex-col gap-y-4">
                 {nav.map((item, i) => (
                   <li key={i}>
                     <Link

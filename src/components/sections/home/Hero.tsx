@@ -8,7 +8,7 @@ import Bg1 from "/public/home/hero-bg.png";
 
 const Hero = () => {
   return (
-    <section className={`lg:pt-16 lg:pb-28 py-14 hero-section relative overflow-hidden`}>
+    <section className={`lg:pt-24 lg:pb-28 pt-32 md:pb-20 pb-14 hero-section relative overflow-hidden`}>
         <Image
           priority
           className="object-cover"

@@ -25,7 +25,8 @@ const config: Config = {
         },
         "non-neutral": {
           100: "#FAFAFA",
-          200: "rgba(255, 255, 255, 0.3)", // semi transparent color for header
+          200: "rgba(255, 255, 255, 0.5)", // semi transparent color for header
+          500: "rgba(255, 255, 255, 0.3)", // semi transparent color for header
           300: "#282347",
           400: "#160b5e",
 

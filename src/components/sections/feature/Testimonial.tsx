@@ -14,7 +14,10 @@ const Testimonial = () => {
       className={`feature-testimonial-section border-t ${styles.sectionPadding}`}
     >
       <MaxWidthWrapper>
-        <div className="feature-text text-center flex flex-col gap-y-6 mb-20">
+        <div
+          className="feature-text text-center flex flex-col 
+        gap-y-6 lg:mb-20 sm:mb-16 mb-10"
+        >
           <h2 className={`${styles.heading200V} max-w-[800px] mx-auto`}>
             Turn your spend management into a fast, secure
           </h2>
@@ -38,7 +41,7 @@ const Testimonial = () => {
         {featureTestimonial.map((item, i) => (
           <div className="outline-none" key={i}>
             <Image
-              className="rounded-2xl"
+              className="rounded-2xl w-full"
               width={370}
               height={486}
               src={item.src}

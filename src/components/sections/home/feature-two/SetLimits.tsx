@@ -2,7 +2,7 @@
 
 import styles from "@/style";
 import Image from "next/image";
-import { LinkButton } from "../../common/Buttons";
+import { LinkButton } from "../../../common/Buttons";
 import BgSetLimitsImage from "/public/home-features/bg-feature-3.png";
 import MainSetLimitsImage from "/public/home-features/main-feature-3.png";
 import ExtraSetLimitsImage from "/public/home-features/extra-feature-3.png";

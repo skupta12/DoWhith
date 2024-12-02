@@ -456,7 +456,7 @@ export const managementAccordion = [
   },
 ];
 
-export const spending = [
+export const featuresteps = [
   {
     id: 1,
     title: "Add employees",

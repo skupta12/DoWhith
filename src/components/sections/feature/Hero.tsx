@@ -11,12 +11,14 @@ import Spending from "/public/feature/spending.png";
 const Hero = () => {
   return (
     <section
-      className={`lg:py-28 md:py-20 py-14 feature-hero-section relative`}
+      className={`feature-hero-section lg:pt-24 lg:pb-28 pt-32 md:pb-20 pb-14 relative`}
     >
-      <div className="object-cover w-[46vw] h-[130%] absolute -top-32 
-      bottom-0 left-auto right-0 -z-[2]">
+      <div
+        className="object-cover w-[46vw] h-[130%] absolute -top-32 
+      bottom-0 left-auto right-0 -z-[2] lg:block hidden "
+      >
         <Image
-          className="object-cover w-full h-full lg:block hidden"
+          className="object-cover w-full h-full"
           src={HeroFeatureImage}
           alt="The Feature Image"
           priority
@@ -24,14 +26,16 @@ const Hero = () => {
       </div>
 
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 gap-0">
+        <div className="grid grid-cols-12">
           <div className="lg:col-span-6 col-span-12">
             <div
               className="inline-block rounded-full bg-gradient-to-r 
           from-neutral-100 to-primary-300 p-[1px] mb-4"
             >
               <div className="rounded-full bg-white px-4 py-[6px]">
-                <span className={`text-[14px] font-medium ${styles.flexItems} gap-x-3`}>
+                <span
+                  className={`text-[14px] font-medium ${styles.flexItems} gap-x-3`}
+                >
                   Watch our investment series{" "}
                   <span
                     className="bg-gradient-to-r from-primary-300 to-neutral-100 
@@ -44,7 +48,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-y-5">
-              <h1 className={styles.heading100}>
+              <h1 className={`${styles.heading100}`}>
                 Employee expense reimbursements
               </h1>
               <p className={styles.paragraph100}>
@@ -59,12 +63,18 @@ const Hero = () => {
                   type="button"
                 />
               </div>
-              <div className={styles.flexItems}>
+              <div className={`${styles.flexItems}`}>
                 <div className="inline-flex items-center gap-x-2 p-4">
                   {Array(5)
                     .fill(0)
                     .map((_, index) => (
-                      <Image width={16} height={16} key={index} src={BlackStar} alt="The black star" />
+                      <Image
+                        width={16}
+                        height={16}
+                        key={index}
+                        src={BlackStar}
+                        alt="The black star"
+                      />
                     ))}
                 </div>
                 <p className={styles.paragraph100}>772+ reviews</p>

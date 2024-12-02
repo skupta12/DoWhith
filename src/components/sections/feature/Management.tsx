@@ -11,7 +11,6 @@ import Image from "next/image";
 import ManagementImage from "/public/management.jpg";
 
 const Management = () => {
-  
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const handleToggle = (index: number) => {
@@ -23,7 +22,7 @@ const Management = () => {
       className={`management-section bg-primary-100 ${styles.sectionPadding}`}
     >
       <MaxWidthWrapper>
-        <div className="text-center mb-20">
+        <div className="text-center lg:mb-20 sm:mb-16 mb-10">
           <span className={`${styles.blueLabel} mb-3`}>Management</span>
           <h2
             className={`text-white max-w-[800px] mx-auto ${styles.heading200V}`}

@@ -10,7 +10,7 @@ const PhysicalCard = () => {
   return (
     <section className={`physicalcard-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
-        <div className="text-center mb-20">
+        <div className="text-center lg:mb-20 sm:mb-16 mb-10">
           <span className={`mb-3 ${styles.blueLabel}`}>Expense Card</span>
           <h2 className={`${styles.heading200V} max-w-[800px] mx-auto`}>
             Issue virtual & physical cards with built-in rules

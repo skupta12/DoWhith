@@ -2,7 +2,7 @@
 
 import styles from "@/style";
 import Image from "next/image";
-import { LinkButton } from "../../common/Buttons";
+import { LinkButton } from "../../../common/Buttons";
 import BgGetControlImage from "/public/home-features/bg-feature-2.png";
 import MainControlImage from "/public/home-features/main-feature-2.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
@@ -34,7 +34,7 @@ const ShowCase = () => {
                 height={577}
                 quality={85}
                 src={BgGetControlImage}
-                alt="background image"
+                alt="The background image"
               />
               <DynamicFramerPos
                 className="absolute sm:-bottom-20 -bottom-16 md:left-20 left-1/4"
@@ -50,7 +50,7 @@ const ShowCase = () => {
                     className="justify-self-end"
                     quality={85}
                     src={MainControlImage}
-                    alt="A nice mobile phone image"
+                    alt="The mobile image"
                   />
                 </div>
               </DynamicFramerPos>

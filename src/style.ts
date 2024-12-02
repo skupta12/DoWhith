@@ -1,5 +1,6 @@
 const styles = {
-    headerStyles: "mx-auto w-full max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md bg-non-neutral-200 z-[111]",
+  
+    headerStyles: "mx-auto w-[calc(100%-24px)] max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md z-[111] bg-non-neutral-500 fixed lg:relative top-0 left-0 right-0 backdrop-blur-[9px]",
     
     heading100: "text-primary-200 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-[1.2]",
 
@@ -22,8 +23,9 @@ const styles = {
     spotlightPaddingUp: "lg:pt-32 md:pt-20 pt-16",
     spotlightPaddingDown: "lg:pb-32 md:pb-20 pb-16",
   
-    sectionPadding: "lg:py-32 md:py-20 py-14",
-    sectionPaddingV1: "lg:pb-40 md:pb-20 pb-14", // pt removed
+    sectionPadding: "lg:py-32 md:py-20 py-[60px]",
+    sectionPaddingV2: "lg:py-30 md:py-20 py-[60px]",
+    sectionPaddingV1: "lg:pb-40 md:pb-20 pb-[60px]", // pt removed
 
     blueLabel: "bg-primary-300 text-white font-semibold px-3 py-1 rounded-full inline-block",
 
