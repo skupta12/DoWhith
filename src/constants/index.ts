@@ -502,6 +502,8 @@ export const blogs = [
     src: "/posts/post-image-1.jpg",
     url: "do-startups-valuations-matter-for-investment-returns",
     label: "Company Announcement",
+    author: "Mat Mursmark",
+    position: "Senior Product Designer"
   },
   {
     id: 2,
@@ -509,6 +511,8 @@ export const blogs = [
     src: "/posts/post-image-2.jpg",
     url: "12-powerful-valuations-addons-to-grow-your-business",
     label: "Company Finance tools & tech",
+    author: "Sarah Lin",
+    position: "Marketing Specialist"
   },
   {
     id: 3,
@@ -516,6 +520,8 @@ export const blogs = [
     src: "/posts/post-image-3.jpg",
     url: "10-top-spend-management-software-solutions-for-2024",
     label: "Expense management",
+    author: "David Chen",
+    position: "Financial Analyst"
   },
   {
     id: 4,
@@ -523,5 +529,7 @@ export const blogs = [
     src: "/posts/post-image-4.jpg",
     url: "do-startups-valuations-matter-for-investments",
     label: "Company Announcement",
-  },
-]
+    author: "Anna Lee",
+    position: "Content Strategist"
+  }
+];

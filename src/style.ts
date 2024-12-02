@@ -1,6 +1,6 @@
 const styles = {
   
-    headerStyles: "mx-auto w-[calc(100%-24px)] max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md z-[111] bg-non-neutral-500 fixed lg:relative top-0 left-0 right-0 backdrop-blur-[9px]",
+    headerStyles: "mx-auto w-[calc(100%-24px)] max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md z-[111] bg-non-neutral-500 fixed lg:relative top-0 left-0 right-0",
     
     heading100: "text-primary-200 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-[1.2]",
 
