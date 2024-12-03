@@ -22,11 +22,12 @@ const Header = () => {
     <>
       {/* custom gradient */}
       <Image
-        className="absolute top-0 left-0 object-cover opacity-[75%] -z-[1]"
+        className="absolute top-0 left-0 object-cover 
+        sm:opacity-[50%] opacity-[30%] -z-[1] w-[1920px] h-[800px]"
         priority
-        fill
+        // fill
         src={GradientBg}
-        alt="background gradient"
+        alt="The background gradient image"
       />
       <header className={`${styles.headerStyles} mt-4`}>
         <div

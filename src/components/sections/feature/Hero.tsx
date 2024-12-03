@@ -11,7 +11,7 @@ import Spending from "/public/feature/hero/spending.png";
 const Hero = () => {
   return (
     <section
-      className={`feature-hero-section lg:pt-24 lg:pb-28 pt-32 md:pb-20 pb-14 relative`}
+      className={`feature-hero-section ${styles.routeSectionPadding} relative`}
     >
       <div
         className="object-cover w-[46vw] h-[130%] absolute -top-32 

@@ -25,6 +25,7 @@ const styles = {
     sectionPadding: "lg:py-32 md:py-20 py-[60px]",
     sectionPaddingV2: "lg:py-30 md:py-20 py-[60px]",
     sectionPaddingV1: "lg:pb-40 md:pb-20 pb-[60px]", // pt removed
+    routeSectionPadding: "lg:pt-24 lg:pb-28 pt-32 md:pb-20 pb-[60px]",
 
     blueLabel: "bg-primary-300 text-white font-semibold px-3 py-1 rounded-full inline-block",
 

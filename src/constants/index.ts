@@ -195,7 +195,7 @@ export const testimonial = [
     alt: "Testimonial image 1",
     name: "David",
     position: "General Manager",
-    quote: "/testimonial/quotes.png",
+    quote: "/home/testimonial/quotes.png",
   },
   {
     id: 2,
@@ -205,7 +205,7 @@ export const testimonial = [
     alt: "Testimonial image 2",
     name: "Casey Kaspol",
     position: "General Manager",
-    quote: "/testimonial/quotes.png",
+    quote: "/home/testimonial/quotes.png",
   },
   {
     id: 3,
@@ -215,7 +215,7 @@ export const testimonial = [
     alt: "Testimonial image 1",
     name: "Casey Kaspol",
     position: "General Manager",
-    quote: "/testimonial/quotes.png",
+    quote: "/home/testimonial/quotes.png",
   },
 ];
 
@@ -406,29 +406,29 @@ export const featureTestimonial = [
 
   {
     id: 1,
-    src: "/feature-testimonial/feature-testimonial-1.jpg",
-    alt: "feature testimonial 1"
+    src: "/feature/testimonial/feature-testimonial-1.jpg",
+    alt: "feature testimonial image"
   },
   {
     id: 2,
-    src: "/feature-testimonial/feature-testimonial-2.jpg",
-    alt: "feature testimonial 2"
+    src: "/feature/testimonial/feature-testimonial-2.jpg",
+    alt: "feature testimonial image"
   },
   {
     id: 3,
-    src: "/feature-testimonial/feature-testimonial-4.jpg",
-    alt: "feature testimonial 4"
+    src: "/feature/testimonial/feature-testimonial-5.jpg",
+    alt: "feature testimonial image"
   },
   {
     id: 4,
-    src: "/feature-testimonial/feature-testimonial-5.jpg",
-    alt: "feature testimonial-5"
+    src: "/feature/testimonial/feature-testimonial-3.jpg",
+    alt: "feature testimonial image"
   },
 
   {
     id: 5,
-    src: "/feature-testimonial/feature-testimonial-2.jpg",
-    alt: "feature testimonial 1"
+    src: "/feature/testimonial/feature-testimonial-2.jpg",
+    alt: "feature testimonial image"
   },
 
 ]
@@ -499,38 +499,47 @@ export const blogs = [
   {
     id: 1,
     title: "Do startups valuations matter for investment returns?",
-    src: "/posts/post-image-1.jpg",
+    src: "/feature/posts/post-image-1.jpg",
     url: "do-startups-valuations-matter-for-investment-returns",
     label: "Company Announcement",
     author: "Mat Mursmark",
-    position: "Senior Product Designer"
+    authorsImage: "/feature/posts/authors-image-1.png",
+    position: "Senior Product Designer",
+    date: "March 19, 2024"
   },
   {
     id: 2,
     title: "12 powerful integrations & addons to grow your business",
-    src: "/posts/post-image-2.jpg",
+    src: "/feature/posts/post-image-2.jpg",
     url: "12-powerful-valuations-addons-to-grow-your-business",
     label: "Company Finance tools & tech",
     author: "Sarah Lin",
-    position: "Marketing Specialist"
+    authorsImage: "/feature/posts/authors-image-1.png",
+    position: "Marketing Specialist",
+    date: "November 3, 2024"
+    
   },
   {
     id: 3,
     title: "10 top spend management software solutions for 2024",
-    src: "/posts/post-image-3.jpg",
+    src: "/feature/posts/post-image-3.jpg",
     url: "10-top-spend-management-software-solutions-for-2024",
     label: "Expense management",
     author: "David Chen",
-    position: "Financial Analyst"
+    authorsImage: "/feature/posts/authors-image-1.png",
+    position: "Financial Analyst",
+    date: "May 10, 2024"
   },
   {
     id: 4,
     title: "Do startups valuations matter for investments",
-    src: "/posts/post-image-4.jpg",
+    src: "/feature/posts/post-image-4.jpg",
     url: "do-startups-valuations-matter-for-investments",
     label: "Company Announcement",
     author: "Anna Lee",
-    position: "Content Strategist"
+    authorsImage: "/feature/posts/authors-image-1.png",
+    position: "Content Strategist",
+    date: "April 27, 2024"
   }
 ];
 

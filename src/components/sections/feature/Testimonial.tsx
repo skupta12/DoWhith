@@ -41,9 +41,9 @@ const Testimonial = () => {
         {featureTestimonial.map(({ src, id, alt }) => (
           <div className="outline-none" key={id}>
             <Image
-              className="rounded-2xl w-full"
+              className="rounded-2xl w-full sm:h-auto h-[500px] object-cover"
               width={370}
-              height={486}
+              height={486}      
               src={src}
               alt={`${alt} ${id}`}
             />

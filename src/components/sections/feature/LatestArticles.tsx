@@ -27,6 +27,7 @@ const Post = () => {
                     className="rounded-lg w-full"
                     width={272}
                     height={177}
+                    quality={90}
                     src={src}
                     alt={`The post image ${id}`}
                   />
