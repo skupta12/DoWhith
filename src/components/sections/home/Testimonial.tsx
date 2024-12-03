@@ -58,7 +58,7 @@ const Testimonial = () => {
                         alt="the quotes image"
                       />
                       <div className="title">
-                        <h3 className={`${styles.heading300} text-white`}>
+                        <h3 className={`${styles.heading300L} text-white`}>
                           {item.name}
                         </h3>
                         <span className="sm:text-[18px] font-semibold text-white">

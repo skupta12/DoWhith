@@ -2,7 +2,7 @@ import styles from "@/style";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { BlackButton } from "./Buttons";
 import Image from "next/image";
-import BgCta from "/public/CTA.png";
+import BgCta from "/public/common/CTA.png";
 
 const PrimaryCta = () => {
   return (
@@ -13,7 +13,7 @@ const PrimaryCta = () => {
         <Image fill src={BgCta} alt="The background image of CTA" />
         <MaxWidthWrapper>
           <div className={`${styles.flexCenter} flex-col gap-y-10 text-center`}>
-            <h2 className={`${styles.heading200V} text-white max-w-[900px]`}>
+            <h2 className={`${styles.heading200L} text-white max-w-[900px]`}>
               Switch to smarter spending across your company.
             </h2>
             <BlackButton

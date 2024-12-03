@@ -1,13 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "/public/logo.png";
+import Logo from "/public/common/logo.png";
 import { nav } from "@/constants";
 import Link from "next/link";
 import { BlackButton, WhiteButton } from "./Buttons";
 import { useState } from "react";
 import styles from "@/style";
-import GradientBg from "/public/gradient-bg.png";
+import GradientBg from "/public/bgs/gradient-bg.png";
 
 const Header = () => {
   
@@ -22,9 +22,9 @@ const Header = () => {
     <>
       {/* custom gradient */}
       <Image
-        className="absolute top-0 left-0 object-cover opacity-[75%] w-[1920px] h-[750px] -z-[1]"
+        className="absolute top-0 left-0 object-cover opacity-[75%] -z-[1]"
         priority
-        // fill
+        fill
         src={GradientBg}
         alt="background gradient"
       />

@@ -2,7 +2,7 @@
 
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import Image from "next/image";
-import MoveLineImage from "/public/mov-sec/move-lines.png";
+import MoveLineImage from "/public/home/mov-sec/move-lines.png";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { movingIcons } from "@/constants";

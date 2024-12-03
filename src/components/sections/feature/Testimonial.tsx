@@ -18,7 +18,7 @@ const Testimonial = () => {
           className="feature-text text-center flex flex-col 
         gap-y-6 lg:mb-20 sm:mb-16 mb-10"
         >
-          <h2 className={`${styles.heading200V} max-w-[800px] mx-auto`}>
+          <h2 className={`${styles.heading200L} max-w-[800px] mx-auto`}>
             Turn your spend management into a fast, secure
           </h2>
           <p className={`${styles.paragraph100} max-w-[750px] mx-auto`}>

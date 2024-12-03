@@ -1,9 +1,9 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import Image from "next/image";
-import PhysicalCardImage from "/public/physical-card-image.png";
-import PhysicalBgImage from "/public/home-features/bg-feature-1.png";
-import PaymentReceivedImage from "/public/payment-received.png";
+import PhysicalCardImage from "/public/feature/physical-card-image.png";
+import PhysicalBgImage from "/public/home/home-features/bg-feature-1.png";
+import PaymentReceivedImage from "/public/feature/payment-received.png";
 import { physicalCards } from "@/constants";
 
 const PhysicalCard = () => {
@@ -12,7 +12,7 @@ const PhysicalCard = () => {
       <MaxWidthWrapper>
         <div className="text-center lg:mb-20 sm:mb-16 mb-10">
           <span className={`mb-3 ${styles.blueLabel}`}>Expense Card</span>
-          <h2 className={`${styles.heading200V} max-w-[800px] mx-auto`}>
+          <h2 className={`${styles.heading200L} max-w-[800px] mx-auto`}>
             Issue virtual & physical cards with built-in rules
           </h2>
         </div>

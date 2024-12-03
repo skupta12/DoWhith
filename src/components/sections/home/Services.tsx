@@ -10,7 +10,7 @@ const Services = () => {
         <div className="flex flex-col lg:gap-y-20 gap-y-10">
           <div className="flex flex-col gap-y-4 text-center">
             <h2
-              className={`${styles.heading200V} max-w-[850px] mx-auto`}
+              className={`${styles.heading200L} max-w-[850px] mx-auto`}
             >
               Make faster & smarter spending decisions
             </h2>
@@ -34,7 +34,7 @@ const Services = () => {
                   />
                 </div>
                 <div className="flex flex-col gap-y-4">
-                  <h3 className={styles.heading300}>{item.title}</h3>
+                  <h3 className={styles.heading300L}>{item.title}</h3>
                   <p className={styles.paragraph100}>{item.text}</p>
                 </div>
               </div>

@@ -1,9 +1,8 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
-import CtaImage from "/public/secondary-cta-image.png";
+import CtaImage from "/public/feature/secondary-cta-image.png";
 import Image from "next/image";
 import { BlackButton } from "@/components/common/Buttons";
-import { ArrowRight } from "lucide-react";
 
 const SecondaryCta = () => {
   return (
@@ -14,7 +13,7 @@ const SecondaryCta = () => {
         px-6 sm:py-10 py-8 items-center rounded-2xl"
         >
           <div className="cta-text lg:col-span-6 col-span-12 lg:pr-14">
-            <h2 className={`text-white mb-3 ${styles.heading200V}`}>
+            <h2 className={`text-white mb-3 ${styles.heading200L}`}>
               Contact our award winning team
             </h2>
             <p className={`text-white text-base text-opacity-90 mb-6`}>

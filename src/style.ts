@@ -2,18 +2,17 @@ const styles = {
   
     headerStyles: "mx-auto w-[calc(100%-24px)] max-w-[1330px] lg:px-10 md:px-8 px-4 rounded-md z-[111] bg-non-neutral-500 fixed lg:relative top-0 left-0 right-0",
     
-    heading100: "text-primary-200 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-[1.2]",
+    heading100L: "text-primary-200 lg:text-[70px] md:text-[52px] text-[42px] font-semibold leading-[1.1]",
+    heading100M: "lg:text-[58px] sm:text-[48px] text-[36px] font-semibold leading-[1.1]",
 
-    heading200: "lg:text-[42px] text-[34px] leading-[1.2] font-semibold",
-    heading200V: "lg:text-[58px] md:text-[48px] text-[36px] leading-[1.05] font-semibold",
+    heading200L: "lg:text-[58px] md:text-[48px] text-[36px] leading-[1.05] font-semibold",
+    heading200M: "lg:text-[42px] text-[34px] leading-[1.2] font-semibold",
     
-    heading300: "text-primary-200 lg:text-[24px] text-[22px] font-semibold leading-[1.4]",
-    heading300V: "text-primary-200 text-[20px] font-semibold leading-[1.4]",
-    // heading4: "lg:text-[22px] md:text-[18px] text-[17px] font-medium leading-tight",
-    // heading5: "lg:text-[18px] font-medium leading-tight",
-    // heading6: "text-[16px] font-medium leading-tight",
+    heading300L: "text-primary-200 lg:text-[24px] text-[22px] font-semibold leading-[1.4]",
+    heading300M: "text-primary-200 text-[20px] font-semibold leading-[1.4]",
+
     paragraph100: "font-normal text-primary-200 text-[18px] opacity-95 leading-[1.6]",
-    paragraph100V: "font-normal text-white sm:text-[18px] text-base leading-[1.6] opacity-[65%]",
+    paragraph100White: "font-normal text-white text-[18px] leading-[1.6] opacity-[65%]",
 
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",

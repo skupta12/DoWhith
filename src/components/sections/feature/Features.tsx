@@ -9,7 +9,7 @@ const ExploreFeatures = () => {
       <MaxWidthWrapper>
         <div className="text-center lg:mb-20 sm:mb-16 mb-10">
           <span className={`${styles.blueLabel} mb-3`}>Features Explored</span>
-          <h2 className={styles.heading200V}>Explore Our Powerful Features</h2>
+          <h2 className={styles.heading200L}>Explore Our Powerful Features</h2>
         </div>
         <div
           className="grid grid-cols-12 gap-y-10 sm:gap-x-12 
@@ -31,7 +31,7 @@ const ExploreFeatures = () => {
                 />
               </div>
 
-              <h3 className={styles.heading300V}>{item.title}</h3>
+              <h3 className={styles.heading300M}>{item.title}</h3>
               <p className={styles.paragraph100}>{item.text}</p>
             </div>
           ))}

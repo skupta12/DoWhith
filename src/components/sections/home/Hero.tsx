@@ -4,16 +4,17 @@ import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/home/hero.png";
-import Bg1 from "/public/home/hero-bg.png";
+// import Bg1 from "/public/bgs/bg-black.png";
 
 const Hero = () => {
   return (
-    <section className={`lg:pt-24 lg:pb-28 pt-32 md:pb-20 pb-14 hero-section relative overflow-hidden`}>
+    <section className={`lg:pt-16 lg:pb-28 pt-32 md:pb-20 pb-14 relative overflow-hidden`}>
         <Image
           priority
           className="object-cover"
           fill
-          src={Bg1}
+          quality={85}
+          src="https://cdn.prod.website-files.com/65a9f49b837859a8d466af31/65e93ae394b1b15990661894_g.png"
           alt="the main background image"
         />
       <MaxWidthWrapper>
@@ -33,7 +34,7 @@ const Hero = () => {
               </span>
             </div>
           </div>
-          <h1 className={`${styles.heading100} max-w-[750px]`}>
+          <h1 className={`${styles.heading100L} max-w-[750px]`}>
             Manage your money efficiently with DoWhith
           </h1>
           <p className={`${styles.paragraph100} max-w-[750px]`}>

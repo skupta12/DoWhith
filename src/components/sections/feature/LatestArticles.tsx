@@ -13,7 +13,7 @@ const Post = () => {
             <span className={` mb-3 ${styles.blueLabel}`}>
               Blogs & Insights
             </span>
-            <h2 className={styles.heading200V}>Latest Articles</h2>
+            <h2 className={styles.heading200L}>Latest Articles</h2>
           </div>
           <div className="grid grid-cols-12 gap-6">
             {blogs.map(({ id, title, src, url, label }) => (
@@ -31,7 +31,7 @@ const Post = () => {
                     alt={`The post image ${id}`}
                   />
                   <h3
-                    className={`mt-4 mb-5 hover:underline ${styles.heading300}`}
+                    className={`mt-4 mb-5 hover:underline ${styles.heading300L}`}
                   >
                     {title}
                   </h3>

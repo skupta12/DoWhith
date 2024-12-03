@@ -1,10 +1,10 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import Image from "next/image";
-import SeamlessImage2 from "/public/seamless/seamless-image-2.png";
-import SeamlessImage1 from "/public/seamless/seamless-image-1.png";
-import NeonLine from "/public/neon-line.png";
-import SeamlessBg from "/public/seamless/seamless-bg.png";
+import SeamlessImage2 from "/public/home/seamless/seamless-image-2.png";
+import SeamlessImage1 from "/public/home/seamless/seamless-image-1.png";
+import NeonLine from "/public/home/neon-line.png";
+import SeamlessBg from "/public/home/seamless/seamless-bg.png";
 
 const Seamless = () => {
   return (
@@ -16,7 +16,7 @@ const Seamless = () => {
           <div className="text-center">
             <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
             <div>
-              <h2 className={`${styles.heading200V} text-white`}>
+              <h2 className={`${styles.heading200L} text-white`}>
                 Seamless integration with your{" "}
                 <br className="sm:block hidden" /> accounting tools
               </h2>
@@ -34,11 +34,11 @@ const Seamless = () => {
               />
               <div className="rounded-xl bg-primary-100 p-8 h-full overflow-hidden">
                 <h3
-                  className={`${styles.heading300V} text-white opacity-80 mb-4`}
+                  className={`${styles.heading300M} text-white opacity-80 mb-4`}
                 >
                   Connect 10+ Integrations
                 </h3>
-                <p className={`${styles.paragraph100V} text-white opacity-70`}>
+                <p className={`${styles.paragraph100White}`}>
                   Seamlessly Connect 10+ Platforms with Ease. Simplify your
                   workflow and productivity.
                 </p>
@@ -61,12 +61,12 @@ const Seamless = () => {
                 />
                 <div className="p-8">
                   <h3
-                    className={`${styles.heading300V} text-white opacity-80 mb-4`}
+                    className={`${styles.heading300M} text-white opacity-80 mb-4`}
                   >
                     Connect 10+ Integrations
                   </h3>
                   <p
-                    className={`${styles.paragraph100V} text-white opacity-70`}
+                    className={`${styles.paragraph100White}`}
                   >
                     Seamlessly Connect 10+ Platforms with Ease. Simplify your
                     workflow and productivity.

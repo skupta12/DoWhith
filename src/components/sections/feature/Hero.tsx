@@ -3,10 +3,10 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import HeroFeatureImage from "/public/feature/hero-feature.jpg";
-import BlackStar from "/public/black-star.png";
-import MasterAccount from "/public/feature/master-account.png";
-import Spending from "/public/feature/spending.png";
+import HeroFeatureImage from "/public/feature/hero/hero-feature.jpg";
+import BlackStar from "/public/feature/hero/black-star.png";
+import MasterAccount from "/public/feature/hero/master-account.png";
+import Spending from "/public/feature/hero/spending.png";
 
 const Hero = () => {
   return (
@@ -48,7 +48,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-y-5">
-              <h1 className={`${styles.heading100}`}>
+              <h1 className={`${styles.heading100L}`}>
                 Employee expense reimbursements
               </h1>
               <p className={styles.paragraph100}>

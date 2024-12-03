@@ -8,7 +8,7 @@ import { managementAccordion } from "@/constants";
 import styles from "@/style";
 import { useState } from "react";
 import Image from "next/image";
-import ManagementImage from "/public/management.jpg";
+import ManagementImage from "/public/feature/management.jpg";
 
 const Management = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
@@ -25,7 +25,7 @@ const Management = () => {
         <div className="text-center lg:mb-20 sm:mb-16 mb-10">
           <span className={`${styles.blueLabel} mb-3`}>Management</span>
           <h2
-            className={`text-white max-w-[800px] mx-auto ${styles.heading200V}`}
+            className={`text-white max-w-[800px] mx-auto ${styles.heading200L}`}
           >
             Smarter management with real-time insights
           </h2>

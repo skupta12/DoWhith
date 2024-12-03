@@ -3,9 +3,9 @@
 import styles from "@/style";
 import Image from "next/image";
 import { LinkButton } from "../../../common/Buttons";
-import BgSetLimitsImage from "/public/home-features/bg-feature-3.png";
-import MainSetLimitsImage from "/public/home-features/main-feature-3.png";
-import ExtraSetLimitsImage from "/public/home-features/extra-feature-3.png";
+import BgSetLimitsImage from "/public/home/home-features/bg-feature-3.png";
+import MainSetLimitsImage from "/public/home/home-features/main-feature-3.png";
+import ExtraSetLimitsImage from "/public/home/home-features/extra-feature-3.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 
@@ -53,7 +53,7 @@ const SetLimits = () => {
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
             <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
-            <h2 className={`${styles.heading200V} mb-3`}>
+            <h2 className={`${styles.heading200L} mb-3`}>
               Set limits to help you stick to your budget
             </h2>
             <p className={`${styles.paragraph100} mb-3`}>

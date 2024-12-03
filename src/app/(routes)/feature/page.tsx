@@ -8,8 +8,9 @@ import {
   SaveTime,
   FeatureSteps,
   Testimonial,
+  SecondaryCta
 } from "@/components/sections/feature";
-import SecondaryCta from "@/components/sections/feature/SecondaryCta";
+
 
 export default function Feature() {
   return (

@@ -2,8 +2,8 @@ import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { steps } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
-import StepsImage from "/public/steps-image.jpg";
-import ReceiveImage from "/public/receive.png";
+import StepsImage from "/public/feature/steps-image.jpg";
+import ReceiveImage from "/public/feature/receive.png";
 
 const FeatureSteps = () => {
   return (
@@ -11,7 +11,7 @@ const FeatureSteps = () => {
       <MaxWidthWrapper>
         <div className="lg:mb-20 sm:mb-16 mb-10 text-center">
           <span className={`${styles.blueLabel} mb-3`}>How it works</span>
-          <h2 className={styles.heading200V}>
+          <h2 className={styles.heading200L}>
             Three steps to smarter spending
           </h2>
         </div>
@@ -29,7 +29,7 @@ const FeatureSteps = () => {
               >
                 {item.id}
               </span>
-              <h3 className={styles.heading300V}>{item.title}</h3>
+              <h3 className={styles.heading300M}>{item.title}</h3>
               <p className={styles.paragraph100}>{item.text}</p>
             </li>
           ))}

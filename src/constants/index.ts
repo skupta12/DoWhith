@@ -1,4 +1,4 @@
-
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const nav = [
   {
@@ -24,7 +24,7 @@ export const nav = [
   {
     id: 5,
     text: "Blog",
-    href: "/blog",
+    href: "/post",
   },
 ];
 
@@ -532,4 +532,27 @@ export const blogs = [
     author: "Anna Lee",
     position: "Content Strategist"
   }
+];
+
+export const mediaIcons = [
+  {
+    id: 1,
+    icon: Facebook,
+    href: "https://www.facebook.com",
+  },
+  {
+    id: 2,
+    icon: Twitter,
+    href: "https://x.com",
+  },
+  {
+    id: 3,
+    icon: Linkedin,
+    href: "https://www.linkedin.com",
+  },
+  {
+    id: 4,
+    icon: Instagram,
+    href: "https://www.instagram.com/",
+  },
 ];

@@ -2,12 +2,11 @@
 
 import styles from "@/style";
 import Image from "next/image";
-import BgSetLimitsImage from "/public/home-features/bg-feature-3.png";
-import MainSetLimitsImage from "/public/home-features/main-feature-3.png";
-import ExtraSetLimitsImage from "/public/home-features/extra-feature-3.png";
+import BgSetLimitsImage from "/public/home/home-features/bg-feature-3.png";
+import MainSetLimitsImage from "/public/home/home-features/main-feature-3.png";
+import ExtraSetLimitsImage from "/public/home/home-features/extra-feature-3.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
-import MarkImage from "/public/mark.png";
+import MarkImage from "/public/common/mark.png";
 
 const SaveTime = () => {
   return (
@@ -16,10 +15,10 @@ const SaveTime = () => {
         <div className="grid grid-cols-12 md:gap-y-0 gap-y-12 items-center">
           <div className={`col-span-12 md:col-span-6 lg:pr-24 md:pr-10`}>
             <span className={`mb-3 ${styles.blueLabel}`}>Manage</span>
-            <h2 className={`${styles.heading200} mb-6`}>
+            <h2 className={`${styles.heading200M} mb-6`}>
               Save time with faster and easier approval process
             </h2>
-            <h3 className={`${styles.heading300V} mb-4`}>
+            <h3 className={`${styles.heading300M} mb-4`}>
               Approve or reject the different invoices.
             </h3>
             <div className="flex flex-col gap-y-3">
