@@ -38,14 +38,14 @@ const Testimonial = () => {
         infinite
         slidesToShow={5}
       >
-        {featureTestimonial.map((item, i) => (
-          <div className="outline-none" key={i}>
+        {featureTestimonial.map(({ src, id, alt }) => (
+          <div className="outline-none" key={id}>
             <Image
               className="rounded-2xl w-full"
               width={370}
               height={486}
-              src={item.src}
-              alt={item.alt}
+              src={src}
+              alt={`${alt} ${id}`}
             />
           </div>
         ))}

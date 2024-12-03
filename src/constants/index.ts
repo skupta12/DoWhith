@@ -31,53 +31,53 @@ export const nav = [
 export const brands = [
   {
     id: 1,
-    src: "/brands/brand-1.png",
+    src: "/home/brands/brand-1.png",
     alt: "The brand image 1"
   },
   {
     id: 2,
-    src: "/brands/brand-2.png",
+    src: "/home/brands/brand-2.png",
     alt: "The brand image 2"
   },
   {
     id: 3,
-    src: "/brands/brand-3.png",
+    src: "/home/brands/brand-3.png",
     alt: "The brand image 3"
   },
   {
     id: 4,
-    src: "/brands/brand-4.png",
+    src: "/home/brands/brand-4.png",
     alt: "The brand image 4"
   },
   {
     id: 5,
-    src: "/brands/brand-5.png",
+    src: "/home/brands/brand-5.png",
     alt: "The brand image 5"
   },
   {
     id: 6,
-    src: "/brands/brand-2.png",
+    src: "/home/brands/brand-2.png",
     alt: "The brand image 6"
   },
 ]
 export const services = [
   {
     id: 1,
-    src: "/services/services-icon-1.png",
+    src: "/home/services/services-icon-1.png",
     alt: "services icon",
     title: "Compliance simplified",
     text: "Unit streamlines compliance so you can make your business at top.",
   },
   {
     id: 2,
-    src: "/services/services-icon-2.png",
+    src: "/home/services/services-icon-2.png",
     alt: "services icon",
     title: "Flexible & customizable",
     text: "Offer unique features and terms that work for your customers.",
   },
   {
     id: 3,
-    src: "/services/services-icon-3.png",
+    src: "/home/services/services-icon-3.png",
     alt: "services icon",
     title: "Built for scale",
     text: "Access a fast, reliable, and secure platform that is trusted",
@@ -105,7 +105,7 @@ export const steps = [
 export const movingIcons = [
   {
     id: 1,
-    src: "/mov-sec/approval-icon.png",
+    src: "/home/mov-sec/approval-icon.png",
     left: 57,
     top: 39,
     translateX: 500,
@@ -118,7 +118,7 @@ export const movingIcons = [
   },
   {
     id: 2,
-    src: "/mov-sec/budget-icon.png",
+    src: "/home/mov-sec/budget-icon.png",
     left: 60,
     top: 39,
     translateX: 500,
@@ -132,7 +132,7 @@ export const movingIcons = [
   },
   {
     id: 3,
-    src: "/mov-sec/invoice-icon.png",
+    src: "/home/mov-sec/invoice-icon.png",
     left: 60,
     top: 29,
     translateX: 500,
@@ -145,7 +145,7 @@ export const movingIcons = [
   },
   {
     id: 4,
-    src: "/mov-sec/payment-icon.png",
+    src: "/home/mov-sec/payment-icon.png",
     right: 47,
     top: 39,
     translateX: -500,
@@ -158,7 +158,7 @@ export const movingIcons = [
   },
   {
     id: 5,
-    src: "/mov-sec/report-icon.png",
+    src: "/home/mov-sec/report-icon.png",
     right: 50,
     top: 29,
     translateX: -500,
@@ -171,7 +171,7 @@ export const movingIcons = [
   },
   {
     id: 6,
-    src: "/mov-sec/treasury-icon.png",
+    src: "/home/mov-sec/treasury-icon.png",
     right: 50,
     top: 39,
     translateX: -500,
@@ -191,7 +191,7 @@ export const testimonial = [
     id: 1,
     title:
       "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
-    src: "/testimonial/testimonial-1.png",
+    src: "/home/testimonial/testimonial-1.png",
     alt: "Testimonial image 1",
     name: "David",
     position: "General Manager",
@@ -201,7 +201,7 @@ export const testimonial = [
     id: 2,
     title:
       "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
-    src: "/testimonial/testimonial-2.png",
+    src: "/home/testimonial/testimonial-2.png",
     alt: "Testimonial image 2",
     name: "Casey Kaspol",
     position: "General Manager",
@@ -211,7 +211,7 @@ export const testimonial = [
     id: 3,
     title:
       "We're loving it. This is simply unbelievable! I like it more and more each day because it makes my life a lot easier.",
-    src: "/testimonial/testimonial-1.png",
+    src: "/home/testimonial/testimonial-1.png",
     alt: "Testimonial image 1",
     name: "Casey Kaspol",
     position: "General Manager",
@@ -309,49 +309,49 @@ export const featureBrands = [
   {
     id: 1,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id: 2,
     title: "No more audit nightmares",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id: 3,
     title: "All at the same place",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id: 4,
     title: "Accounting made easy",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id:5,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id:6,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id:7,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
   {
     id:8,
     title: "Papertrail for every transaction",
-    src: "/mark.png",
+    src: "/common/mark.png",
     alt: "The mark icon",
   },
 
@@ -360,42 +360,42 @@ export const featureBrands = [
 export const exploreFeatures = [
   {
     id: 1,
-    icon: "/feature/explore-feature-1.png",
+    icon: "/feature/explore/explore-feature-1.png",
     title: "Digitise expense reports",
     text: "Create an expense reimbursement policy that staff can't help but follow. You set the rules and spending limits.",
     alt: "The feature explored list item icon",
   },
   {
     id: 2,
-    icon: "/feature/explore-feature-2.png",
+    icon: "/feature/explore/explore-feature-2.png",
     title: "Automate receipt capture",
     text: "Requesters can track their invoice the whole way. Finance teams and budget owners have complete oversight of all requests.",
     alt: "The feature explored list item icon",
   },
   {
     id: 3,
-    icon: "/feature/explore-feature-3.png",
+    icon: "/feature/explore/explore-feature-3.png",
     title: "Reconcile & report",
     text: "Any team member or supplier can submit an invoice by directly email, file upload, or by taking a photo with their phone.",
     alt: "The feature explored list item icon",
   },
   {
     id: 4,
-    icon: "/feature/explore-feature-4.png",
+    icon: "/feature/explore/explore-feature-4.png",
     title: "Digitise expense reports",
     text: "Create an expense reimbursement policy that staff can’t help but follow. You set the rules and spending limits.",
     alt: "The feature explored list item icon",
   },
   {
     id: 5,
-    icon: "/feature/explore-feature-5.png",
+    icon: "/feature/explore/explore-feature-5.png",
     title: "Reconcile & report",
     text: "Any team member or supplier can submit an invoice by directly email, file upload, or by taking a photo with their phone.",
     alt: "The feature explored list item icon",
   },
   {
     id: 6,
-    icon: "/feature/explore-feature-6.png",
+    icon: "/feature/explore/explore-feature-6.png",
     title: "Automate receipt capture",
     text: "Requesters can track their invoice the whole way. Finance teams and budget owners have complete oversight of all requests.",
     alt: "The feature explored list item icon",
