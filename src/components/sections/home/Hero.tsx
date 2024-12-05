@@ -4,7 +4,6 @@ import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/home/hero.png";
-// import Bg1 from "/public/bgs/bg-black.png";
 
 const Hero = () => {
   return (
