@@ -19,7 +19,14 @@ const PostDetails = ({ params }: { params: { url: string } }) => {
 
   if (!post) return <div>Not Found</div>;
 
-  const { title, src, label, author, authorsImage, position, date } = post;
+  const { 
+    title, 
+    src, 
+    label,
+     author, 
+     authorsImage, 
+     position, 
+     date } = post;
 
   return (
     <>

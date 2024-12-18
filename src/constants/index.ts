@@ -13,7 +13,7 @@ export const nav = [
   },
   {
     id: 3,
-    text: "Integration",
+    text: "Interation",
     href: "/integration",
   },
   {
