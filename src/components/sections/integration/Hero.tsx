@@ -9,14 +9,23 @@ import HeroIcon2 from "/public/integration/hero-icon-2.png";
 import HeroIcon3 from "/public/integration/hero-icon-3.png";
 import HeroIcon4 from "/public/integration/hero-icon-4.png";
 
-
 const Hero = () => {
   return (
     <section
-      className={`feature-hero-section ${styles.routeSectionPadding} relative`}
+      className={`feature-hero-section ${styles.routeSectionPadding} relative overflow-hidden`}
     >
+      <div className="absolute top-[75%] left-0 right-0 w-[105vw] h-[700px]">
+        <Image
+          priority
+          className="object-cover"
+          fill
+          quality={90}
+          src="https://cdn.prod.website-files.com/65a9f49b837859a8d466af31/65b48cc27db264a75dec9169_glass-abstract-gray.png"
+          alt="The details post image"
+        />
+      </div>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12">
+        <div className="grid grid-cols-12 gap-10">
           <div className="lg:col-span-6 col-span-12">
             <div
               className="inline-block rounded-full bg-gradient-to-r 
@@ -38,7 +47,7 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-y-5">
-              <h1 className={`${styles.heading100L} lg:text-[64px]`}>
+              <h1 className={`text-primary-200 lg:text-[64px] md:text-[52px] text-[42px] font-semibold leading-[1.1]`}>
                 Apps integrate all the tools you use to run your business
               </h1>
               <p className={styles.paragraph100}>
@@ -71,36 +80,90 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="lg:col-span-6 col-span-12">
-            <div className="integration-box gap-6">
-              <div className="integration-box-wrapper">
-              <div className="integration-card">
-                <Image src={HeroIcon1} width={40} height={40} alt={`The hero icon`} />
-                <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">Pricing Generator</h6>
-                <p className="text-base">Generate multi-currencies prices at current exchange rate in one click</p>
+          <div className="lg:col-span-6 col-span-12 lg:pl-10">
+            <div className="grid grid-cols-[1fr,1fr] gap-6">
+              <div className="flex gap-6 lg:mb-10" style={{ flexFlow: "column" }}>
+                <div
+                  className="bg-white flex justify-start 
+                  items-start p-7 rounded-lg shadow-sm"
+                  style={{ flexFlow: "column" }}
+                >
+                  <Image
+                    src={HeroIcon1}
+                    width={40}
+                    height={40}
+                    alt={`The hero icon 1`}
+                  />
+                  <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
+                    Pricing Generator
+                  </h6>
+                  <p className="text-base">
+                    Generate multi-currencies prices at current exchange rate in
+                    one click
+                  </p>
+                </div>
+                <div
+                  className="bg-white flex justify-start 
+                  items-start p-7 rounded-lg shadow-sm"
+                  style={{ flexFlow: "column" }}
+                >
+                  <Image
+                    src={HeroIcon2}
+                    width={40}
+                    height={40}
+                    alt={`The hero icon 2`}
+                  />
+                  <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
+                    Invoice & Customer Uploader
+                  </h6>
+                  <p className="text-base">
+                    Create an online store to sell your products with AI
+                  </p>
+                </div>
               </div>
-              <div className="integration-card">
-                <Image src={HeroIcon1} width={40} height={40} alt={`The hero icon`} />
-                <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">Invoice & Customer Uploader</h6>
-                <p className="text-base">Create an online store to sell your products with AI</p>
+              <div
+                className="flex gap-6 lg:justify-end lg:items-stretch"
+                style={{ flexFlow: "column" }}
+              >
+                <div
+                  className="bg-white flex justify-start 
+                  items-start p-7 rounded-lg shadow-sm"
+                  style={{ flexFlow: "column" }}
+                >
+                  <Image
+                    src={HeroIcon3}
+                    width={40}
+                    height={40}
+                    alt={`The hero icon 3`}
+                  />
+                  <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
+                    Reetail
+                  </h6>
+                  <p className="text-base">
+                    Create an online store to sell your products with AI
+                  </p>
+                </div>
+                <div
+                  className="bg-white flex p-7 justify-center 
+                  items-center rounded-lg shadow-sm"
+                  style={{ flexFlow: "column" }}
+                >
+                  <Image
+                    src={HeroIcon4}
+                    width={144}
+                    height={47}
+                    alt={`The hero icon`}
+                    className="mb-4"
+                  />
+                  <BlackButton
+                  className="text-[18px] py-[12px]"
+                  title="Connect"
+                  type="button"
+                />
+                </div>
               </div>
-              </div>
-                    <div className="integration-box-wrapper second-column">
-                    <div className="integration-card">
-                <Image src={HeroIcon1} width={40} height={40} alt={`The hero icon`} />
-                <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">Reetail</h6>
-                <p className="text-base">Create an online store to sell your products with AI</p>
-              </div>
-              <div className="integration-card flex-center">
-                <Image src={HeroIcon1} width={40} height={40} alt={`The hero icon`} />
-                <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">Reetail</h6>
-                {/* <p className="text-base">Create an online store to sell your products with AI</p> */}
-               
-              </div>
-                    </div>
-              
             </div>
-        </div>
+          </div>
         </div>
       </MaxWidthWrapper>
     </section>

@@ -48,7 +48,8 @@ const Hero = () => {
           />
         </div>
         <div className="flex justify-center">
-          <Image loading="eager" width={970} height={572} src={HeroImage} alt="The hero image" />
+          <Image loading="eager" width={970} height={572} 
+          src={HeroImage} alt="The hero image" />
         </div>
       </MaxWidthWrapper>
     </section>

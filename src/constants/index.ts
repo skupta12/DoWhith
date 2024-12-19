@@ -565,3 +565,151 @@ export const mediaIcons = [
     href: "https://www.instagram.com/",
   },
 ];
+
+export const integration = [
+  {
+    id: 1,
+    src: "/integration/hero-icon-1.png",
+    title: "Pricing Generator",
+    text: "Generate multi-currencies prices at current exchange rate in one click"
+  },
+  {
+    id: 2,
+    src: "/integration/hero-icon-2.png",
+    title: "Invoice & Customer Uploader",
+    text: "Bulk upload of all your Invoice and Customer data to your  account"
+  },
+  {
+    id: 3,
+    src: "/integration/hero-icon-3.png",
+    title: "Retail",
+    text: "Create an online store to sell your products with AI"
+  },
+  {
+    id: 4,
+    src: "/integration/hero-icon-4.png",
+    title: "",
+    text: ""
+  },
+]
+
+export const integrationCalendars = [
+  {
+    id: 2,
+    src: "/integration/integration-features/int-feature-image-1.png",
+    width: 49,
+    height: 40,
+    title: "Google",
+    text: "Enable your integration while use the above integration to maximise your products growth.",
+  },
+  {
+    id: 3,
+    src: "/integration/integration-features/int-feature-image-2.png",
+    width: 40,
+    height: 40,
+    title: "Office 365",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 4,
+    src: "/integration/integration-features/int-feature-image-3.png",
+    width: 40,
+    height: 40,
+    title: "Apple Calender",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+];
+
+export const integrationCalendarsSecond = [
+  {
+    id: 1,
+    src: "/integration/integration-features/int-feature-image-4.png",
+    width: 40,
+    height: 40,
+    title: "Todolist",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 2,
+    src: "/integration/integration-features/int-feature-image-5.png",
+    width: 42,
+    height: 40,
+    title: "Google Tasks",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 3,
+    src: "/integration/integration-features/int-feature-image-6.png",
+    width: 40,
+    height: 40,
+    title: "Microsoft To Do",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 4,
+    src: "/integration/integration-features/int-feature-image-3.png",
+    width: 42,
+    height: 40,
+    title: "Outlook Email",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 5,
+    src: "/integration/integration-features/int-feature-image-2.png",
+    width: 40,
+    height: 40,
+    title: "Zapier",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 6,
+    src: "/integration/integration-features/int-feature-image-1.png",
+    width: 49,
+    height: 40,
+    title: "Gmail",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 7,
+    src: "/integration/integration-features/int-feature-image-5.png",
+    width: 42,
+    height: 40,
+    title: "Notion",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 8,
+    src: "/integration/integration-features/int-feature-image-7.png",
+    width: 40,
+    height: 40,
+    title: "Monday.com",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+]
+
+export const videoConference = [
+  {
+    id: 1,
+    src: "/integration/integration-features/int-feature-image-1.png",
+    width: 49,
+    height: 40,
+    title: "Zoom",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 2,
+    src: "/integration/integration-features/int-feature-image-6.png",
+    width: 40,
+    height: 40,
+    title: "Google Meet",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+  {
+    id: 3,
+    src: "/integration/integration-features/int-feature-image-4.png",
+    width: 40,
+    height: 40,
+    title: "Microsoft Teams",
+    text: "Enable your integration while use the above integration to maximise your products growth",
+  },
+]

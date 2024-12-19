@@ -38,7 +38,7 @@ const PostDetails = ({ params }: { params: { url: string } }) => {
           priority
           className="object-cover"
           fill
-          quality={85}
+          quality={90}
           src="https://cdn.prod.website-files.com/65a9f49b837859a8d466af31/65b48cc27db264a75dec9169_glass-abstract-gray.png"
           alt="The details post image"
         />
