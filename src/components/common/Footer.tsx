@@ -30,16 +30,16 @@ const Footer = () => {
                 <BlackButton className="h-full" type="submit" title="Sign up" />
               </form>
               <div className="media-icons flex gap-x-3">
-                <Link href="/">
-                  <Facebook />
+                <Link aria-label="The facebook icon" href="/">
+                  <Facebook name="" />
                 </Link>
-                <Link href="/">
+                <Link aria-label="The twitter icon" href="/">
                   <Twitter />
                 </Link>
-                <Link href="/">
+                <Link aria-label="The linkedin icon" href="/">
                   <Linkedin />
                 </Link>
-                <Link href="/">
+                <Link aria-label="The instagram icon" href="/">
                   <Instagram />
                 </Link>
               </div>
