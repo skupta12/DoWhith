@@ -8,7 +8,6 @@ const Post = () => {
   return (
     <section className={styles.sectionPaddingV1}>
       <MaxWidthWrapper>
-        <div>
           <div className="articles-text mb-10">
             <span className={` mb-3 ${styles.blueLabel}`}>
               Blogs & Insights
@@ -41,7 +40,6 @@ const Post = () => {
               </Link>
             ))}
           </div>
-        </div>
       </MaxWidthWrapper>
     </section>
   );

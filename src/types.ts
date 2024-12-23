@@ -35,9 +35,13 @@ export type Icons = {
 };
 
 export type AccordionProps = {
+  id?: string;
   title: string;
   content: string;
-  isActive: boolean;
-  onToggle: () => void;
+  isActive?: boolean;
+  onToggle?: () => void;
   className?: string;
+  color: string;
+  bgColor: string;
+  style?: CSSProperties;
 }

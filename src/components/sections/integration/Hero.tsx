@@ -47,7 +47,8 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col gap-y-5">
-              <h1 className={`text-primary-200 lg:text-[64px] md:text-[52px] text-[42px] font-semibold leading-[1.1]`}>
+              <h1 className={`text-primary-200 lg:text-[64px] 
+                md:text-[52px] text-[42px] font-semibold leading-[1.1]`}>
                 Apps integrate all the tools you use to run your business
               </h1>
               <p className={styles.paragraph100}>

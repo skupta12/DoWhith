@@ -1,4 +1,4 @@
-// проблема с картинкой при открытии аккордиона
+
 
 "use client";
 
@@ -11,6 +11,7 @@ import Image from "next/image";
 import ManagementImage from "/public/feature/management.jpg";
 
 const Management = () => {
+
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const handleToggle = (index: number) => {
@@ -31,7 +32,7 @@ const Management = () => {
           </h2>
         </div>
         <div className="grid lg:grid-cols-[1.25fr,1fr] grid-cols-1 lg:gap-[78px] gap-10">
-          <div className="">
+          <div>
             <Image
               quality={90}
               className="object-cover w-full rounded-2xl"
@@ -41,10 +42,13 @@ const Management = () => {
               alt="The management image"
             />
           </div>
-          <div className="">
+          <div>
             {managementAccordion.map((item, i) => (
               <Accordion
                 key={item.id}
+                style={{ marginBottom: "24px" }}
+                bgColor="#0b091f"
+                color="white"              
                 title={item.title}
                 content={item.text}
                 isActive={activeIndex === i}

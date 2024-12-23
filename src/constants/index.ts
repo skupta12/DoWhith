@@ -713,3 +713,36 @@ export const videoConference = [
     text: "Enable your integration while use the above integration to maximise your products growth",
   },
 ]
+
+export const faqAccodion = [
+  {
+    id: 1,
+    title: "Do you have a free trial?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+  {
+    id: 2,
+    title: "DDo you offer any early startup discounts?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+  {
+    id: 3,
+    title: "Can I get a discount if I commit yearly?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+  {
+    id: 4,
+    title: "How long does it takes to get results?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+  {
+    id: 5,
+    title: "How do i do when i have a question?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+  {
+    id: 6,
+    title: "How will i be kept informed of my case?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+  },
+]

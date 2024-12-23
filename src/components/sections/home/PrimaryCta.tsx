@@ -1,6 +1,6 @@
 import styles from "@/style";
-import MaxWidthWrapper from "./MaxWidthWrapper";
-import { BlackButton } from "./Buttons";
+import MaxWidthWrapper from "../../common/MaxWidthWrapper";
+import { BlackButton } from "../../common/Buttons";
 import Image from "next/image";
 import BgCta from "/public/common/CTA.png";
 

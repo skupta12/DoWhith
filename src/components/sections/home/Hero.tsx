@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/home/hero.png";
 
+
 const Hero = () => {
   return (
     <section className={`lg:pt-16 lg:pb-28 pt-32 md:pb-20 pb-14 relative overflow-hidden`}>

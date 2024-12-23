@@ -8,13 +8,13 @@ const Features = () => {
     <section className={styles.sectionPadding}>
       <MaxWidthWrapper>
         <div className="flex lg:flex-row flex-col lg:gap-y-0 gap-y-10">
-          <div className="lg:w-[20%]">
+          <div className="lg:w-[25%]">
             <h6 className="lg:text-[24px] text-[22px] font-semibold">
               Calendars
             </h6>
           </div>
 
-          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[80%]">
+          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[75%]">
             {integrationCalendars.map(
               ({ id, src, title, text, width, height }) => (
                 <div
@@ -43,13 +43,13 @@ const Features = () => {
         <div className="divider w-full bg-slate-100 h-[2px] lg:my-16 my-12"/>
 
         <div className="flex lg:flex-row flex-col lg:gap-y-0 gap-y-10">
-          <div className="lg:w-[20%]">
+          <div className="lg:w-[25%]">
             <h6 className="lg:text-[24px] text-[22px] font-semibold">
               Calendars
             </h6>
           </div>
 
-          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[80%]">
+          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[75%]">
             {integrationCalendarsSecond.map(
               ({ id, src, title, text, width, height }) => (
                 <div
@@ -79,13 +79,13 @@ const Features = () => {
         <div className="divider w-full bg-slate-100 h-[2px] lg:my-16 my-12"/>
 
         <div className="flex lg:flex-row flex-col lg:gap-y-0 gap-y-10">
-          <div className="lg:w-[20%]">
+          <div className="lg:w-[25%]">
             <h6 className="lg:text-[24px] text-[22px] font-semibold">
               Video Conference
             </h6>
           </div>
 
-          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[80%]">
+          <div className="grid grid-cols-12 lg:gap-10 gap-6 lg:w-[75%]">
             {videoConference.map(
               ({ id, src, title, text, width, height }) => (
                 <div

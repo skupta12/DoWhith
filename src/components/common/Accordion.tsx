@@ -3,8 +3,15 @@ import { Minus, Plus } from "lucide-react";
 import { AccordionProps } from "@/types";
 import styles from "@/style";
 
-const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
-
+const Accordion = ({
+  title,
+  content,
+  isActive,
+  onToggle,
+  color,
+  bgColor,
+  style,
+}: AccordionProps) => {
   const contentSpace = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(
     isActive ? `${contentSpace.current?.scrollHeight}px` : "0px"
@@ -17,10 +24,20 @@ const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
   }, [isActive]);
 
   return (
-    <div onClick={() => !isActive ? onToggle() : null} className="mb-6 cursor-pointer">
-      <div className="border border-white/10 bg-primary-200 rounded-lg px-4 py-[22px]">
+    <div
+      onClick={() => (!isActive && onToggle ? onToggle() : null)}
+      className="cursor-pointer"
+      style={style}
+    >
+      <div
+        className={`border border-white/10 rounded-lg px-6 py-[22px]`}
+        style={{ backgroundColor: bgColor }}
+      >
         <div className={`outline-none ${styles.flexBetween}`}>
-          <span className="text-white font-semibold lg:text-[24px] text-[20px]">
+          <span
+            className={`font-semibold lg:text-[24px] text-[20px]`}
+            style={{ color: color }}
+          >
             {title}
           </span>
           <span
@@ -28,7 +45,7 @@ const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
               isActive ? "rotate-[180deg]" : ""
             }`}
           >
-            {isActive ? <Minus color="white" /> : <Plus color="white" />}
+            {isActive ? <Minus color={color} /> : <Plus color={color} />}
           </span>
         </div>
         <div
@@ -36,9 +53,11 @@ const Accordion = ({ title, content, isActive, onToggle }: AccordionProps) => {
           style={{ maxHeight: height }}
           className="overflow-hidden transition-max-height duration-500 ease-in-out"
         >
-          <p className="text-white text-base mt-3">{content}</p>
+          <p className={`text-base mt-3`} style={{ color: color }}>
+            {content}
+          </p>
         </div>
-        </div>
+      </div>
     </div>
   );
 };

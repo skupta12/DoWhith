@@ -1,4 +1,4 @@
-import { Features, Hero } from "@/components/sections/integration";
+import { Faq, Features, Hero, IntegrationCta } from "@/components/sections/integration";
 import { Brands } from "@/components/sections/feature";
   
   
@@ -8,6 +8,8 @@ import { Brands } from "@/components/sections/feature";
         <Hero />
         <Brands />
         <Features />
+        <IntegrationCta />
+        <Faq />
       </>
     );
   }
