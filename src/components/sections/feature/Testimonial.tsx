@@ -8,6 +8,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css/effect-coverflow';
+import { EffectCoverflow } from 'swiper/modules';
 
 const Testimonial = () => {
   return (
@@ -31,39 +34,46 @@ const Testimonial = () => {
       </MaxWidthWrapper>
 
       <Swiper
-        className="carousel mx-auto w-full max-w-[1920px]"
-        pagination={{ clickable: true }}
+        className="carousel mx-auto w-full max-w-[1920px] select-none"
         autoplay={{ delay: 3000 }}
+        modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
         speed={1000}
-        loop={true}
-        centeredSlides={true}
+        loop
         spaceBetween={20}
-        slidesPerView={4}
+        centeredSlides
+        effect="coverflow"
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 20,
+          modifier: 1,
+          slideShadows: false,
+        }}
         lazyPreloadPrevNext={1}
         breakpoints={{
           320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          1024: {
+          768: {
             slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 5,
             spaceBetween: 20,
           },
         }}
       >
         {featureTestimonial.map(({ src, id, alt }) => (
-          <SwiperSlide key={id}>
-            <div className="outline-none">
+          <SwiperSlide className="cursor-pointer" key={id}>
+            <div>
               <Image
-                className="rounded-2xl w-full"
+                className="rounded-2xl mx-auto object-cover"
                 width={370}
                 height={486}
                 src={src}
