@@ -15,6 +15,7 @@ const Testimonial = () => {
         <SliderWrapper
           slidesToShow={1}
           autoplay
+          arrows
           className="border border-white/10 rounded-3xl bg-[#0b091f] relative"
         >
           {testimonial.map((item, i) => (
@@ -42,7 +43,7 @@ const Testimonial = () => {
                   >
                     <Image
                       width={166}
-                      height={190}
+                      height={199}
                       src={item.src}
                       alt={item.alt}
                     />

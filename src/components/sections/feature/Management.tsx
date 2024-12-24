@@ -47,7 +47,7 @@ const Management = () => {
               <Accordion
                 key={item.id}
                 style={{ marginBottom: "24px" }}
-                bgColor="#0b091f"
+                bgColor="#0b091f"   
                 color="white"              
                 title={item.title}
                 content={item.text}

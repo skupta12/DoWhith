@@ -43,5 +43,6 @@ export type AccordionProps = {
   className?: string;
   color: string;
   bgColor: string;
+  activeBgColor?: string;
   style?: CSSProperties;
 }

@@ -431,6 +431,35 @@ export const featureTestimonial = [
     alt: "feature testimonial image"
   },
 
+  
+  {
+    id: 1,
+    src: "/feature/testimonial/feature-testimonial-1.jpg",
+    alt: "feature testimonial image"
+  },
+  {
+    id: 2,
+    src: "/feature/testimonial/feature-testimonial-2.jpg",
+    alt: "feature testimonial image"
+  },
+  {
+    id: 3,
+    src: "/feature/testimonial/feature-testimonial-5.jpg",
+    alt: "feature testimonial image"
+  },
+  {
+    id: 4,
+    src: "/feature/testimonial/feature-testimonial-3.jpg",
+    alt: "feature testimonial image"
+  },
+
+  {
+    id: 5,
+    src: "/feature/testimonial/feature-testimonial-2.jpg",
+    alt: "feature testimonial image"
+  },
+  
+
 ]
 
 export const managementAccordion = [

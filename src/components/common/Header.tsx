@@ -34,13 +34,14 @@ const Header = () => {
           className={`${styles.flexBetween} sm:py-4 py-2`}
         >
           <div className="flex items-center lg:gap-x-14">
-            <Link className="sm:w-[172px] w-[142px] h-auto" onClick={() => isOpen(false)} href="/">
+            <Link className="sm:w-[172px] w-[142px] h-auto" 
+            onClick={() => isOpen(false)} href="/">
               <Image src={Logo} alt="DoWhith logo" />
             </Link>
 
             {/* desktop nav */}
             <nav className="lg:block hidden">
-              <ul className="flex items-center gap-x-6">
+              <ul className="flex items-center gap-x-7">
                 {nav.map((item, i) => (
                   <li key={i}>
                     <Link className="text-[18px] font-medium" href={item.href}>

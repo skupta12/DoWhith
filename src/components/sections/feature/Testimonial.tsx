@@ -1,12 +1,14 @@
 "use client";
 
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import SliderWrapper from "@/components/common/SliderWrapper";
 import { featureTestimonial } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 
 const Testimonial = () => {
   return (
@@ -29,27 +31,34 @@ const Testimonial = () => {
         </div>
       </MaxWidthWrapper>
 
-      <SliderWrapper
-        className="carousel mx-auto w-full max-w-[1920px]"
-        dots
-        lgBreakpoint={1024}
-        mdBreakPoint={768}
-        autoplay
-        infinite
-        slidesToShow={5}
+      <Swiper
+        speed={1000}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        centeredSlides={true}
+        spaceBetween={20}
+        slidesPerView={5}
+        className="swiper-container"
+        lazyPreloadPrevNext={1}
+        
       >
         {featureTestimonial.map(({ src, id, alt }) => (
-          <div className="outline-none" key={id}>
-            <Image
-              className="rounded-2xl w-full sm:h-auto h-[500px] object-cover"
-              width={370}
-              height={486}      
-              src={src}
-              alt={`${alt} ${id}`}
-            />
-          </div>
+          <SwiperSlide key={id}>
+            <div className="outline-none">
+              <Image
+                className="rounded-2xl"
+                width={370}
+                height={485}
+                src={src}
+                alt={`${id}`}
+              />
+            </div>
+          </SwiperSlide>
         ))}
-      </SliderWrapper>
+      </Swiper>
     </section>
   );
 };

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <section className={styles.sectionPadding}>
+    <section className={`integration-features-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="flex lg:flex-row flex-col lg:gap-y-0 gap-y-10">
           <div className="lg:w-[25%]">
@@ -76,7 +76,7 @@ const Features = () => {
         
         </div>
 
-        <div className="divider w-full bg-slate-100 h-[2px] lg:my-16 my-12"/>
+        <div className="divider w-full bg-slate-100 h-[2px] lg:my-16 my-12" />
 
         <div className="flex lg:flex-row flex-col lg:gap-y-0 gap-y-10">
           <div className="lg:w-[25%]">

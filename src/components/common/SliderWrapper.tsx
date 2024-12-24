@@ -1,5 +1,7 @@
-import { ReactNode, useRef } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SliderWrapper = ({
   dots,
@@ -15,7 +17,7 @@ const SliderWrapper = ({
   dots?: boolean;
   slidesToShow: number;
   arrows?: boolean;
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
   infinite?: boolean;
   autoplay?: boolean;
@@ -28,40 +30,32 @@ const SliderWrapper = ({
     dots: dots,
     infinite: infinite,
     autoplay: autoplay,
-    speed: 600,
     slidesToShow: slidesToShow,
-    slidesToScroll: 1,
     arrows: arrows,
-    swipe: false,
     responsive: [
-      ...(lgBreakpoint
-        ? [
-            {
-              breakpoint: lgBreakpoint,
-              settings: {
-                slidesToShow: 3
-              }
-            }
-          ]
-        : []),
-      ...(mdBreakPoint
-        ? [
-            {
-              breakpoint: mdBreakPoint,
-              settings: {
-                slidesToShow: 1
-              }
-            }
-          ]
-        : [])
-    ]
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: lgBreakpoint || slidesToShow,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: mdBreakPoint || slidesToShow,
+        },
+      },
+    ],
   };
 
   return (
-    <Slider ref={sliderRef} {...settings} className={className}>
-      {children}
-    </Slider>
+    <div className={className}>
+      <Slider ref={sliderRef} {...settings}>
+        {children}
+      </Slider>
+    </div>
   );
 };
 
 export default SliderWrapper;
+;

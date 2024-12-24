@@ -7,7 +7,7 @@ import BgCtaImage from "/public/integration/integration-bg-cta.png";
 
 const IntegrationCta = () => {
   return (
-    <section className={`${styles.sectionPaddingV1}`}>
+    <section className={`integration-cta-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
         <div
           className="bg-primary-100 grid grid-cols-12 lg:px-20 sm:px-10 

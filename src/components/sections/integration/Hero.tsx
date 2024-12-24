@@ -25,7 +25,7 @@ const Hero = () => {
         />
       </div>
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 gap-10">
+        <div className="grid grid-cols-12 lg:gap-10 gap-6">
           <div className="lg:col-span-6 col-span-12">
             <div
               className="inline-block rounded-full bg-gradient-to-r 
@@ -82,8 +82,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="lg:col-span-6 col-span-12 lg:pl-10">
-            <div className="grid grid-cols-[1fr,1fr] gap-6">
-              <div className="flex gap-6 lg:mb-10" style={{ flexFlow: "column" }}>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
+              <div className="flex gap-6 lg:mb-6" style={{ flexFlow: "column" }}>
                 <div
                   className="bg-white flex justify-start 
                   items-start p-7 rounded-lg shadow-sm"

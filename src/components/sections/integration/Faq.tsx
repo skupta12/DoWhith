@@ -15,7 +15,7 @@ const Faq = () => {
   };
 
   return (
-    <section className={styles.sectionPaddingV1}>
+    <section className={`integration-accordion-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper className="max-w-[990px]">
         <div>
           <div>
@@ -24,8 +24,8 @@ const Faq = () => {
           <div className="mt-6">
             {faqAccodion.map(({ id, text, title }, i) => (
               <Accordion
-                // className="mb-2"
                 bgColor="white"
+                activeBgColor="#fafafa"
                 color="black"
                 title={title}
                 content={text}

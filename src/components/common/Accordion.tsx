@@ -11,7 +11,9 @@ const Accordion = ({
   color,
   bgColor,
   style,
+  activeBgColor = "#0b091f"
 }: AccordionProps) => {
+
   const contentSpace = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(
     isActive ? `${contentSpace.current?.scrollHeight}px` : "0px"
@@ -31,7 +33,7 @@ const Accordion = ({
     >
       <div
         className={`border border-white/10 rounded-lg px-6 py-[22px]`}
-        style={{ backgroundColor: bgColor }}
+        style={{ backgroundColor: !isActive ? bgColor : activeBgColor }}
       >
         <div className={`outline-none ${styles.flexBetween}`}>
           <span
