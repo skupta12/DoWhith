@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
 const Testimonial = () => {
   return (
     <section
@@ -32,28 +31,43 @@ const Testimonial = () => {
       </MaxWidthWrapper>
 
       <Swiper
+        className="carousel mx-auto w-full max-w-[1920px]"
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
         speed={1000}
         loop={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
         centeredSlides={true}
         spaceBetween={20}
-        slidesPerView={5}
-        className="swiper-container"
+        slidesPerView={4}
         lazyPreloadPrevNext={1}
-        
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        }}
       >
         {featureTestimonial.map(({ src, id, alt }) => (
           <SwiperSlide key={id}>
             <div className="outline-none">
               <Image
-                className="rounded-2xl"
+                className="rounded-2xl w-full"
                 width={370}
-                height={485}
+                height={486}
                 src={src}
-                alt={`${id}`}
+                alt={`${id} ${alt}`}
               />
             </div>
           </SwiperSlide>
