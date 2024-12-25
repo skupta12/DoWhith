@@ -13,7 +13,6 @@ const Testimonial = () => {
       <MaxWidthWrapper>
         <Carousel
           className="carousel border border-white/10 rounded-3xl bg-[#0b091f] relative"
-          loop
           space={20}
           slidesPerView={1}
           mdBreakpoint={1}

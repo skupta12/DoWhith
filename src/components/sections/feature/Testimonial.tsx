@@ -29,7 +29,6 @@ const Testimonial = () => {
 
       <Carousel
         className="carousel mx-auto w-full max-w-[1920px] select-none"   
-        loop
         space={20}
         centeredSlides      
         effect="coverflow"

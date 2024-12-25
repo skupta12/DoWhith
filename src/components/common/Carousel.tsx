@@ -9,24 +9,19 @@ import React from "react";
 const Carousel = ({ 
     children, 
     className,
-    loop,
     space,
     slidesPerView,
-    pagination,
     centeredSlides,
     effect,
     mdBreakpoint,
     smBreakpoint,
     xsBreakpoint,
-
 } : 
 { 
     children: ReactNode;
     className: string
-    loop?: boolean;
     space?: number;
     slidesPerView?: number;
-    pagination?: boolean;
     centeredSlides?: boolean;
     effect?: string;
     mdBreakpoint?: number;
@@ -37,13 +32,12 @@ const Carousel = ({
         modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
         navigation: { nextEl: ".arrow-left", prevEl: ".arrow-right" },
         speed: 800,
-        pagination: pagination ? { clickable: true } : false,
         autoplay: { delay: 5000 },
-        loop: loop,
+        loop: true,
         spaceBetween: space,
         slidesPerView: slidesPerView,
         centeredSlides: centeredSlides,
-        effect: effect, // Используем значение пропса effect или значение по умолчанию
+        effect: effect,
         ...(effect === "coverflow" && {
             coverflowEffect: {
                 rotate: 0,
