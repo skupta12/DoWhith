@@ -13,7 +13,12 @@ const Carousel = ({
     space,
     slidesPerView,
     pagination,
-    centeredSlides
+    centeredSlides,
+    effect,
+    mdBreakpoint,
+    smBreakpoint,
+    xsBreakpoint,
+
 } : 
 { 
     children: ReactNode;
@@ -23,7 +28,10 @@ const Carousel = ({
     slidesPerView?: number;
     pagination?: boolean;
     centeredSlides?: boolean;
-
+    effect?: string;
+    mdBreakpoint?: number;
+    smBreakpoint?: number;
+    xsBreakpoint?: number;
 }) => {
     const settings = {
         modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
@@ -35,14 +43,28 @@ const Carousel = ({
         spaceBetween: space,
         slidesPerView: slidesPerView,
         centeredSlides: centeredSlides,
-        effect: "coverflow",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 20,
-          modifier: 1,
-          slideShadows: false,
-        }
+        effect: effect, // Используем значение пропса effect или значение по умолчанию
+        ...(effect === "coverflow" && {
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 23,
+                modifier: 1,
+                slideShadows: false,
+            }
+        }),
+        breakpoints: {
+            320: {
+                slidesPerView: xsBreakpoint,
+            },
+            640: {
+                slidesPerView: smBreakpoint,
+            },
+            768: {
+              slidesPerView: mdBreakpoint,
+
+            },
+          },
     };
   
     return (

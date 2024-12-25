@@ -16,7 +16,9 @@ const Testimonial = () => {
           loop
           space={20}
           slidesPerView={1}
-          centeredSlides
+          mdBreakpoint={1}
+          smBreakpoint={1}
+          xsBreakpoint={1}
         >
           {testimonial.map((item, i) => (
             <div key={i} className="overflow-hidden md:py-[70px] py-[60px] md:px-[50px] px-[30px]">

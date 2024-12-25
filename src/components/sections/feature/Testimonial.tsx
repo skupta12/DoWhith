@@ -31,8 +31,11 @@ const Testimonial = () => {
         className="carousel mx-auto w-full max-w-[1920px] select-none"   
         loop
         space={20}
-        centeredSlides
-        slidesPerView={5}
+        centeredSlides      
+        effect="coverflow"
+        mdBreakpoint={5}
+        smBreakpoint={2}
+        xsBreakpoint={2}
       >
         {featureTestimonial.map(({ src, id, alt }) => (
             <div key={id}>

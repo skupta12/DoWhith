@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { Minus, Plus } from "lucide-react";
-import { AccordionProps } from "@/types";
+import { AccordionProps } from "@/definitions";
 import styles from "@/style";
 
 const Accordion = ({

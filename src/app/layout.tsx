@@ -4,18 +4,16 @@ import Header from "../components/common/Header";
 import { cabinetGrotesk } from "./fonts";
 import Cta from "@/components/sections/home/PrimaryCta";
 import Footer from "@/components/common/Footer";
+import { constructMetadata } from "@/lib/utils";
 
-export const metadata: Metadata = {
-  title: "DoWidth",
-  description: "Manage your money efficiently with DoWidth",
-};
+export const metadata = constructMetadata()
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  
+
   return (
     <html lang="en">
       <body className={`${cabinetGrotesk.className} antialiased`}>
