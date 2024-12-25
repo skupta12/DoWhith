@@ -60,19 +60,17 @@ export function LinkButton({ href = "/", type, title }: ButtonProps) {
 
   return (
     <Link
-      className=""
       onClick={() => router.push(href)}
       href={href}
     >
-      <div className={`${styles.flexItems} gap-x-2 group`}>
+      <div className={`${styles.flexItems} inline-flex group gap-x-2`}>
         <button
           type={type}
-          className={styles.linkButton}
+          className={`${styles.linkButton}`}
         >
           {title}
         </button>
-        <div className="inline-block group-hover:transform group-hover:translate-x-[4px] 
-        group-hover:translate-y-[-4px] duration-500">
+        <div className="duration-500 group-hover:translate-x-1 group-hover:-translate-y-[2px]">
           <ArrowUpRight size={24} className="text-primary-300" />
         </div>
        

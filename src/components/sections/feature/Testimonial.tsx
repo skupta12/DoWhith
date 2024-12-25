@@ -1,16 +1,10 @@
 "use client";
 
+import Carousel from "@/components/common/Carousel";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import { featureTestimonial } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import 'swiper/css/effect-coverflow';
-import { EffectCoverflow } from 'swiper/modules';
 
 const Testimonial = () => {
   return (
@@ -33,46 +27,17 @@ const Testimonial = () => {
         </div>
       </MaxWidthWrapper>
 
-      <Swiper
-        className="carousel mx-auto w-full max-w-[1920px] select-none"
-        autoplay={{ delay: 3000 }}
-        modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]}
-        speed={1000}
+      <Carousel
+        className="carousel mx-auto w-full max-w-[1920px] select-none"   
         loop
-        spaceBetween={20}
+        space={20}
         centeredSlides
-        effect="coverflow"
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 20,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        lazyPreloadPrevNext={1}
-        breakpoints={{
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
-        }}
+        slidesPerView={5}
       >
         {featureTestimonial.map(({ src, id, alt }) => (
-          <SwiperSlide className="cursor-pointer" key={id}>
-            <div>
+            <div key={id}>
               <Image
+                quality={100}
                 className="rounded-2xl mx-auto object-cover"
                 width={370}
                 height={486}
@@ -80,9 +45,8 @@ const Testimonial = () => {
                 alt={`${id} ${alt}`}
               />
             </div>
-          </SwiperSlide>
         ))}
-      </Swiper>
+      </Carousel>
     </section>
   );
 };
