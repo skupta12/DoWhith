@@ -775,3 +775,126 @@ export const faqAccodion = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
   },
 ]
+
+export const pricingOptions = [
+  {
+    id: 1,
+    yearlyPrice: "Free",
+    monthlyPrice: "Free",
+    type: "Starter",
+    billType: "Free for forever",
+    discount: undefined,
+    included: [
+      {
+        id: 1,
+        text: "Unlimited ideas & features",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 2,
+        text: "Unlimited feedback",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 3,
+        text: "AI Suggestions",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 4,
+        text: "CRM integration",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 5,
+        text: "Manage feedback from Slack & Hubspot",
+        icon: "/common/mark.png"
+      }, 
+      {
+        id: 6,
+        text: "Dedicated Slack Channel",
+        icon: "/common/mark.png"
+      }
+    ]
+  },
+  {
+    id: 2,
+    monthlyPrice: 30,
+    yearlyPrice: 16,
+    type: "Pro",
+    billType: "Billed annually",
+    discount: 20,
+    included: [
+      {
+        id: 1,
+        text: "Unlimited ideas & features",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 2,
+        text: "Unlimited feedback",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 3,
+        text: "AI Suggestions",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 4,
+        text: "CRM integration",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 5,
+        text: "Manage feedback from Slack & Hubspot",
+        icon: "/common/mark.png"
+      }, 
+      {
+        id: 6,
+        text: "Dedicated Slack Channel",
+        icon: "/common/mark.png"
+      }
+    ]
+  },
+  {
+    id: 3,
+    monthlyPrice: 40,
+    yearlyPrice: 30,
+    type: "Enterprise",
+    billType: "Billed annually",
+    discount: 20,
+    included: [
+      {
+        id: 1,
+        text: "Unlimited ideas & features",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 2,
+        text: "Unlimited feedback",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 3,
+        text: "AI Suggestions",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 4,
+        text: "CRM integration",
+        icon: "/common/mark.png"
+      },
+      {
+        id: 5,
+        text: "Manage feedback from Slack & Hubspot",
+        icon: "/common/mark.png"
+      }, 
+      {
+        id: 6,
+        text: "Dedicated Slack Channel",
+        icon: "/common/mark.png"
+      }
+    ]
+  },
+]

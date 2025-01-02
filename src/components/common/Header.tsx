@@ -11,8 +11,7 @@ import GradientBg from "/public/bgs/gradient-bg.png";
 
 const Header = () => {
   
-  const isClicked = false;
-  const [open, isOpen] = useState<boolean>(isClicked);
+  const [open, isOpen] = useState<boolean>(false);
 
   const handleClick = () => {
     isOpen((prev) => !prev);
@@ -75,16 +74,16 @@ const Header = () => {
                   </li>
                 ))}
                 <div className="flex items-center gap-4">
-                  <WhiteButton href={"/"} type="button" title="Log In" />
-                  <BlackButton href={"/"} type="button" title="Sign Up" />
+                  <WhiteButton href="/log-in" type="button" title="Log In" />
+                  <BlackButton href="/sign-up" type="button" title="Sign Up" />
                 </div>
               </ul>
             </nav>
           </div>
           <div className="flex items-center gap-x-5">
             <div className="md:flex hidden items-center gap-x-3">
-              <WhiteButton href={"/"} type="button" title="Log In" />
-              <BlackButton href={"/"} type="button" title="Sign Up" />
+              <WhiteButton href="/log-in" type="button" title="Log In" />
+              <BlackButton href="/sign-up" type="button" title="Sign Up" />
             </div>
             <div className="burger-menu lg:hidden block">
               <button

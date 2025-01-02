@@ -10,10 +10,10 @@ const IntegrationCta = () => {
     <section className={`integration-cta-section ${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
         <div
-          className="bg-primary-100 grid grid-cols-12 lg:px-20 sm:px-10 
+          className="bg-primary-100 grid grid-cols-12 gap-6 lg:px-20 sm:px-10 
         px-6 sm:py-10 py-8 items-center rounded-2xl"
         >
-          <div className="cta-text lg:col-span-6 col-span-12 lg:pr-14">
+          <div className="cta-text md:col-span-6 col-span-12 lg:pr-14">
             <h2
               className={`text-white mb-[23px] text-[20px] ${styles.heading200L}`}
             >
@@ -32,9 +32,10 @@ const IntegrationCta = () => {
               />
             </div>
           </div>
-          <div className="col-span-6 justify-self-end relative">
+          <div className="md:col-span-6 col-span-12 justify-self-end relative">
           <div>
               <Image
+                className="mx-auto"
                 width={675}
                 height={509}    
                 src={BgCtaImage}
