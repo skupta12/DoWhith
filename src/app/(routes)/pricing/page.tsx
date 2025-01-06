@@ -1,6 +1,5 @@
 import PricingOptions from '@/components/sections/pricing/Pricing'
 
-
 const Pricing = () => {
   return (
     <>

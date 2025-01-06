@@ -8,7 +8,7 @@ import MainControlImage from "/public/home/home-features/main-feature-1.png";
 import ExtraControlImage from "/public/home/home-features/extra-feature-1.png";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
-
+import { YStransition } from "@/components/common/motion/Transitions";
 
 const ShowCase = () => {
   return (
@@ -23,45 +23,52 @@ const ShowCase = () => {
                 height={524}
                 quality={85}
                 src={BgGetControlImage}
-                alt="feature glass abstract image"
+                alt="the features glass abstract image"
               />
-              <Image
-                quality={85}
-                className="object-cover absolute bottom-0 left-0 
-                lg:w-[472px] sm:w-[392px] w-[312px] h-[324px] sm:h-[415px] lg:h-[524px]"
 
-                src={MainControlImage}
-                alt="Feature image"
-              />
+              <YStransition y={60} margin="50%">
+                <Image
+                  quality={85}
+                  className="object-cover absolute bottom-0 left-0
+                    lg:w-[472px] sm:w-[392px] w-[312px] h-[324px] sm:h-[415px] lg:h-[524px]"
+                  src={MainControlImage}
+                  alt="The features main image"
+                />
+              </YStransition>
+
               <DynamicFramerPos
                 className="absolute bottom-5 sm:left-10 left-5"
                 xTransform={40}
                 yTransform={-40}
               >
-                <div
-                  className="lg:w-[254px] 
-                md:w-[287px] w-[227px] lg:h-[147px] md:h-[127px] 
-                h-[97px] object-contain"
-                >
-                  <Image
-                    quality={85}
-                    src={ExtraControlImage}
-                    alt="master account showing image"
-                  />
-                </div>
+                <YStransition scale={0.7}>
+                  <div
+                    className="lg:w-[254px] 
+                      md:w-[287px] w-[227px] lg:h-[147px] md:h-[127px] 
+                      h-[97px] object-contain"
+                  >
+                    <Image
+                      quality={85}
+                      src={ExtraControlImage}
+                      alt="master account showing image"
+                    />
+                  </div>
+                </YStransition>
               </DynamicFramerPos>
             </div>
           </div>
           <div className={`col-span-12 md:col-span-6 lg:pl-24 md:pl-10`}>
-            <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
-            <h2 className={`${styles.heading200L} mb-3`}>
-              Get control & visibility over every payment
-            </h2>
-            <p className={`${styles.paragraph100} mb-3`}>
-              Establish a request and approval process to increase spend
-              accountability without blocking employees.
-            </p>
-            <LinkButton title="Learn More" type="button" />
+            <YStransition y={60}>
+              <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
+              <h2 className={`${styles.heading200L} mb-3`}>
+                Get control & visibility over every payment
+              </h2>
+              <p className={`${styles.paragraph100} mb-3`}>
+                Establish a request and approval process to increase spend
+                accountability without blocking employees.
+              </p>
+              <LinkButton title="Learn More" type="button" />
+            </YStransition>
           </div>
         </div>
       </MaxWidthWrapper>

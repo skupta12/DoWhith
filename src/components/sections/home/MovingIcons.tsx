@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { movingIcons } from "@/constants";
 import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
 import { Icons } from "@/lib/definitions";
+import { YStransition } from "@/components/common/motion/Transitions";
 
 const MovingIcons = () => {
 
@@ -22,13 +23,14 @@ const MovingIcons = () => {
   return (
     <section className="icons-section lg:pb-32 pb-16 lg:block hidden">
       <MaxWidthWrapper>
+        <YStransition y={60} delay={0.07}>
         <div className="relative">
           <motion.div
             initial={{ opacity: 0 }}
             ref={ref}
             style={{ opacity: scrollYProgress }}
           >
-            <Image src={MoveLineImage} alt="move line image" />
+            <Image src={MoveLineImage} alt="The purple horizontal line" />
           </motion.div>
 
           {movingIcons.map((icon: Icons) => (
@@ -62,6 +64,7 @@ const MovingIcons = () => {
             </div>
           ))}
         </div>
+        </YStransition>
       </MaxWidthWrapper>
     </section>
   );

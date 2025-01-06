@@ -67,6 +67,7 @@ export const services = [
     alt: "services icon",
     title: "Compliance simplified",
     text: "Unit streamlines compliance so you can make your business at top.",
+    transitionDelay: .3
   },
   {
     id: 2,
@@ -74,6 +75,7 @@ export const services = [
     alt: "services icon",
     title: "Flexible & customizable",
     text: "Offer unique features and terms that work for your customers.",
+    transitionDelay: .4
   },
   {
     id: 3,
@@ -81,6 +83,7 @@ export const services = [
     alt: "services icon",
     title: "Built for scale",
     text: "Access a fast, reliable, and secure platform that is trusted",
+    transitionDelay: .5
   },
 ];
 
