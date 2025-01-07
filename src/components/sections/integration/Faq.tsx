@@ -5,9 +5,9 @@ import { faqAccodion } from "@/constants";
 import styles from "@/style";
 import { useState } from "react";
 import Accordion from "@/components/common/Accordion";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Faq = () => {
-  
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {
@@ -15,12 +15,14 @@ const Faq = () => {
   };
 
   return (
-    <section className={`integration-accordion-section ${styles.sectionPaddingV1}`}>
+    <section
+      className={`integration-accordion-section ${styles.sectionPaddingV1}`}
+    >
       <MaxWidthWrapper className="max-w-[990px]">
-        <div>
-          <div>
-            <h2 className={styles.heading200M}>Still have questions?</h2>
-          </div>
+        <Ytransition delay={0}>
+          <h2 className={styles.heading200M}>Still have questions?</h2>
+        </Ytransition>
+        <Ytransition delay={0.04}>
           <div className="mt-6">
             {faqAccodion.map(({ id, text, title }, i) => (
               <Accordion
@@ -35,7 +37,7 @@ const Faq = () => {
               />
             ))}
           </div>
-        </div>
+        </Ytransition>
       </MaxWidthWrapper>
     </section>
   );

@@ -4,18 +4,25 @@ import styles from "@/style";
 import Image from "next/image";
 import StepsImage from "/public/feature/steps-image.jpg";
 import ReceiveImage from "/public/feature/receive.png";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const FeatureSteps = () => {
   return (
     <section className={`howitworks-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="lg:mb-20 sm:mb-16 mb-10 text-center">
+          <Ytransition delay={0}>
           <span className={`${styles.blueLabel} mb-3`}>How it works</span>
+          </Ytransition>
+          <Ytransition delay={0.04}>
           <h2 className={styles.heading200L}>
             Three steps to smarter spending
           </h2>
+          </Ytransition>
+          
         </div>
-        <ul className="grid grid-cols-12 gap-6">
+        <Ytransition delay={0.08}>
+        <ul className="grid grid-cols-12 gap-6 mb-6">
           {steps.map((item, i) => (
             <li
               key={i}
@@ -32,8 +39,11 @@ const FeatureSteps = () => {
               <h3 className={styles.heading300M}>{item.title}</h3>
               <p className={styles.paragraph100}>{item.text}</p>
             </li>
-          ))}
-          <div className="col-span-12 relative">
+          ))} 
+        </ul>
+        </Ytransition>
+        <Ytransition delay={0.12}>
+        <div className="relative">
             <div>
               <Image
                 quality={90}
@@ -50,7 +60,8 @@ const FeatureSteps = () => {
               <Image src={ReceiveImage} alt="The receive image" />
             </div>
           </div>
-        </ul>
+        </Ytransition>
+      
       </MaxWidthWrapper>
     </section>
   );

@@ -3,6 +3,7 @@ import MaxWidthWrapper from "../../common/MaxWidthWrapper";
 import { BlackButton } from "../../common/Buttons";
 import Image from "next/image";
 import BgCta from "/public/common/CTA.png";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const PrimaryCta = () => {
   return (
@@ -12,17 +13,26 @@ const PrimaryCta = () => {
       >
         <Image fill src={BgCta} alt="The background image of CTA" />
         <MaxWidthWrapper>
-          <div className={`${styles.flexCenter} flex-col gap-y-10 text-center`}>
-            <h2 className={`${styles.heading200L} text-white max-w-[900px]`}>
-              Switch to smarter spending across your company.
-            </h2>
-            <BlackButton
-              className="text-[18px] py-[12px]"
-              title="Get Early Access"
-              type="button"
-              href="/"
-            />
-          </div>
+       
+            <div
+              className={`${styles.flexCenter} flex-col gap-y-10 text-center`}
+            >
+              <Ytransition>
+              <h2 className={`${styles.heading200L} text-white max-w-[900px]`}>
+                Switch to smarter spending across your company.
+              </h2>
+              </Ytransition>
+              <Ytransition delay={0.3}>
+              <BlackButton
+                className="text-[18px] py-[12px]"
+                title="Get Early Access"
+                type="button"
+                href="/"
+              />
+              </Ytransition>
+             
+            </div>
+       
         </MaxWidthWrapper>
       </section>
       <div

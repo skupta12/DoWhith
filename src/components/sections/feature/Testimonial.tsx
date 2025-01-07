@@ -2,6 +2,7 @@
 
 import Carousel from "@/components/common/Carousel";
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
+import { Ytransition } from "@/components/common/motion/Transitions";
 import { featureTestimonial } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
@@ -16,17 +17,25 @@ const Testimonial = () => {
           className="feature-text text-center flex flex-col 
         gap-y-6 lg:mb-20 sm:mb-16 mb-10"
         >
+          <Ytransition delay={0}>
           <h2 className={`${styles.heading200L} max-w-[800px] mx-auto`}>
             Turn your spend management into a fast, secure
           </h2>
+          </Ytransition>
+        
+          <Ytransition delay={0.04}>
           <p className={`${styles.paragraph100} max-w-[750px] mx-auto`}>
             Reimburse employee expenses seamlessly, without paperwork.
             Consolidate expense reimbursements alongside all other company
             spending.
           </p>
+          </Ytransition>
+        
         </div>
       </MaxWidthWrapper>
+      <Ytransition delay={0.08}>
 
+   
       <Carousel
         className="carousel mx-auto w-full max-w-[1920px] select-none"   
         space={20}
@@ -49,6 +58,7 @@ const Testimonial = () => {
             </div>
         ))}
       </Carousel>
+      </Ytransition>
     </section>
   );
 };

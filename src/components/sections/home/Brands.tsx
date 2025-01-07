@@ -6,7 +6,7 @@ import { brands } from "@/constants";
 import InfinitiveScroller from "@/components/common/motion/InfinitiveScroller";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { YStransition } from "@/components/common/motion/Transitions";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Brands = () => {
   return (
@@ -29,15 +29,15 @@ const Brands = () => {
             />
           </div>
           <div className="flex flex-col gap-y-10">
-            <YStransition y={60}>
+            <Ytransition y={60}>
               <h2
                 className={`${styles.heading200M} max-w-[850px] text-center mx-auto text-white`}
               >
                 Building the future of financial services with leading brands
               </h2>
-            </YStransition>
+            </Ytransition>
 
-            <YStransition y={60}>
+            <Ytransition y={60}>
               <div className="relative w-full overflow-hidden">
                 <InfinitiveScroller Sduration={25}>
                   {[...brands, ...brands].map((item, i) => (
@@ -56,7 +56,7 @@ const Brands = () => {
                   ))}
                 </InfinitiveScroller>
               </div>
-            </YStransition>
+            </Ytransition>
           </div>
         </MaxWidthWrapper>
       </section>

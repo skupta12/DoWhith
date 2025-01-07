@@ -4,7 +4,7 @@ import styles from "@/style";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import HeroImage from "/public/home/hero.png";
-import { YStransition } from "@/components/common/motion/Transitions";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Hero = () => {
   return (
@@ -24,7 +24,7 @@ const Hero = () => {
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-5 items-center text-center mb-14">
           {/* label */}
-          <YStransition y={60} delay={0}>
+          <Ytransition delay={0}>
             <div
               className="rounded-full bg-gradient-to-r 
           from-neutral-100 to-primary-300 p-[1px]"
@@ -43,29 +43,30 @@ const Hero = () => {
                 </span>
               </div>
             </div>
-          </YStransition>
-          <YStransition y={60} delay={0.05}>
+          </Ytransition>
+          <Ytransition delay={0.04}>
             <h1 className={`${styles.heading100L} max-w-[750px]`}>
               Manage your money efficiently with DoWhith
             </h1>
-          </YStransition>
-          <YStransition y={60} delay={0.10}>
+          </Ytransition>
+          <Ytransition delay={0.08}>
             <p className={`${styles.paragraph100} max-w-[750px]`}>
               Keep your business account and all your finance needs safely
               organized and manage money quickly, easily & efficiently.
             </p>
-          </YStransition>
-          <YStransition y={60} delay={0.20}>
+          </Ytransition>
+          <Ytransition delay={0.12}>
             <BlackButton
               className="text-[18px] py-[12px]"
               href="/"
               type="button"
               title="Get Early Access"
             />
-          </YStransition>
+          </Ytransition>
         </div>
-        <YStransition y={60} delay={0.20}>
-          <div className="flex justify-center">
+
+        <div className="flex justify-center">
+          <Ytransition delay={0.16}>
             <Image
               loading="eager"
               width={970}
@@ -73,8 +74,8 @@ const Hero = () => {
               src={HeroImage}
               alt="The hero image"
             />
-          </div>
-        </YStransition>
+          </Ytransition>
+        </div>
       </MaxWidthWrapper>
     </section>
   );

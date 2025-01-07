@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
+import { Ytransition } from "@/components/common/motion/Transitions";
 import { blogs } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
@@ -8,12 +9,11 @@ const Post = () => {
   return (
     <section className={styles.sectionPaddingV1}>
       <MaxWidthWrapper>
-          <div className="articles-text mb-10">
-            <span className={` mb-3 ${styles.blueLabel}`}>
-              Blogs & Insights
-            </span>
-            <h2 className={styles.heading200L}>Latest Articles</h2>
-          </div>
+        <div className="articles-text mb-10">
+          <span className={` mb-3 ${styles.blueLabel}`}>Blogs & Insights</span>
+          <h2 className={styles.heading200L}>Latest Articles</h2>
+        </div>
+        <Ytransition>
           <div className="grid grid-cols-12 gap-6">
             {blogs.map(({ id, title, src, url, label }) => (
               <Link
@@ -40,6 +40,7 @@ const Post = () => {
               </Link>
             ))}
           </div>
+        </Ytransition>
       </MaxWidthWrapper>
     </section>
   );

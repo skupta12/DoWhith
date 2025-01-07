@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
-import { YStransition } from "@/components/common/motion/Transitions";
+import { Ytransition } from "@/components/common/motion/Transitions";
 import { services } from "@/constants";
 import styles from "@/style";
 import Image from "next/image";
@@ -9,7 +9,7 @@ const Services = () => {
     <section className={`services-section ${styles.sectionPadding}`}>
       <MaxWidthWrapper>
         <div className="flex flex-col lg:gap-y-20 gap-y-10">
-          <YStransition y={60}>
+          <Ytransition>
             <div className="flex flex-col gap-y-4 text-center">
               <h2 className={`${styles.heading200L} max-w-[850px] mx-auto`}>
                 Make faster & smarter spending decisions
@@ -19,7 +19,7 @@ const Services = () => {
                 integration so you can build, launch, and grow faster.
               </p>
             </div>
-          </YStransition>
+          </Ytransition>
 
           <div className="grid grid-cols-12 gap-5">
             {services.map((item, i) => (
@@ -28,7 +28,7 @@ const Services = () => {
                 className={`lg:col-span-4 md:col-span-6 
                     col-span-12 `}
               >
-                <YStransition y={60} delay={item.transitionDelay}>
+                <Ytransition delay={item.transitionDelay}>
 
                 <div className="px-7 py-9 bg-neutral-50 
               bg-primary-600 h-full rounded-2xl">      
@@ -48,7 +48,7 @@ const Services = () => {
                   <p className={styles.paragraph100}>{item.text}</p>
                 </div>
                 </div>
-                </YStransition>
+                </Ytransition>
               </div>
             ))}
           </div>

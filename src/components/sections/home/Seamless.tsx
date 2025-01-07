@@ -5,6 +5,7 @@ import SeamlessImage2 from "/public/home/seamless/seamless-image-2.png";
 import SeamlessImage1 from "/public/home/seamless/seamless-image-1.png";
 import NeonLine from "/public/home/neon-line.png";
 import SeamlessBg from "/public/home/seamless/seamless-bg.png";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Seamless = () => {
   return (
@@ -14,14 +15,20 @@ const Seamless = () => {
       <MaxWidthWrapper>
         <div className="flex flex-col gap-y-10">
           <div className="text-center">
-            <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
-            <div>
+            <Ytransition>
+              <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
+            </Ytransition>
+
+            <Ytransition delay={0.26}>
               <h2 className={`${styles.heading200L} text-white`}>
                 Seamless integration with your{" "}
                 <br className="sm:block hidden" /> accounting tools
               </h2>
-            </div>
+            </Ytransition>
           </div>
+          <Ytransition>
+
+       
           <div className="grid grid-cols-12 lg:gap-x-7 gap-x-5 gap-y-7">
             <div
               className="relative lg:col-span-7 col-span-12 p-[2px] rounded-xl 
@@ -65,9 +72,7 @@ const Seamless = () => {
                   >
                     Connect 10+ Integrations
                   </h3>
-                  <p
-                    className={`${styles.paragraph100White}`}
-                  >
+                  <p className={`${styles.paragraph100White}`}>
                     Seamlessly Connect 10+ Platforms with Ease. Simplify your
                     workflow and productivity.
                   </p>
@@ -80,6 +85,7 @@ const Seamless = () => {
               </div>
             </div>
           </div>
+          </Ytransition>
         </div>
       </MaxWidthWrapper>
     </section>

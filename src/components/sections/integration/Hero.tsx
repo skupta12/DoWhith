@@ -8,6 +8,7 @@ import HeroIcon1 from "/public/integration/hero-icon-1.png";
 import HeroIcon2 from "/public/integration/hero-icon-2.png";
 import HeroIcon3 from "/public/integration/hero-icon-3.png";
 import HeroIcon4 from "/public/integration/hero-icon-4.png";
+import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Hero = () => {
   return (
@@ -27,6 +28,7 @@ const Hero = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 lg:gap-10 gap-6">
           <div className="lg:col-span-6 col-span-12">
+            <Ytransition delay={0}>
             <div
               className="inline-block rounded-full bg-gradient-to-r 
           from-neutral-100 to-primary-300 p-[1px] mb-4"
@@ -45,25 +47,34 @@ const Hero = () => {
                 </span>
               </div>
             </div>
+            </Ytransition>
+           
 
             <div className="flex flex-col gap-y-5">
+              <Ytransition delay={0.04}>
               <h1 className={`text-primary-200 lg:text-[64px] 
                 md:text-[52px] text-[42px] font-semibold leading-[1.1]`}>
                 Apps integrate all the tools you use to run your business
               </h1>
-              <p className={styles.paragraph100}>
+              </Ytransition>
+                <Ytransition delay={0.08}>
+                <p className={styles.paragraph100}>
                 Reimburse employee expenses seamlessly, without paperwork.
                 Consolidate expense reimbursements alongside all other company
                 spending.
               </p>
-              <div className="overflow-hidden">
+                </Ytransition>
+                <Ytransition delay={0.12}>
+                <div className="overflow-hidden">
                 <BlackButton
                   className="text-[18px] py-[12px]"
                   title="Get Early Access"
                   type="button"
                 />
               </div>
-              <div className={`${styles.flexItems}`}>
+                </Ytransition>
+                <Ytransition delay={0.16}>
+                <div className={`${styles.flexItems}`}>
                 <div className="inline-flex items-center gap-x-2 p-4">
                   {Array(5)
                     .fill(0)
@@ -79,9 +90,14 @@ const Hero = () => {
                 </div>
                 <p className={styles.paragraph100}>772+ reviews</p>
               </div>
+                </Ytransition>
+             
             </div>
           </div>
           <div className="lg:col-span-6 col-span-12 lg:pl-10">
+            <Ytransition>
+
+        
             <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
               <div className="flex gap-6 lg:mb-6" style={{ flexFlow: "column" }}>
                 <div
@@ -164,6 +180,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
+            </Ytransition>
           </div>
         </div>
       </MaxWidthWrapper>
