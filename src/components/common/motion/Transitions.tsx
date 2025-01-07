@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const Ytransition = ({
   children,
   className,
-  delay = 0.2,
+  delay,
   y = 60,
   margin,
   scale,

@@ -19,14 +19,14 @@ const Seamless = () => {
               <span className={`mb-3 ${styles.blueLabel}`}>Approval</span>
             </Ytransition>
 
-            <Ytransition delay={0.26}>
+            <Ytransition delay={0.04}>
               <h2 className={`${styles.heading200L} text-white`}>
                 Seamless integration with your{" "}
                 <br className="sm:block hidden" /> accounting tools
               </h2>
             </Ytransition>
           </div>
-          <Ytransition>
+          <Ytransition delay={0.08}>
 
        
           <div className="grid grid-cols-12 lg:gap-x-7 gap-x-5 gap-y-7">

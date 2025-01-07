@@ -14,7 +14,7 @@ const ExploreFeatures = () => {
               Features Explored
             </span>
           </Ytransition>
-          <Ytransition delay={0.26}>
+          <Ytransition delay={0.04}>
             <h2 className={styles.heading200L}>
               Explore Our Powerful Features
             </h2>
@@ -30,7 +30,7 @@ const ExploreFeatures = () => {
                 className="lg:col-span-4 sm:col-span-6 
               col-span-12 flex flex-col gap-y-4"
               >
-                <Ytransition>
+                <Ytransition delay={0.08}>
 
            
                 <div className="sm:mx-0 mx-auto">
