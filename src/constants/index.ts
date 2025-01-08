@@ -901,3 +901,20 @@ export const pricingOptions = [
     ]
   },
 ]
+
+export const loginForm = [
+  {
+    id: 1,
+    label: "Email",
+    placeholder: "Enter your email",
+    type: "text",
+    name: "email"
+  },
+  {
+    id: 2,
+    label: "Choose password",
+    placeholder: "Enter your password",
+    type: "text",
+    name: "password"
+  }
+]
