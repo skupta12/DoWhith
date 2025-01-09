@@ -31,6 +31,8 @@ const Header = () => {
         className="absolute top-0 left-0 object-cover 
         sm:opacity-[50%] opacity-[30%] -z-[1] w-[1920px] h-[800px]"
         priority
+        sizes="100vw"
+        quality={1}
         src={GradientBg}
         alt="The background gradient image"
       />

@@ -20,22 +20,20 @@ const ExploreFeatures = () => {
             </h2>
           </Ytransition>
         </div>
-          <div
-            className="grid grid-cols-12 gap-y-10 sm:gap-x-12 
+        <div
+          className="grid grid-cols-12 gap-y-10 sm:gap-x-12 
         gap-x-0 sm:text-start text-center"
-          >
-            {exploreFeatures.map((item, i) => (
-              <div
-                key={i}
-                className="lg:col-span-4 sm:col-span-6 
+        >
+          {exploreFeatures.map((item, i) => (
+            <div
+              key={i}
+              className="lg:col-span-4 sm:col-span-6 
               col-span-12 flex flex-col gap-y-4"
-              >
-                <Ytransition delay={0.08}>
-
-           
-                <div className="sm:mx-0 mx-auto">
+            >
+              <Ytransition delay={0.08}>
+                <div>
                   <Image
-                    className="mb-3"
+                    className="sm:mx-0 mx-auto"
                     src={item.icon}
                     alt={item.alt}
                     width={48}
@@ -43,12 +41,12 @@ const ExploreFeatures = () => {
                   />
                 </div>
 
-                <h3 className={styles.heading300M}>{item.title}</h3>
+                <h3 className={`${styles.heading300M} my-5`}>{item.title}</h3>
                 <p className={styles.paragraph100}>{item.text}</p>
-                </Ytransition>
-              </div>
-            ))}
-          </div>
+              </Ytransition>
+            </div>
+          ))}
+        </div>
       </MaxWidthWrapper>
     </section>
   );
