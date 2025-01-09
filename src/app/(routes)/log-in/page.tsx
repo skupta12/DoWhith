@@ -15,10 +15,9 @@ const page = () => {
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 lg:gap-x-16 lg:gap-y-0 gap-y-16 py-8">
           <div className="lg:col-span-6 col-span-12">
-            <Link href="/">
-              <Image width={172} height={40} src={Logo} alt="The logo icon" />
+            <Link className="sm:w-[172px] w-[40px] h-auto" href="/">
+              <Image width={172} height={40} src={Logo} alt="The DoWhith logo" />
             </Link>
-
             <div className="max-w-[484px] mx-auto mt-[100px]">
               <div className="text-center mb-6">
                 <div className="flex justify-center items-start gap-x-2 mb-1">

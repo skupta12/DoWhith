@@ -13,12 +13,13 @@ import Image from "next/image";
 import SecPostDetailsImage from "/public/feature/posts/secondary-post-image.png";
 import { LatestArticles } from "@/components/sections/feature";
 import { Ytransition } from "@/components/common/motion/Transitions";
+import NotFound from "@/app/not-found";
 
 const PostDetails = ({ params }: { params: { url: string } }) => {
   
   const post = blogs?.find((obj) => obj.url === params.url);
 
-  if (!post) return <div>Not Found</div>;
+  if (!post) return <NotFound />;
 
   const { title, src, label, author, authorsImage, position, date } = post;
 

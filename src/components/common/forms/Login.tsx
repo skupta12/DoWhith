@@ -14,7 +14,8 @@ const LoginForm = () => {
           <label className="font-semibold block">{label}</label>
           <input
             required
-            className="w-full focus:outline-none p-3 border rounded-md placeholder:text-[14px]"
+            className="w-full focus:outline-none p-3 border 
+            rounded-md placeholder:text-[14px]"
             type={type}
             name={name}
             placeholder={placeholder}

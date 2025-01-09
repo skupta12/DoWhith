@@ -1,6 +1,12 @@
 
 import { CSSProperties, ReactNode } from "react";
 
+export type NavbarProps = {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  closeMenu: () => void;
+}
+
 export type PosTypes = {
   children: ReactNode;
   xTransform?: number;
@@ -17,6 +23,7 @@ export type ButtonProps = {
   type: "button" | "submit" | "reset";
   title: string;
   style?: string;
+  onClick?: () => void;
 }
 
 export type Icons = {
