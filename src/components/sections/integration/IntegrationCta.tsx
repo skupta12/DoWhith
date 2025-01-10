@@ -29,7 +29,7 @@ const IntegrationCta = () => {
                 <BlackButton
                   className="text-[20px] py-[12px] rounded-[10px]"
                   title="Request Integration"
-                  href="/"
+                  href="/log-in"
                 />
               </div>
             </div>

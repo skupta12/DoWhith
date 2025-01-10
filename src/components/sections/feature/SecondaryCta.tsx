@@ -1,11 +1,19 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/common/MaxWidthWrapper";
 import styles from "@/style";
 import CtaImage from "/public/feature/secondary-cta-image.png";
 import Image from "next/image";
-import { BlackButton } from "@/components/common/Buttons";
+import { BlackButton, SubmitButton } from "@/components/common/Buttons";
 import { Ytransition } from "@/components/common/motion/Transitions";
+import { useState } from "react";
 
 const SecondaryCta = () => {
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+  };
+
   return (
     <section className={`${styles.sectionPaddingV1}`}>
       <MaxWidthWrapper>
@@ -22,20 +30,22 @@ const SecondaryCta = () => {
                 Lorem ipsum dolor sit amet. Qui eaque illum sit saepe repellat
                 aut omnis repellat in cupiditate galisum.
               </p>
-              <form className="relative">
+              <form onSubmit={handleSubmit} className="relative">
                 <input
+              
+                  required
                   placeholder="Enter your email"
                   className="pl-6 pr-[130px] py-[18px] bg-white
                 lg:w-full md:w-[280px] w-full rounded-lg placeholder:text-[14px] border-[1px]
                 focus:outline-none"
                   type="text"
+                  name="email"
                 />
                 <div
                   className="absolute lg:left-auto md:left-40 
-              right-1 top-[10px] overflow-hidden"
+              right-1 top-[10px]"
                 >
-                  <BlackButton
-                    href="/feature"
+                  <SubmitButton
                     className="rounded-[6px]"
                     title="Sign up"
                   />

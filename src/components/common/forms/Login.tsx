@@ -7,33 +7,80 @@ import Image from "next/image";
 import Link from "next/link";
 import GoogleIcon from "/public/common/google-icon.png";
 import FacebookIcon from "/public/common/facebook-icon.png";
+import { LoginFormSchema } from "@/lib/validators";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { z } from "zod";
+// import { LoginFormFieldsProps } from "@/lib/definitions";
 
 const LoginForm = () => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
-    alert("Passwords cannot be submitted");
+  const {
+    handleSubmit,
+    register,
+    setError,
+    formState: { errors, isSubmitting },
+  } = useForm<z.infer<typeof LoginFormSchema>>({
+    resolver: zodResolver(LoginFormSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
+  const onSubmit: SubmitHandler<z.infer<typeof LoginFormSchema>> = async (
+    data
+  ) => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      console.log(data);
+
+      setIsFormSubmitted(true);
+    } catch (error) {
+      setError("root", {
+        message: "This email is already taken",
+      });
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       {loginForm.map(({ id, label, name, placeholder, type }) => (
-        <div className="flex flex-col gap-y-2 mb-6" key={id}>
-          <label className="font-semibold block">{label}</label>
+        <div className="flex flex-col mb-6 relative" key={id}>
+          <label className="font-semibold block mb-2">{label}</label>
           <input
+            // autoComplete="off"
+            {...register(name)}
+            disabled={isSubmitting}
             required
-            className="w-full focus:outline-none p-3 border 
+            className="w-full focus:outline-none p-3 border
             rounded-md placeholder:text-[14px]"
             type={type}
             name={name}
             placeholder={placeholder}
-          />             
+          />
+          <div className="">
+          {errors[name] ? (
+            <span className="text-red-500 absolute top-0 right-0">{errors[name]?.message}</span>
+          ) : (
+           "" 
+          )}
+          </div>
+        
         </div>
       ))}
       <SubmitButton
-        className={`w-full text-[19px] py-[12px]`}
-        title="Sign in"
+        className={`w-full text-[19px] py-[12px] duration-300 ${isSubmitting ? "bg-gray-500" : ""}`}
+        title={isSubmitting ? "Loading..." : "Sign in"}
       />
+      <div className="relative">
+      {isFormSubmitted && (
+        <div className="text-red-500 text-[14px] absolute top-0 left-0">Disabled</div>
+      )}
+      </div>
+     
       <div className="relative">
         <div aria-hidden="true" className="absolute inset-0 flex items-center">
           <span className="w-full border-t border-t-black/10" />

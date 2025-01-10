@@ -5,6 +5,7 @@ import styles from "@/style";
 import Image from "next/image";
 
 const NotFound = () => {
+
   return (
     <section
       className={`relative overflow-hidden lg:pt-32 lg:pb-72 pt-32 pb-32`}

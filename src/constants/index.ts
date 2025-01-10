@@ -1,3 +1,4 @@
+import { LoginFormFieldsProps } from "@/lib/definitions";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const nav = [
@@ -13,7 +14,7 @@ export const nav = [
   },
   {
     id: 3,
-    text: "Interation",
+    text: "Integration",
     href: "/integration",
   },
   {
@@ -902,7 +903,7 @@ export const pricingOptions = [
   },
 ]
 
-export const loginForm = [
+export const loginForm: LoginFormFieldsProps[]  = [
   {
     id: 1,
     label: "Email",

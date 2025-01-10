@@ -37,6 +37,7 @@ const Footer = () => {
                   <BlackButton
                     className="h-full"
                     title="Sign up"
+                    href="/sign-up"
                   />
                 </form>
                 <div className="media-icons flex gap-x-3">

@@ -1,5 +1,8 @@
 
+import { loginForm } from "@/constants";
 import { CSSProperties, ReactNode } from "react";
+import { z } from "zod";
+import { LoginFormSchema } from "./validators";
 
 export type NavbarProps = {
   open: boolean;
@@ -52,3 +55,11 @@ export type AccordionProps = {
   activeBgColor?: string;
   style?: CSSProperties;
 }
+
+export type LoginFormFieldsProps = {
+  id: number;
+  label: string;
+  name: keyof z.infer<typeof LoginFormSchema>;
+  type: 'text' | 'email' | 'password';
+  placeholder: string;
+};

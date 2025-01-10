@@ -69,6 +69,7 @@ const Hero = () => {
                   <BlackButton
                     className="text-[18px] py-[12px]"
                     title="Get Early Access"
+                    href="/log-in"
                   />
                 </div>
               </Ytransition>
