@@ -51,13 +51,11 @@ const Navbar = ({ open, setOpen, closeMenu }: NavbarProps) => {
           <div className="md:hidden flex items-center gap-3">
             <WhiteButton
               href="/log-in"
-              type="button"
               title="Log In"
               onClick={closeMenu}
             />
             <BlackButton
               href="/sign-up"
-              type="button"
               title="Sign Up"
               onClick={closeMenu}
             />

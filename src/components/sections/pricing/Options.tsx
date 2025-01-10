@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const Options = () => {
     
-  const [billingType, setBillingType] = useState<string>("yearly");
+  const [billingType, setBillingType] = useState("yearly");
 
   const renderPricingOptions = () => {
     return pricingOptions.map(
@@ -93,7 +93,6 @@ const Options = () => {
             <BlackButton
               className="text-[18px] py-[12px] text-center w-full"
               href="/"
-              type="button"
               title="Get Started"
             />
           </div>

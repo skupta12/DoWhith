@@ -25,7 +25,7 @@ const IssueVirtual = () => {
                 Establish a request and approval process to increase spend
                 accountability without blocking employees.
               </p>
-              <LinkButton title="Learn More" type="button" />
+              <LinkButton title="Learn More" href="/feature" />
             </Ytransition>
           </div>
           <div className="col-span-12 md:col-span-6 order-1">

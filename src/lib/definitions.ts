@@ -20,7 +20,6 @@ export type PosTypes = {
 export type ButtonProps = {
   className?: string;
   href?: string;
-  type: "button" | "submit" | "reset";
   title: string;
   style?: string;
   onClick?: () => void;

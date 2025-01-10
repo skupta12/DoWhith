@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/common/Header";
 import { cabinetGrotesk } from "./fonts";
-import Cta from "@/components/sections/home/PrimaryCta";
+import Cta from "@/components/common/PrimaryCta";
 import Footer from "@/components/common/Footer";
 import { constructMetadata } from "@/lib/utils";
 

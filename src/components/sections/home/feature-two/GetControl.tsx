@@ -70,7 +70,7 @@ const GetControl = () => {
                 Establish a request and approval process to increase spend
                 accountability without blocking employees.
               </p>
-              <LinkButton title="Learn More" type="button" />
+              <LinkButton title="Learn More" href="/feature" />
             </Ytransition>
           </div>
         </div>

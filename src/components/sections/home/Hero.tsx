@@ -58,8 +58,7 @@ const Hero = () => {
           <Ytransition delay={0.12}>
             <BlackButton
               className="text-[18px] py-[12px]"
-              href="/"
-              type="button"
+              href="/log-in"
               title="Get Early Access"
             />
           </Ytransition>

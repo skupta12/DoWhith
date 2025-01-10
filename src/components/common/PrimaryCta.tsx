@@ -1,9 +1,9 @@
 import styles from "@/style";
-import MaxWidthWrapper from "../../common/MaxWidthWrapper";
-import { BlackButton } from "../../common/Buttons";
 import Image from "next/image";
 import BgCta from "/public/common/CTA.png";
 import { Ytransition } from "@/components/common/motion/Transitions";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import { BlackButton } from "./Buttons";
 
 const PrimaryCta = () => {
   return (
@@ -26,8 +26,7 @@ const PrimaryCta = () => {
               <BlackButton
                 className="text-[18px] py-[12px]"
                 title="Get Early Access"
-                type="button"
-                href="/"
+                href="/log-in"
               />
               </Ytransition>
              

@@ -69,7 +69,6 @@ const Hero = () => {
                 <BlackButton
                   className="text-[18px] py-[12px]"
                   title="Get Early Access"
-                  type="button"
                 />
               </div>
                 </Ytransition>
@@ -175,7 +174,6 @@ const Hero = () => {
                   <BlackButton
                   className="text-[18px] py-[12px]"
                   title="Connect"
-                  type="button"
                 />
                 </div>
               </div>

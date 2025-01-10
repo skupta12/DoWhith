@@ -14,7 +14,7 @@ const DynamicFramerPos = ({
 }: PosTypes) => {
   
   const ref = useRef<HTMLDivElement>(null);
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {

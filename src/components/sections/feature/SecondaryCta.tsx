@@ -37,8 +37,7 @@ const SecondaryCta = () => {
                   <BlackButton
                     href="/feature"
                     className="rounded-[6px]"
-                    type="button"
-                    title={"Sign up"}
+                    title="Sign up"
                   />
                 </div>
               </form>

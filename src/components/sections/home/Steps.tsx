@@ -36,9 +36,8 @@ const Steps = () => {
               <div className="overflow-hidden">
                 <BlackButton
                   className="text-[18px] py-[12px] border border-white/10"
-                  href=""
+                  href="/log-in"
                   title="Get Early Access"
-                  type="button"
                 />
               </div>
             </div>

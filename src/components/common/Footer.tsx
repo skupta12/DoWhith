@@ -36,7 +36,6 @@ const Footer = () => {
                   />
                   <BlackButton
                     className="h-full"
-                    type="submit"
                     title="Sign up"
                   />
                 </form>

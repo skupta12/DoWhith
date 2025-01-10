@@ -918,3 +918,34 @@ export const loginForm = [
     name: "password"
   }
 ]
+
+export const signUpForm = [
+  {
+    id: 1,
+    label: "First name*",
+    placeholder: "John",
+    type: "text",
+    name: "name"
+  },
+  {
+    id: 2,
+    label: "Last name*",
+    placeholder: "Doe",
+    type: "text",
+    name: "name"
+  },
+  {
+    id: 3,
+    label: "Email",
+    placeholder: "Enter your email",
+    type: "text",
+    name: "email"
+  },
+  {
+    id: 4,
+    label: "Choose password",
+    placeholder: "Minimum 8 characters",
+    type: "text",
+    name: "password"
+  },
+]

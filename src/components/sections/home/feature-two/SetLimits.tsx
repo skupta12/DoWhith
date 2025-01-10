@@ -66,7 +66,7 @@ const SetLimits = () => {
               We&apos;ll calculate limits to recommend you based on your
               spending predictions, or simply tell us how much you want to spend
             </p>
-            <LinkButton title="Learn More" type="button" />
+            <LinkButton title="Learn More" href="/feature" />
             </Ytransition>
          
           </div>

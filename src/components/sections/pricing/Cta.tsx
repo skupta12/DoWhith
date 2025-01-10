@@ -31,7 +31,6 @@ const Cta = () => {
             <BlackButton
               className="text-[20px] py-[12px] rounded-[10px]"
               title="Contact Us"
-              type="button"
               href="/"
             />
           </div>
