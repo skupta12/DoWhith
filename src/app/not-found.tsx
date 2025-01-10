@@ -37,7 +37,6 @@ const NotFound = () => {
             <BlackButton
               href="/"
               className="w-full text-[19px] py-[12px]"
-              type="button"
               title="Back to home"
             />
           </Ytransition>
