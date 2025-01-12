@@ -1,32 +1,77 @@
 "use client";
 
 import { signUpForm } from "@/constants";
-import React from "react";
-import { SubmitButton } from "../Buttons";
-import Image from "next/image";
-import Link from "next/link";
+import React, { useState } from "react";
+import { SocialButton, SubmitButton } from "../Buttons";
 import GoogleIcon from "/public/common/google-icon.png";
 import FacebookIcon from "/public/common/facebook-icon.png";
+import { SubmitHandler, useForm } from "react-hook-form";
+import { z } from "zod";
+import { RegisterFormSchema } from "@/lib/validators";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const SignUpForm = () => {
+  
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
-    alert("Passwords cannot be submitted");
+  const {
+    handleSubmit,
+    register,
+    setError,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<z.infer<typeof RegisterFormSchema>>({
+    resolver: zodResolver(RegisterFormSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+      firstName: "",
+      lastName: "",
+    },
+  });
+
+  const onSubmit: SubmitHandler<z.infer<typeof RegisterFormSchema>> = async (
+    data
+  ) => {
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 200));
+      alert("Passwords cannot be submitted");
+      console.log(data);
+      setIsFormSubmitted(true);
+      reset();
+    } catch (error) {
+      setError("root", {
+        message: "This email is already taken",
+      });
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="grid grid-cols-12 gap-x-4">
         {signUpForm.map(({ id, label, name, placeholder, type }, i) => (
           <div
             className={`${
               i === 0 || i === 1 ? "col-span-6" : "col-span-12"
-            } flex flex-col gap-y-2 mb-6`}
+            } flex flex-col mb-6 relative`}
             key={id}
           >
-            <label className="font-semibold block">{label}</label>
+            <div className="flex justify-between items-center mb-2">
+              <label className="font-semibold block">{label}</label>
+
+              <div>
+                {errors[name] ? (
+                  <span className="text-red-500 text-[14px] block">
+                    {errors[name]?.message}
+                  </span>
+                ) : (
+                  ""
+                )}
+              </div>
+            </div>
+
             <input
+              {...register(name)}
               required
               className="w-full focus:outline-none p-3 border 
             rounded-md placeholder:text-[14px]"
@@ -38,11 +83,13 @@ const SignUpForm = () => {
         ))}
       </div>
 
-        <SubmitButton
-          className="w-full text-[19px] py-[12px]"
-          title="Sign In"
-        />
-  
+      <SubmitButton
+        className={`w-full text-[19px] py-[12px] duration-300 ${
+          isSubmitting ? "bg-gray-500" : ""
+        }`}
+        title={isSubmitting ? "Loading..." : "Sign in"}
+      />
+
       <div className="relative">
         <div aria-hidden="true" className="absolute inset-0 flex items-center">
           <span className="w-full border-t border-t-black/10" />
@@ -52,36 +99,16 @@ const SignUpForm = () => {
         </div>
       </div>
       <div className="flex flex-col gap-y-4">
-        <Link href="https://google.com">
-          <button
-            className="flex gap-x-3 w-full justify-center items-center 
-          border focus:outline-none p-3 rounded-md font-semibold"
-            type="button"
-          >
-            <Image
-              width={24}
-              height={24}
-              src={GoogleIcon}
-              alt="The google icon"
-            />
-            Sign up with Google
-          </button>
-        </Link>
-        <Link href="https://facebook.com">
-          <button
-            className="flex gap-x-3 w-full justify-center items-center 
-          border focus:outline-none p-3 rounded-md font-semibold"
-            type="button"
-          >
-            <Image
-              width={24}
-              height={24}
-              src={FacebookIcon}
-              alt="The facebook icon"
-            />
-            Sign up with Facebook
-          </button>
-        </Link>
+        <SocialButton
+          title="Google"
+          src={GoogleIcon.src}
+          href="https://google.com"
+        />
+        <SocialButton
+          title="Facebook"
+          src={FacebookIcon.src}
+          href="https://facebook.com"
+        />
       </div>
     </form>
   );

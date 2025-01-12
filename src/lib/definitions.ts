@@ -2,7 +2,7 @@
 import { loginForm } from "@/constants";
 import { CSSProperties, ReactNode } from "react";
 import { z } from "zod";
-import { LoginFormSchema } from "./validators";
+import { LoginFormSchema, RegisterFormSchema } from "./validators";
 
 export type NavbarProps = {
   open: boolean;
@@ -26,6 +26,7 @@ export type ButtonProps = {
   title: string;
   style?: string;
   onClick?: () => void;
+  disabled?: boolean
 }
 
 export type Icons = {
@@ -63,3 +64,12 @@ export type LoginFormFieldsProps = {
   type: 'text' | 'email' | 'password';
   placeholder: string;
 };
+
+export type RegisterFormFieldsProps = {
+  id: number;
+  label: string;
+  name: keyof z.infer<typeof RegisterFormSchema>;
+  type: 'text' | 'email' | 'password';
+  placeholder: string;
+};
+

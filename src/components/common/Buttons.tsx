@@ -2,6 +2,7 @@ import styles from "@/style";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { ButtonProps } from "@/lib/definitions";
+import Image from "next/image";
 
 export function BlackButton({
   className,
@@ -68,7 +69,7 @@ export function LinkButton({ href = "/", title }: ButtonProps) {
 export function SubmitButton({
   className,
   title,
-  style
+  style,
 }: ButtonProps) {
 
   return (
@@ -85,3 +86,27 @@ export function SubmitButton({
     </div>
   );
 }
+
+export function SocialButton({
+  className,
+  title,
+  src,
+  href = "/",
+}: {
+  className?: string;
+  title: string;
+  src: string;
+  href: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="flex gap-x-3 w-full justify-center items-center 
+  border border-gray-300 focus:outline-none p-3 rounded-md font-semibold"
+    >
+      <Image width={24} height={24} src={src} alt={`The ${title} icon`} />
+      Sign up with {title}
+    </Link>
+  );
+}
+

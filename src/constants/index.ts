@@ -1,4 +1,4 @@
-import { LoginFormFieldsProps } from "@/lib/definitions";
+import { LoginFormFieldsProps, RegisterFormFieldsProps } from "@/lib/definitions";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const nav = [
@@ -920,20 +920,20 @@ export const loginForm: LoginFormFieldsProps[]  = [
   }
 ]
 
-export const signUpForm = [
+export const signUpForm: RegisterFormFieldsProps[] = [
   {
     id: 1,
     label: "First name*",
     placeholder: "John",
     type: "text",
-    name: "name"
+    name: "firstName"
   },
   {
     id: 2,
     label: "Last name*",
     placeholder: "Doe",
     type: "text",
-    name: "name"
+    name: "lastName"
   },
   {
     id: 3,
