@@ -51,7 +51,6 @@ const LoginForm = () => {
           <div className="flex justify-between items-center mb-2">
             <label className="font-semibold block">{label}</label>
 
-          
           </div>
           <input
             // autoComplete="off"
@@ -64,7 +63,7 @@ const LoginForm = () => {
             name={name}
             placeholder={placeholder}
           />
-            <div className="h-[10px]">
+            <div className="sm:h-[11px] h-[16px]">
               {errors[name] ? (
                 <span className="text-red-500 text-[14px] block">
                   {errors[name]?.message}

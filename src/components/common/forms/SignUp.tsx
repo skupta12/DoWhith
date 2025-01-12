@@ -71,7 +71,7 @@ const SignUpForm = () => {
               name={name}
               placeholder={placeholder}
             />
-                <div className="h-[10px]">
+               <div className="sm:h-[11px] h-[16px]">
                 {errors[name] ? (
                   <span className="text-red-500 text-[14px] block">
                     {errors[name]?.message}
