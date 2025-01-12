@@ -27,7 +27,7 @@ const page = () => {
               />
             </Link>
             <Ytransition>
-              <div className="max-w-[484px] mx-auto mt-[100px]">
+              <div className="max-w-[484px] mx-auto lg:mt-[100px] mt-[50px]">
                 <div className="text-center mb-6">
                   <div className="flex justify-center items-start gap-x-2 mb-1">
                     <h1 className="sm:text-[42px] text-[32px] font-semibold">

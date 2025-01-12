@@ -77,12 +77,13 @@ export function SubmitButton({
       className="relative overflow-hidden group transform hover:-translate-y-1 duration-500"  
     >
       <button className={`${styles.blackButton} ${className}`}>
-        <span className="relative z-[5]">{title}</span>
-      </button>
       <div
         className="absolute -bottom-3 left-1/2 transform cursor-pointer
       -translate-x-1/2 w-24 h-full bg-primary-300 blur-2xl group-hover:blur-xl duration-200"
       />
+        <span className="relative z-[5]">{title}</span>
+      </button>
+      
     </div>
   );
 }

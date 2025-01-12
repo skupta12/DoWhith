@@ -51,15 +51,7 @@ const LoginForm = () => {
           <div className="flex justify-between items-center mb-2">
             <label className="font-semibold block">{label}</label>
 
-            <div>
-              {errors[name] ? (
-                <span className="text-red-500 text-[14px] block">
-                  {errors[name]?.message}
-                </span>
-              ) : (
-                ""
-              )}
-            </div>
+          
           </div>
           <input
             // autoComplete="off"
@@ -72,6 +64,15 @@ const LoginForm = () => {
             name={name}
             placeholder={placeholder}
           />
+            <div className="h-[10px]">
+              {errors[name] ? (
+                <span className="text-red-500 text-[14px] block">
+                  {errors[name]?.message}
+                </span>
+              ) : (
+                ""
+              )}
+            </div>
         </div>
       ))}
       <SubmitButton
@@ -80,11 +81,6 @@ const LoginForm = () => {
         }`}
         title={isSubmitting ? "Loading..." : "Sign in"}
       />
-      {/* <div className="relative">
-      {isFormSubmitted && (
-        <div className="text-red-500 text-[14px] absolute top-0 left-0">Disabled</div>
-      )}
-      </div> */}
 
       <div className="relative">
         <div aria-hidden="true" className="absolute inset-0 flex items-center">

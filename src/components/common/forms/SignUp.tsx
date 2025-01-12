@@ -11,7 +11,7 @@ import { RegisterFormSchema } from "@/lib/validators";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const SignUpForm = () => {
-  
+
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   const {
@@ -35,7 +35,7 @@ const SignUpForm = () => {
   ) => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 200));
-      alert("Passwords cannot be submitted");
+      alert(`Passwords cannot be submitted`);
       console.log(data);
       setIsFormSubmitted(true);
       reset();
@@ -59,15 +59,7 @@ const SignUpForm = () => {
             <div className="flex justify-between items-center mb-2">
               <label className="font-semibold block">{label}</label>
 
-              <div>
-                {errors[name] ? (
-                  <span className="text-red-500 text-[14px] block">
-                    {errors[name]?.message}
-                  </span>
-                ) : (
-                  ""
-                )}
-              </div>
+          
             </div>
 
             <input
@@ -79,6 +71,15 @@ const SignUpForm = () => {
               name={name}
               placeholder={placeholder}
             />
+                <div className="h-[10px]">
+                {errors[name] ? (
+                  <span className="text-red-500 text-[14px] block">
+                    {errors[name]?.message}
+                  </span>
+                ) : (
+                  ""
+                )}
+              </div>
           </div>
         ))}
       </div>

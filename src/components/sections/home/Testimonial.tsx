@@ -10,9 +10,25 @@ import { Ytransition } from "@/components/common/motion/Transitions";
 
 const Testimonial = () => {
   return (
-    <section className={`py-2 bg-primary-100`}>
+    <section className={`bg-primary-100`}>
       <MaxWidthWrapper>
-        <Ytransition>
+        <Ytransition className="relative">
+          <div className="sm:flex absolute bottom-[72px] right-20 gap-x-5 hidden z-[111]">
+            <button
+              type="button"
+              className="duration-500 arrow-right hover:bg-neutral-50 text-white 
+                        hover:text-primary-200 border border-neutral-50 rounded-full p-3"
+            >
+              <ArrowLeft absoluteStrokeWidth size={24} />
+            </button>
+            <button
+              type="button"
+              className="duration-500 arrow-left hover:bg-neutral-50 text-white 
+                        hover:text-primary-200 border border-neutral-50 rounded-full p-3"
+            >
+              <ArrowRight absoluteStrokeWidth size={24} />
+            </button>
+          </div>
           <Carousel
             className="carousel border border-white/10 rounded-3xl bg-[#0b091f] relative"
             space={20}
@@ -69,22 +85,6 @@ const Testimonial = () => {
                             {item.position}
                           </span>
                         </div>
-                      </div>
-                      <div className="sm:flex hidden gap-4 ">
-                        <button
-                          type="button"
-                          className="duration-500 arrow-right hover:bg-neutral-50 text-white 
-                        hover:text-primary-200 border border-neutral-50 rounded-full p-3"
-                        >
-                          <ArrowLeft absoluteStrokeWidth size={24} />
-                        </button>
-                        <button
-                          type="button"
-                          className="duration-500 arrow-left hover:bg-neutral-50 text-white 
-                        hover:text-primary-200 border border-neutral-50 rounded-full p-3"
-                        >
-                          <ArrowRight absoluteStrokeWidth size={24} />
-                        </button>
                       </div>
                     </div>
                   </div>

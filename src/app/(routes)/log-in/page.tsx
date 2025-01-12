@@ -14,7 +14,7 @@ import {
 
 const page = () => {
   return (
-    <section className="log-in-section lg:pb-[110px]">
+    <section className="log-in-section lg:pb-[110px] overflow-y-hidden">
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 lg:gap-x-16 lg:gap-y-0 gap-y-16 py-8">
           <div className="lg:col-span-6 col-span-12">
@@ -27,7 +27,7 @@ const page = () => {
               />
             </Link>
             <Ytransition>
-              <div className="max-w-[484px] mx-auto mt-[100px]">
+              <div className="max-w-[484px] mx-auto lg:mt-[100px] mt-[50px]">
                 <div className="text-center mb-6">
                   <div className="flex justify-center items-start gap-x-2 mb-1">
                     <h1 className="sm:text-[42px] text-[32px] font-semibold">

@@ -945,7 +945,7 @@ export const signUpForm: RegisterFormFieldsProps[] = [
   {
     id: 4,
     label: "Choose password",
-    placeholder: "Minimum 8 characters",
+    placeholder: "Minimum 4 characters",
     type: "text",
     name: "password"
   },

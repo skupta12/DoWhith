@@ -55,7 +55,7 @@ const Hero = () => {
               organized and manage money quickly, easily & efficiently.
             </p>
           </Ytransition>
-          <Ytransition delay={0.12}>
+          <Ytransition className="overflow-hidden" delay={0.12}>
             <BlackButton
               className="text-[18px] py-[12px]"
               href="/log-in"
