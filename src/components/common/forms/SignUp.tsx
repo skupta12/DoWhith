@@ -53,7 +53,7 @@ const SignUpForm = () => {
           <div
             className={`${
               i === 0 || i === 1 ? "col-span-6" : "col-span-12"
-            } flex flex-col mb-6 relative`}
+            } flex flex-col mb-4 relative`}
             key={id}
           >
             <div className="flex justify-between items-center mb-2">
@@ -65,7 +65,7 @@ const SignUpForm = () => {
             <input
               {...register(name)}
               required
-              className="w-full focus:outline-none p-3 border 
+              className="w-full focus:outline-none sm:p-3 p-[10px] border border-gray-300
             rounded-md placeholder:text-[14px]"
               type={type}
               name={name}

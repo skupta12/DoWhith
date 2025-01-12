@@ -16,9 +16,9 @@ const page = () => {
   return (
     <section className="log-in-section lg:pb-[110px] overflow-y-hidden">
       <MaxWidthWrapper>
-        <div className="grid grid-cols-12 lg:gap-x-16 lg:gap-y-0 gap-y-16 py-8">
-          <div className="lg:col-span-6 col-span-12">
-            <Link className="sm:w-[172px] w-[40px] h-auto" href="/">
+        <div className="grid grid-cols-12 lg:gap-x-16 lg:gap-y-0 gap-y-16">
+          <div className="lg:col-span-6 col-span-12 pt-10 pb-12">
+            <Link className="inline-block" href="/">
               <Image
                 width={172}
                 height={40}

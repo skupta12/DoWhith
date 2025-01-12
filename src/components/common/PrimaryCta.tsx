@@ -17,12 +17,12 @@ const PrimaryCta = () => {
             <div
               className={`${styles.flexCenter} flex-col gap-y-10 text-center`}
             >
-              <Ytransition>
+              <Ytransition delay={0}>
               <h2 className={`${styles.heading200L} text-white max-w-[900px]`}>
                 Switch to smarter spending across your company.
               </h2>
               </Ytransition>
-              <Ytransition delay={0.3}>
+              <Ytransition delay={0.04}>
               <BlackButton
                 className="text-[18px] py-[12px]"
                 title="Get Early Access"

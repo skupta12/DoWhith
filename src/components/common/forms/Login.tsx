@@ -47,7 +47,7 @@ const LoginForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       {loginForm.map(({ id, label, name, placeholder, type }) => (
-        <div className="flex flex-col mb-6" key={id}>
+        <div className="flex flex-col mb-4" key={id}>
           <div className="flex justify-between items-center mb-2">
             <label className="font-semibold block">{label}</label>
 
@@ -58,7 +58,7 @@ const LoginForm = () => {
             {...register(name)}
             disabled={isSubmitting}
             required
-            className="w-full focus:outline-none p-3 border border-gray-300
+            className="w-full focus:outline-none sm:p-3 p-[10px] border border-gray-300
             rounded-md placeholder:text-[14px]"
             type={type}
             name={name}

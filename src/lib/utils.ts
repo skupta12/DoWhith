@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import { usePathname } from "next/navigation"
 
 export function constructMetadata({
     title = 'Dowhith - React and Next JS Template',
@@ -75,4 +76,5 @@ export function constructMetadata({
       totalPages,
     ];
   };
+
   
