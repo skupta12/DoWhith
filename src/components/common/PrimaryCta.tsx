@@ -13,16 +13,15 @@ const PrimaryCta = () => {
       >
         <Image fill src={BgCta} alt="The background image of CTA" />
         <MaxWidthWrapper>
-       
             <div
               className={`${styles.flexCenter} flex-col gap-y-10 text-center`}
             >
-              <Ytransition delay={0}>
+              <Ytransition>
               <h2 className={`${styles.heading200L} text-white max-w-[900px]`}>
                 Switch to smarter spending across your company.
               </h2>
               </Ytransition>
-              <Ytransition delay={0.04}>
+              <Ytransition>
               <BlackButton
                 className="text-[18px] py-[12px]"
                 title="Get Early Access"

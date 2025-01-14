@@ -14,11 +14,11 @@ import {
 
 const page = () => {
   return (
-    <section className="log-in-section lg:pb-[110px] overflow-y-hidden">
+    <section className="log-in-section pt-5 pb-[50px] overflow-y-hidden lg:h-[100svh]">
       <MaxWidthWrapper>
         <div className="grid grid-cols-12 lg:gap-x-16 lg:gap-y-0 gap-y-16">
-          <div className="lg:col-span-6 col-span-12 pt-10 pb-12">
-            <Link className="inline-block" href="/">
+          <div className="lg:col-span-6 col-span-12">
+            <Link href="/">
               <Image
                 width={172}
                 height={40}
@@ -27,7 +27,7 @@ const page = () => {
               />
             </Link>
             <Ytransition>
-              <div className="max-w-[484px] mx-auto lg:mt-[100px] mt-[50px]">
+              <div className="max-w-[484px] mx-auto lg:pt-[80px] pt-[50px]">
                 <div className="text-center mb-6">
                   <div className="flex justify-center items-start gap-x-2 mb-1">
                     <h1 className="sm:text-[42px] text-[32px] font-semibold">
@@ -61,8 +61,8 @@ const page = () => {
               alt="The log in image"
             />
             <Stransition scale={0.9}>
-              <div className="absolute bottom-5 left-5 right-5 bg-white p-[30px] rounded-lg">
-                <div className="flex flex-col gap-y-5">
+              <div className="absolute bottom-5 left-5 right-5 bg-white p-[30px] rounded-lg overflow-hidden">
+                <div className="flex flex-col gap-y-5 relative">
                   <Image
                     width={47}
                     height={31}
@@ -83,6 +83,10 @@ const page = () => {
                     </h6>
                     <p className="text-[20px]">UX Researcher</p>
                   </div>
+                  <div
+                    className="pointer-events-none z-[1] w-[400px] h-[300px] absolute -bottom-8 
+                  left-1/2 -translate-x-1/2 bg-red-600 rounded-full blur-xl opacity-[0.06]"
+                  />
                 </div>
               </div>
             </Stransition>

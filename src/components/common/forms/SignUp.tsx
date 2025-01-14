@@ -65,7 +65,7 @@ const SignUpForm = () => {
             <input
               {...register(name)}
               required
-              className="w-full focus:outline-none sm:p-3 p-[10px] border border-gray-300
+              className="w-full focus:outline-none sm:p-3 p-[11px] border border-gray-300
             rounded-md placeholder:text-[14px]"
               type={type}
               name={name}
