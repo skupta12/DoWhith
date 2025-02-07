@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>DoWhith - React & Next.js Template</h1>
+
+![Framer Motion](https://img.shields.io/badge/framer--motion-v11.2.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.2.3-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue) ![React Intersection Observer](https://img.shields.io/badge/react--intersection--observer-v9.10.3-orange)
+
+![do-whith](https://github.com/user-attachments/assets/5acc9f0c-76bb-4a84-9399-0313201245c1)
 
 ## Getting Started
 
