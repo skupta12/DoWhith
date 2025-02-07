@@ -1,5 +1,12 @@
 <h1>DoWhith - React & Next js Template</h1>
-![Framer Motion](https://img.shields.io/badge/framer--motion-v11.2.9-pink) ![Next.js](https://img.shields.io/badge/next-v14.2.3-yellowgreen) ![React](https://img.shields.io/badge/react-v18-blue) ![React Intersection Observer](https://img.shields.io/badge/react--intersection--observer-v9.10.3-orange) ![Slick Carousel](https://img.shields.io/badge/slick--carousel-v1.8.1-darkred) ![Swiper](https://img.shields.io/badge/swiper-v11.1.15-lightblue) ![Zod](https://img.shields.io/badge/zod-v3.24.1-purple)
+![Framer Motion](https://img.shields.io/badge/framer--motion-v11.2.9-pink)  
+![Next.js](https://img.shields.io/badge/next-v14.2.3-yellowgreen)  
+![React](https://img.shields.io/badge/react-v18-blue)  
+![React Intersection Observer](https://img.shields.io/badge/react--intersection--observer-v9.10.3-orange)  
+![Slick Carousel](https://img.shields.io/badge/slick--carousel-v1.8.1-darkred)  
+![Swiper](https://img.shields.io/badge/swiper-v11.1.15-lightblue)  
+![Zod](https://img.shields.io/badge/zod-v3.24.1-purple)  
+
 
 
 ## Getting Started
