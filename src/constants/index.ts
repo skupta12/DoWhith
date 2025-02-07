@@ -1,4 +1,4 @@
-import { LoginFormFieldsProps, RegisterFormFieldsProps } from "@/lib/definitions";
+import { LoginFormFieldsProps, RegisterFormFieldsProps } from "@/components/common/forms/definitions";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 export const nav = [

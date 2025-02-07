@@ -3,9 +3,15 @@
 import Link from "next/link";
 import { nav } from "@/constants";
 import { BlackButton, WhiteButton } from "./Buttons";
-import { NavbarProps } from "@/lib/definitions";
+
+interface NavbarProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  closeMenu: () => void;
+}
 
 const Navbar = ({ open, setOpen, closeMenu }: NavbarProps) => {
+
   return (
     <>
     

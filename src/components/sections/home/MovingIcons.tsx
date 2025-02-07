@@ -7,8 +7,22 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import { movingIcons } from "@/constants";
 import DynamicFramerPos from "@/components/common/motion/DynamicFramerPos";
-import { Icons } from "@/lib/definitions";
 import { Ytransition } from "@/components/common/motion/Transitions";
+
+type Icons = {
+  id: number;
+  left?: number;
+  right?: number;
+  top: number;
+  translateX: number;
+  translateY: number;
+  src: string;
+  title?: string;
+  zIndex?: number;
+  alt: string;
+  elStartOffset?: number;
+  elEndOffset?: number;
+};
 
 const MovingIcons = () => {
 

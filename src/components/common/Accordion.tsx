@@ -1,8 +1,19 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, CSSProperties } from "react";
 import { Minus, Plus } from "lucide-react";
-import { AccordionProps } from "@/lib/definitions";
 import styles from "@/style";
 
+interface AccordionProps {
+  id?: string;
+  title: string;
+  content: string;
+  isActive?: boolean;
+  onToggle?: () => void;
+  className?: string;
+  color: string;
+  bgColor: string;
+  activeBgColor?: string;
+  style?: CSSProperties;
+}
 const Accordion = ({
   title,
   content,

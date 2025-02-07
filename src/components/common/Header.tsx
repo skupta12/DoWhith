@@ -13,11 +13,8 @@ import { BlackButton, WhiteButton } from "./Buttons";
 const Header = () => {
   
   const [open, setOpen] = useState(false);
-
   const pathName = usePathname();
-
-  const hideHeader = pathName === "/log-in" || pathName === "/sign-up";
-
+  const hideHeader = pathName === "/log-in" || pathName === "/sign-up"; // temp
   const closeMenu = () => setOpen(false);
 
   useEffect(() => {

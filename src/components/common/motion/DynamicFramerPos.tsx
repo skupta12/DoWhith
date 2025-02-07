@@ -1,6 +1,16 @@
-import { PosTypes } from "@/lib/definitions";
+
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, ReactNode, CSSProperties } from "react";
+
+export type PosTypes = {
+  children: ReactNode;
+  xTransform?: number;
+  yTransform?: number;
+  className?: string;
+  style?: CSSProperties;
+  elStartOffset?: number;
+  elEndOffset?: number;
+};
 
 const DynamicFramerPos = ({
   children,

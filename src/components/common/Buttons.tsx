@@ -1,8 +1,17 @@
 import styles from "@/style";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { ButtonProps } from "@/lib/definitions";
+
 import Image from "next/image";
+
+ interface ButtonProps {
+  className?: string;
+  href?: string;
+  title: string;
+  style?: string;
+  onClick?: () => void;
+  disabled?: boolean
+}
 
 export function BlackButton({
   className,

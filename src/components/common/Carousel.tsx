@@ -37,16 +37,18 @@ const Carousel = ({
         spaceBetween: space,
         slidesPerView: slidesPerView,
         centeredSlides: centeredSlides,
-        effect: effect,
-        ...(effect === "coverflow" && {
-            coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 23,
-                modifier: 1,
-                slideShadows: false,
-            }
-        }),
+        
+        // TODO: bug with scrolling
+        // effect: effect,
+        // ...(effect === "coverflow" && {
+        //     coverflowEffect: {
+        //         rotate: 0,
+        //         stretch: 0,
+        //         depth: 23,
+        //         modifier: 1,
+        //         slideShadows: false,
+        //     }
+        // }),
         breakpoints: {
             320: {
                 slidesPerView: xsBreakpoint,
