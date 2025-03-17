@@ -43,6 +43,7 @@ const page = () => {
                   width={578}
                   height={400}
                   alt="The main post image"
+                  priority
                 />
               </div>
               <div className="lg:col-span-5 col-span-12">
@@ -65,6 +66,7 @@ const page = () => {
                       height={60}
                       src={AuthorsImage}
                       alt="The author's icon"
+                      priority
                     />
                     <div>
                       <h6 className="text-base font-semibold">Mat Mursmark</h6>
