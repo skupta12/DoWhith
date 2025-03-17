@@ -85,6 +85,7 @@ const Hero = () => {
                         key={index}
                         src={BlackStar}
                         alt="The black star"
+                        priority
                       />
                     ))}
                 </div>
@@ -110,6 +111,7 @@ const Hero = () => {
                     width={40}
                     height={40}
                     alt={`The hero icon 1`}
+                    priority
                   />
                   <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
                     Pricing Generator
@@ -129,6 +131,7 @@ const Hero = () => {
                     width={40}
                     height={40}
                     alt={`The hero icon 2`}
+                    priority
                   />
                   <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
                     Invoice & Customer Uploader
@@ -152,6 +155,7 @@ const Hero = () => {
                     width={40}
                     height={40}
                     alt={`The hero icon 3`}
+                    priority
                   />
                   <h6 className="sm:text-[20px] text-[18px] font-semibold mt-4 mb-2">
                     Reetail
@@ -171,6 +175,7 @@ const Hero = () => {
                     height={47}
                     alt={`The hero icon`}
                     className="mb-4"
+                    priority
                   />
                   <BlackButton
                   className="text-[18px] py-[12px]"
