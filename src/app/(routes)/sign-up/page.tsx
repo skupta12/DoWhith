@@ -39,6 +39,7 @@ const page = () => {
                       height={43}
                       src={Stars}
                       alt="The stars icon"
+                      priority
                     />
                   </div>
                   <div>
@@ -59,6 +60,7 @@ const page = () => {
               height={848}
               src={LogInImage}
               alt="The log in image"
+              priority
             />
             <Stransition scale={0.9}>
               <div
