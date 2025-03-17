@@ -85,6 +85,7 @@ const Hero = () => {
                           key={index}
                           src={BlackStar}
                           alt="The black star"
+                          priority
                         />
                       ))}
                   </div>
@@ -103,11 +104,13 @@ const Hero = () => {
                 className="absolute left-8 -bottom-4 rounded-lg"
                 src={MasterAccount}
                 alt="The master account image"
+                priority
               />
               <Image
                 className="absolute left-32 bottom-44 rounded-lg"
                 src={Spending}
                 alt="The spending image"
+                priority
               />
             </Ytransition>
           </div>
