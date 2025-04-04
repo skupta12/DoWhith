@@ -41,16 +41,16 @@ const Footer = () => {
                   />
                 </form>
                 <div className="media-icons flex gap-x-3">
-                  <Link aria-label="The facebook icon" href="/">
+                  <Link aria-label="Facebook icon" href="/">
                     <Facebook name="" />
                   </Link>
-                  <Link aria-label="The twitter icon" href="/">
+                  <Link aria-label="Twitter icon" href="/">
                     <Twitter />
                   </Link>
-                  <Link aria-label="The linkedin icon" href="/">
+                  <Link aria-label="Linkedin icon" href="/">
                     <Linkedin />
                   </Link>
-                  <Link aria-label="The instagram icon" href="/">
+                  <Link aria-label="Instagram icon" href="/">
                     <Instagram />
                   </Link>
                 </div>
